@@ -1,0 +1,50 @@
+name: EOL Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  eol-check:
+    name: Check End-of-Line Issues
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install editorconfig-checker
+        run: |
+          curl -sSfL https://github.com/editorconfig-checker/editorconfig-checker/releases/latest/download/ec-linux-amd64.tar.gz | tar -xzf - -C /tmp
+          sudo mv /tmp/bin/ec-linux-amd64 /usr/local/bin/editorconfig-checker
+
+      - name: Run EOL check
+        run: |
+          echo "Running editorconfig-checker to validate end-of-line issues..."
+          editorconfig-checker
+
+      - name: Check for CRLF line endings
+        run: |
+          echo "Checking for Windows CRLF line endings..."
+          if find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" -o -name "*.tf" -o -name "*.py" -o -name "*.sh" \) -exec file {} \; | grep -q "CRLF"; then
+            echo "❌ Found files with CRLF line endings:"
+            find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" -o -name "*.tf" -o -name "*.py" -o -name "*.sh" \) -exec file {} \; | grep "CRLF"
+            echo "Please convert these files to use LF line endings."
+            exit 1
+          else
+            echo "✅ All files use proper LF line endings."
+          fi
+
+      - name: Check for trailing whitespace
+        run: |
+          echo "Checking for trailing whitespace..."
+          if find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" -o -name "*.tf" -o -name "*.py" -o -name "*.sh" \) -exec grep -l '[[:space:]]$' {} \; | grep -v '.git'; then
+            echo "❌ Found files with trailing whitespace:"
+            find . -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.json" -o -name "*.tf" -o -name "*.py" -o -name "*.sh" \) -exec grep -l '[[:space:]]$' {} \; | grep -v '.git'
+            echo "Please remove trailing whitespace from these files."
+            exit 1
+          else
+            echo "✅ No trailing whitespace found."
+          fi
