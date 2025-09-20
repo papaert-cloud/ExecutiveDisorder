@@ -1,0 +1,59 @@
+name: 🛡️ Security Gates
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      severity_threshold:
+        required: false
+        type: string
+        default: 'medium'
+    secrets:
+      SNYK_TOKEN:
+        required: true
+
+jobs:
+  sast-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: CodeQL Analysis
+        uses: github/codeql-action/init@v3
+        with:
+          languages: python, javascript
+      
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  sca-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Snyk Security Scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=${{ inputs.severity_threshold }}
+
+  sbom-generation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate SBOM
+        run: |
+          echo "📋 Generating Software Bill of Materials..."
+          # Install syft for SBOM generation
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+          syft . -o cyclonedx-json=sbom.json
+      
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-${{ github.sha }}
+          path: sbom.json
