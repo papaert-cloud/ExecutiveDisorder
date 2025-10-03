@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExecutiveDisorder.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb824704be2ac9834c9f70fd03a01bf7e4866fc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd81c48fd50e52f0e794b4da61922e9d895684e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExecutiveDisorder.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExecutiveDisorder.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
