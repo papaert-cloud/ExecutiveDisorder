@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_99
+  m_EditorClassIdentifier: 
+  CardID: 99
+  Title: Gravity Inverted Locally!
+  Category: 1
+  Description: A mishap at the experimental physics lab has inverted gravity in a
+    five-block radius. People, cars, and pets are now stuck to the sky. Utter chaos!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Deploy giant nets and magnets.
+    OutcomeDescription: A desperate attempt to retrieve citizens. Many things get
+      tangled.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -16
+      Percent: 0
+    - Type: 1
+      Amount: -14
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue tiny parachutes to victims.
+    OutcomeDescription: Airdropping parachutes is tricky when 'up' is 'down' for
+      them.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -10
+      Percent: 0
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Try to reverse the polarity again.
+    OutcomeDescription: Could fix it, or make everyone float sideways. High risk!
+    ResourceRequirements:
+    - Type: 1
+      Amount: -19
+      Percent: 0
+    - Type: 3
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 2038fc9b2aa0ada40a787bc8ec220538, type: 2}
+  - {fileID: 11400000, guid: 709de0c72cf936a42a9b85c24d2fcc88, type: 2}
+  - {fileID: 11400000, guid: 8e8fab777a2002d4ebb0f4cc8e718fba, type: 2}
+  - {fileID: 11400000, guid: e811963b9ee7d9242a226c44be3744a2, type: 2}
+  - {fileID: 11400000, guid: 6ee135ee3e651af41989f63cb188a6ef, type: 2}
+  - {fileID: 11400000, guid: 3f7d766366ef67a4d9a2cf80a1988380, type: 2}
+  - {fileID: 11400000, guid: ca5019aeca4189c4f9f4aa58e3322b3e, type: 2}
+  - {fileID: 11400000, guid: 8d75a81e23d14aa44920668148c17390, type: 2}
+  - {fileID: 11400000, guid: 0b9fd26e5fe7ada4cb9b3c48f6975b76, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_88
+  m_EditorClassIdentifier: 
+  CardID: 88
+  Title: 'National Debate: Spork vs Foon'
+  Category: 3
+  Description: 'A heated national debate erupts over the superior hybrid utensil:
+    the Spork or the Foon. The cutlery industry is on edge. This is your moment to
+    lead.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Declare allegiance to Team Spork!
+    OutcomeDescription: Spork loyalists rejoice! Foon proponents feel betrayed. Soup
+      season is tense.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 1
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Champion the mighty Foon!
+    OutcomeDescription: Foon enthusiasts celebrate! Spork users call for a recount.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 1
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Promote utensil unity for all.
+    OutcomeDescription: A call for peace between Spork and Foon factions. Unlikely
+      to work.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: f95320e5e62b75544a1e536895fe3bd3, type: 2}
+  - {fileID: 11400000, guid: b04bf44ac7155454ea2bf0bc18398048, type: 2}
+  - {fileID: 11400000, guid: 0685e44b5664acb49b8518186fc2c172, type: 2}
+  - {fileID: 11400000, guid: 9fdc441bde34fb24184187d464a64b10, type: 2}
+  - {fileID: 11400000, guid: a6e8de80ea1331643bf339c410936ad6, type: 2}
+  - {fileID: 11400000, guid: 97890418cf71d4b44b1dfe8b93c800f5, type: 2}
+  - {fileID: 11400000, guid: 7c7760f5bd023ea4a9dbd1721bf715b3, type: 2}
+  - {fileID: 11400000, guid: ea871c22ab394074994f9986c7a65774, type: 2}
+  - {fileID: 11400000, guid: f87c877ce2dd11d4781cfe80e7b8c210, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

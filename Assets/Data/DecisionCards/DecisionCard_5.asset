@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_5
+  m_EditorClassIdentifier: 
+  CardID: 5
+  Title: Mandatory Interpretive Dance
+  Category: 0
+  Description: 'Education reform proposal: mandatory interpretive dance classes in
+    all schools to ''foster creativity''. Parents are... divided on this.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Dance our way to success!
+    OutcomeDescription: Artistic community rejoices. Test scores... TBD.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Focus on 'core' subjects.
+    OutcomeDescription: Practical, but a bit boring. The dancers are sad.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Suggest a pilot program.
+    OutcomeDescription: A small, controlled dance experiment. Delays the inevitable.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: d83eecc399555534fa2fbceebef4c75d, type: 2}
+  - {fileID: 11400000, guid: be8c92dc44b30354aac42db9f11c6869, type: 2}
+  - {fileID: 11400000, guid: 2b6da0e7437dcff49b85066ff09d1bc4, type: 2}
+  - {fileID: 11400000, guid: a6ce9af05d8ef7647b028f51406974bb, type: 2}
+  - {fileID: 11400000, guid: f12a4d11396bd494f8fb37e4254b7805, type: 2}
+  - {fileID: 11400000, guid: 136e92826e2f5c0448449e3c21186dce, type: 2}
+  - {fileID: 11400000, guid: df5785f7d505b23408d3ce1fc52d59ec, type: 2}
+  - {fileID: 11400000, guid: f851c6b42f2a338418725826eb82e458, type: 2}
+  - {fileID: 11400000, guid: 4088809feb8f8d3478021a8d69f2447f, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

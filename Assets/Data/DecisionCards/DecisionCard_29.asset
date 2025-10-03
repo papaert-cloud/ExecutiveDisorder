@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_29
+  m_EditorClassIdentifier: 
+  CardID: 29
+  Title: Pigeon Uprising Imminent!
+  Category: 1
+  Description: The city's pigeons have become organized and aggressive, dive-bombing
+    citizens and disrupting transport. It's feathered anarchy on the streets!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Call in animal control units.
+    OutcomeDescription: A protracted, messy battle against avian aggressors ensues.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -14
+      Percent: 0
+    - Type: 3
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Negotiate with pigeon leader.
+    OutcomeDescription: Appeasement may work, or you'll look like a complete fool.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -16
+      Percent: 0
+    - Type: 2
+      Amount: 10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Declare pigeons 'persona non grata'.
+    OutcomeDescription: A symbolic gesture. The pigeons ignore your decrees.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -12
+      Percent: 0
+    - Type: 2
+      Amount: -8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: a098d122448f9464c99a8651a31d0202, type: 2}
+  - {fileID: 11400000, guid: a9d7e9e946bb8154b96349d79b2e63c1, type: 2}
+  - {fileID: 11400000, guid: cb64e9b87be85e94288a824a8e0d4d5a, type: 2}
+  - {fileID: 11400000, guid: bfe008dd6c733d94e9cb29e2a39c152c, type: 2}
+  - {fileID: 11400000, guid: 05514acbdf6d4f247940343c5d7c3ecf, type: 2}
+  - {fileID: 11400000, guid: 9340b2eb829cfd24d83e077b7e663d62, type: 2}
+  - {fileID: 11400000, guid: 7f1cec07459ca6b4784158eb38ecd738, type: 2}
+  - {fileID: 11400000, guid: fd012c4c15e3240498366fea016375e7, type: 2}
+  - {fileID: 11400000, guid: 6589b38e26ebcfe489bc53d3cb77f6b5, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

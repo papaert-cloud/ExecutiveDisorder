@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_38_0
+  m_EditorClassIdentifier: 
+  ReactionType: 0
+  Text: Huge thumbs up for the latest on cat elected mayor (unofficially)! It's about
+    time. A stray cat, 'Whiskers,' has become the unofficial mayor of a small town,
+    with residents leaving it 'policy suggestions' (treats). #CatElectedMayor #Progress
+    #Yes
+  Topic: Cat Elected Mayor (Unofficially)
+  SourceName: Evening Post
+  ResourceRequirements:
+  - Type: 0
+    Amount: 0.8
+    Percent: 0

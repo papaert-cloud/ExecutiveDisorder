@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_22
+  m_EditorClassIdentifier: 
+  CardID: 22
+  Title: Croissant Crisis Looms!
+  Category: 0
+  Description: The National Croissant Day was a hit, but now there's a butter shortage
+    and pastry prices are skyrocketing. People are hangry for croissants.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Subsidize expensive butter imports.
+    OutcomeDescription: Butter flows again, but the national deficit grows larger.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    - Type: 0
+      Amount: 4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 25
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Promote 'Healthy Alternatives'.
+    OutcomeDescription: Public demands butter, not bran muffins. Unpopular.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    - Type: 2
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Form a Butter Task Force now.
+    OutcomeDescription: Many meetings commence, but butter remains scarce for now.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 8eaab3cfd0f99354ea1cd2fd47fe3516, type: 2}
+  - {fileID: 11400000, guid: 9aeb059108311f64582bb214fa3e8a60, type: 2}
+  - {fileID: 11400000, guid: cfd1bb0029942ff46ac5ab64d6c5e9f2, type: 2}
+  - {fileID: 11400000, guid: 5435fc7f92a0ab044bb82e055b7d0368, type: 2}
+  - {fileID: 11400000, guid: 59cb6e04e48d3744a90b476670ccbb76, type: 2}
+  - {fileID: 11400000, guid: 02af014e9a5debf40b171783f7936ad4, type: 2}
+  - {fileID: 11400000, guid: 0260c907ce2ed7c42be08e9b5c4ba18f, type: 2}
+  - {fileID: 11400000, guid: f18175e284c95f64bb3369b978639c0a, type: 2}
+  - {fileID: 11400000, guid: d85a0561503ac564687593a434d4d985, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

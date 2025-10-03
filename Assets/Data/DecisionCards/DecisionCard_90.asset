@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_90
+  m_EditorClassIdentifier: 
+  CardID: 90
+  Title: Badger Mascot International Gaffe
+  Category: 4
+  Description: The 'Confused Badger' mascot accidentally wandered into a live international
+    summit broadcast, looking bewildered. It is now a global meme for political confusion.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Lean into the 'Confused Statesman' meme.
+    OutcomeDescription: Your nation becomes ironically famous for diplomatic bewilderment.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 94
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue formal apology for badger.
+    OutcomeDescription: The world chuckles. The badger remains blissfully unaware.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -4
+      Percent: 0
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Give badger 'media training'.
+    OutcomeDescription: The badger is taught to look thoughtfully confused, not erratically
+      so.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 3f2d3811ca8602a44bfe58c141ef268c, type: 2}
+  - {fileID: 11400000, guid: dc96e2062082f17409ba9a4bc243b385, type: 2}
+  - {fileID: 11400000, guid: 6574e785a9f14474197efbd8980bb11d, type: 2}
+  - {fileID: 11400000, guid: 272d6a32aa8a05a43a9a72b7d3dc1e81, type: 2}
+  - {fileID: 11400000, guid: a986eba041acac74290e79fe40380603, type: 2}
+  - {fileID: 11400000, guid: 8094f0063b0564947b3f46ce9a8fee40, type: 2}
+  - {fileID: 11400000, guid: cd3961a3d48198d4bb06d18b2af066c9, type: 2}
+  - {fileID: 11400000, guid: 50e46f71871a8074ab1a416e899fba84, type: 2}
+  - {fileID: 11400000, guid: d3a77791647cc92469725fd390f552c9, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

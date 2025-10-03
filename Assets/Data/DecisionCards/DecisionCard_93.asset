@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_93
+  m_EditorClassIdentifier: 
+  CardID: 93
+  Title: Pigeon Suit Sabotage!
+  Category: 5
+  Description: Rival bird factions (sparrows, mostly) are sabotaging the pigeons'
+    tiny business suits, leading to wardrobe malfunctions at important pigeon press
+    conferences.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Deploy Pigeon Secret Service.
+    OutcomeDescription: Tiny earpieces and sunglasses. Protects pigeon dignity, escalates
+      bird tensions.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -6
+      Percent: 0
+    - Type: 3
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Host Inter-Bird Peace Summit.
+    OutcomeDescription: Difficult negotiations. Sparrows demand equal suit representation.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    - Type: 0
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue reinforced pigeon suits.
+    OutcomeDescription: More durable, but less breathable. Pigeons complain of chafing.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: a15355738781b6f4ea2b78b9c740c054, type: 2}
+  - {fileID: 11400000, guid: ef6ee5a5ec853114e9d6d0661275e3b9, type: 2}
+  - {fileID: 11400000, guid: c2f3d903a4b5c2f49b82f0f229979b8d, type: 2}
+  - {fileID: 11400000, guid: 99cb4e26b9bd8154ca87be9bf360d4a5, type: 2}
+  - {fileID: 11400000, guid: 9a172e5df98820d4782f4bfe399c9b07, type: 2}
+  - {fileID: 11400000, guid: 033ffc560d5b2434fbdc457ac3f29c98, type: 2}
+  - {fileID: 11400000, guid: 1109660baefee2249aa95cb05228d049, type: 2}
+  - {fileID: 11400000, guid: 3bd0dadc712d1e54d9e111fe35a3d7d0, type: 2}
+  - {fileID: 11400000, guid: 880034514a29c614cb31924fe4f4fa98, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

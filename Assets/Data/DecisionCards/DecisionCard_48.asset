@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_48
+  m_EditorClassIdentifier: 
+  CardID: 48
+  Title: Official State Cloud Shape
+  Category: 5
+  Description: A movement to declare an 'Official State Cloud Shape' (e.g., 'Fluffy
+    Bunny') is gaining traction. Meteorologists are bemused, artists are inspired.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Declare the 'Regal Dolphin' cloud!
+    OutcomeDescription: Cloud-gazing becomes a national pastime. Difficult to enforce.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Clouds are chaotically beautiful.
+    OutcomeDescription: No official shape designated. Nature remains unlegislated.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Cloud shape naming contest.
+    OutcomeDescription: Public submits thousands of ideas, from 'Potato' to 'Dragon'.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: a5f0a44c78d9f4445a292f7abb13cdcb, type: 2}
+  - {fileID: 11400000, guid: 0c6caf6797f37194d885e5730c0b7a72, type: 2}
+  - {fileID: 11400000, guid: 2fb1d5c3963560f4cab4aed884ea14d1, type: 2}
+  - {fileID: 11400000, guid: 0d357f85e59829145a918b4e35a099bf, type: 2}
+  - {fileID: 11400000, guid: 2e2e8d28525975547bf5a7ebda8915f6, type: 2}
+  - {fileID: 11400000, guid: 9efecff5d3167cc4f9f1b49b877620ff, type: 2}
+  - {fileID: 11400000, guid: 28794167687303442baa875d793fa3a3, type: 2}
+  - {fileID: 11400000, guid: 51eecf257ce55454cac3f884cc47b7c5, type: 2}
+  - {fileID: 11400000, guid: 7b291b364a51348489db6e7a035f6858, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

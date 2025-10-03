@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_34
+  m_EditorClassIdentifier: 
+  CardID: 34
+  Title: Interpretive Dance Language
+  Category: 5
+  Description: 'A radical proposal: replace an official language with interpretive
+    dance to foster ''deeper, non-verbal understanding''. Communication will be...
+    expressive.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Let our bodies do the talking!
+    OutcomeDescription: Diplomacy becomes a ballet. Grocery shopping, a modern dance.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -10
+      Percent: 0
+    - Type: 2
+      Amount: 8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 41
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Words are good, let's keep them.
+    OutcomeDescription: The status quo of verbal communication is maintained.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 2
+  - OptionText: Pilot dance in one department.
+    OutcomeDescription: The Department of Motor Vehicles tries to pirouette its way
+      through bureaucracy.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: a9f5e40130718134e961e87d117a1213, type: 2}
+  - {fileID: 11400000, guid: 5133efff13d651a4f9960fdc75f49f79, type: 2}
+  - {fileID: 11400000, guid: a51fd011c42486946a217fc3efa06a72, type: 2}
+  - {fileID: 11400000, guid: bb2cbec5703a8464f93e8c7160a0a085, type: 2}
+  - {fileID: 11400000, guid: 11ca6812efa3f874ba07c7177c0e9b03, type: 2}
+  - {fileID: 11400000, guid: ad31acf3eb01367449d363c0c0fc67bb, type: 2}
+  - {fileID: 11400000, guid: ee730ef8d5fcda846a85fe0d38254408, type: 2}
+  - {fileID: 11400000, guid: 0e0f0b08bbba4754cb12a778eb939a59, type: 2}
+  - {fileID: 11400000, guid: cd17b5736314bd4449358eeb812958ca, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 59

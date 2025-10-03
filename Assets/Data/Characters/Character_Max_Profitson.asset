@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bdfa0338d282114086100806de65f7a, type: 3}
+  m_Name: Character_Max_Profitson
+  m_EditorClassIdentifier: 
+  CharacterName: Max Profitson
+  GovernTitle: Executive-In-Chief
+  PartyAffiliation: The Capital Crew
+  Portrait: {fileID: 8462332327786566469, guid: cd0b05cdc6a53104092d1a5bf989828e, type: 3}
+  FullBody: {fileID: 8462332327786566469, guid: cd0b05cdc6a53104092d1a5bf989828e, type: 3}
+  ProfilePicture: {fileID: 0}
+  CampaignSlogan: Democracy... but quarterly.
+  CharacterEffect: {fileID: 11400000, guid: 2104ef41d4de75048a91bd14d02dd918, type: 2}
+  InitialPopularity: 40
+  InitialStability: 55
+  InitialMedia: 45
+  InitialEconomic: 65

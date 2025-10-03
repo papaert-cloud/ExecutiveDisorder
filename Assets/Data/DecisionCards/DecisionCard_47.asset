@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_47
+  m_EditorClassIdentifier: 
+  CardID: 47
+  Title: 'Proposal: Zero Gravity Day'
+  Category: 0
+  Description: Scientists propose a 'National Zero Gravity Day' using experimental
+    tech to briefly nullify gravity in major cities. Safety concerns are... significant.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Let everyone float for a day!
+    OutcomeDescription: Incredible fun, followed by massive insurance claims.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 10
+      Percent: 0
+    - Type: 3
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Keep our feet on the ground.
+    OutcomeDescription: A wise, if less exciting, decision. Physicists sigh.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 7
+      Percent: 0
+    - Type: 0
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Test on a small, empty town.
+    OutcomeDescription: The town's buildings float away. Oops. More research needed.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 9d6dd0b7184ea3d4b8f2e0d3a4f10436, type: 2}
+  - {fileID: 11400000, guid: 6b826f87fca8e7640819b8a0de347bdb, type: 2}
+  - {fileID: 11400000, guid: 0258961dacaa0954fba8d992edcd1970, type: 2}
+  - {fileID: 11400000, guid: f074c599c715ce746a33cd8f0f3654f9, type: 2}
+  - {fileID: 11400000, guid: 7066e035cba735c4aa5eec0d92bc7b1f, type: 2}
+  - {fileID: 11400000, guid: 7e38ac16b44c7504fb7205a4e873aad9, type: 2}
+  - {fileID: 11400000, guid: b4b599064980c224ab9009dafc90a743, type: 2}
+  - {fileID: 11400000, guid: ec8f45afb1384fe42abe91daa68f3058, type: 2}
+  - {fileID: 11400000, guid: 84fb63dd3a768324fa09467e699e5f8a, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 58

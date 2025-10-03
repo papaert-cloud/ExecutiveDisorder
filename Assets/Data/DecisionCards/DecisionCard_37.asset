@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_37
+  m_EditorClassIdentifier: 
+  CardID: 37
+  Title: Giant Harbor Rubber Duck
+  Category: 3
+  Description: An artist wants to install a colossal rubber duck in the main harbor
+    for 'artistic and whimsical purposes'. Port authorities are concerned about navigation.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Unleash the Quacken!
+    OutcomeDescription: Massive tourist attraction. Seagulls are confused. It's very
+      big.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 5
+      Percent: 0
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Keep the harbor duck-free.
+    OutcomeDescription: A sensible decision, but the city feels less joyful.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Suggest a smaller duck.
+    OutcomeDescription: A compromise is sought. Perhaps a flotilla of normal ducks?
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: c20bf976c2805cd4799f3a698b93f6cf, type: 2}
+  - {fileID: 11400000, guid: 61d14e7aea69cd3429287015b5bae735, type: 2}
+  - {fileID: 11400000, guid: e0a8582a170fd644f82f9ccaf60949aa, type: 2}
+  - {fileID: 11400000, guid: e5bd267939d68c84897dc6bdd11b08cd, type: 2}
+  - {fileID: 11400000, guid: bc54d5f03bd4a2e4c804794dc54f76c9, type: 2}
+  - {fileID: 11400000, guid: 3e28de1d38e40454f95e355f8486aed7, type: 2}
+  - {fileID: 11400000, guid: a85447b13f93a4049857fc8c7f6903c7, type: 2}
+  - {fileID: 11400000, guid: 0e3f5429d6661b84a9b733fb14563b6d, type: 2}
+  - {fileID: 11400000, guid: 6d382212d887d3c49b4f414a5737e98e, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 59

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_69
+  m_EditorClassIdentifier: 
+  CardID: 69
+  Title: 'Currency Change: Bottle Caps'
+  Category: 0
+  Description: Economists propose replacing the national currency with bottle caps
+    to 'prepare for a post-apocalyptic future' and 'simplify transactions'. Banks
+    are horrified.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Make it rain bottle caps!
+    OutcomeDescription: Economy thrown into chaos. Beverage companies become central
+      banks.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -12
+      Percent: 0
+    - Type: 1
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 73
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Stick to boring old money.
+    OutcomeDescription: Financial system remains stable. Apocalypse preppers are
+      disappointed.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 8
+      Percent: 0
+    - Type: 0
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue commemorative bottle caps.
+    OutcomeDescription: A collector's item. Does not affect actual monetary policy.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 4941627d218729f4884d8adc01e66d85, type: 2}
+  - {fileID: 11400000, guid: e2e34bb90c3a82e4bbfc93f83c78363d, type: 2}
+  - {fileID: 11400000, guid: d1afb5363e695bd4fa81524efe517e3e, type: 2}
+  - {fileID: 11400000, guid: cdebfafe9d4dd4d4a89ba5b9cd1a18d2, type: 2}
+  - {fileID: 11400000, guid: db37513cf1f465b4c8205cdc5db8e18c, type: 2}
+  - {fileID: 11400000, guid: 94c6f7bc2add2184f8fa40347616f3fd, type: 2}
+  - {fileID: 11400000, guid: ac2ce30289b28234287b31f696dc2c01, type: 2}
+  - {fileID: 11400000, guid: 17460b15e8ba3b94b82aaad94dacd4bc, type: 2}
+  - {fileID: 11400000, guid: f0ef18000e2e81843afd31b62e835883, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 97

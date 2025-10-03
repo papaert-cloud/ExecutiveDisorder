@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56735e5c8f3a1a540a951735a0d55e3c, type: 3}
+  m_Name: Ending_The_Media_Manipulator
+  m_EditorClassIdentifier: 
+  Title: The Media Manipulator
+  Description: You've masterfully controlled the narrative by suppressing negative
+    stories and promoting favorable coverage. The media has become your propaganda
+    machine, with critical voices silenced or discredited.
+  ResourceRequirements:
+  - ResourceType: 0
+    Comparison: 3
+    Value: 90
+  - ResourceType: 2
+    Comparison: 0
+    Value: 30
