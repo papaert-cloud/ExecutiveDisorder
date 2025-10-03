@@ -1,0 +1,61 @@
+name: Unity WebGL Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build WebGL
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      # Cache
+      - name: Cache Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+      
+      # Build
+      - name: Build project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: WebGL
+          unityVersion: 6000.0.23f1
+      
+      # Output
+      - name: Upload Build
+        uses: actions/upload-artifact@v3
+        with:
+          name: WebGL-Build
+          path: build/WebGL
+          
+      # Check size
+      - name: Check Build Size
+        run: |
+          SIZE=$(du -sh build/WebGL | cut -f1)
+          echo "Build size: $SIZE"
+          
+          # Convert to MB for comparison
+          SIZE_MB=$(du -sm build/WebGL | cut -f1)
+          if [ $SIZE_MB -gt 50 ]; then
+            echo "::warning::Build size ($SIZE_MB MB) exceeds 50MB target"
+          else
+            echo "✓ Build size ($SIZE_MB MB) is under 50MB target"
+          fi
