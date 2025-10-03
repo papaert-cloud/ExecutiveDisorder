@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, current_app as app
 from flask_login import login_user, logout_user, login_required, current_user
 from models import db, User
 import re
@@ -38,18 +38,23 @@ def register():
     if User.query.filter_by(email=email).first():
         return jsonify({'error': 'Email already exists'}), 400
     
-    user = User(username=username, email=email)
-    user.set_password(password)
-    
-    db.session.add(user)
-    db.session.commit()
-    
-    login_user(user)
-    
-    return jsonify({
-        'message': 'Registration successful',
-        'user': user.to_dict()
-    }), 201
+    try:
+        user = User(username=username, email=email)
+        user.set_password(password)
+        
+        db.session.add(user)
+        db.session.commit()
+        
+        login_user(user)
+        
+        return jsonify({
+            'message': 'Registration successful',
+            'user': user.to_dict()
+        }), 201
+    except Exception as e:
+        db.session.rollback()
+        app.logger.error(f'Failed to register user: {str(e)}')
+        return jsonify({'error': 'Registration failed'}), 500
 
 @auth_bp.route('/login', methods=['POST'])
 def login():

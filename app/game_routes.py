@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, current_app as app
 from flask_login import login_required, current_user
 from models import db, GameSave
 
@@ -12,26 +12,38 @@ def save_game():
     if not data:
         return jsonify({'error': 'No data provided'}), 400
     
-    save_data = data.get('save_data', {})
-    character_name = data.get('character_name', '')
-    resources = data.get('resources', {})
-    decisions_count = data.get('decisions_count', 0)
-    
-    game_save = GameSave(
-        user_id=current_user.id,
-        character_name=character_name,
-        save_data=save_data,
-        resources=resources,
-        decisions_count=decisions_count
-    )
-    
-    db.session.add(game_save)
-    db.session.commit()
-    
-    return jsonify({
-        'message': 'Game saved successfully',
-        'save': game_save.to_dict()
-    }), 201
+    try:
+        save_data = data.get('save_data', {})
+        character_name = data.get('character_name', '')
+        resources = data.get('resources', {})
+        decisions_count = data.get('decisions_count', 0)
+        
+        if 'save_data' in data and not isinstance(data['save_data'], dict):
+            return jsonify({'error': 'save_data must be a JSON object'}), 400
+        if 'resources' in data and not isinstance(data['resources'], dict):
+            return jsonify({'error': 'resources must be a JSON object'}), 400
+        if 'decisions_count' in data and not isinstance(data['decisions_count'], int):
+            return jsonify({'error': 'decisions_count must be an integer'}), 400
+        
+        game_save = GameSave(
+            user_id=current_user.id,
+            character_name=character_name,
+            save_data=save_data,
+            resources=resources,
+            decisions_count=decisions_count
+        )
+        
+        db.session.add(game_save)
+        db.session.commit()
+        
+        return jsonify({
+            'message': 'Game saved successfully',
+            'save': game_save.to_dict()
+        }), 201
+    except Exception as e:
+        db.session.rollback()
+        app.logger.error(f'Failed to save game: {str(e)}')
+        return jsonify({'error': 'Failed to save game'}), 500
 
 @game_bp.route('/saves', methods=['GET'])
 @login_required
@@ -55,28 +67,42 @@ def get_save(save_id):
 @game_bp.route('/save/<int:save_id>', methods=['PUT'])
 @login_required
 def update_save(save_id):
+    data = request.get_json()
+    
+    if not data:
+        return jsonify({'error': 'No data provided'}), 400
+    
     save = GameSave.query.filter_by(id=save_id, user_id=current_user.id).first()
     
     if not save:
         return jsonify({'error': 'Save not found'}), 404
     
-    data = request.get_json()
-    
-    if 'save_data' in data:
-        save.save_data = data['save_data']
-    if 'character_name' in data:
-        save.character_name = data['character_name']
-    if 'resources' in data:
-        save.resources = data['resources']
-    if 'decisions_count' in data:
-        save.decisions_count = data['decisions_count']
-    
-    db.session.commit()
-    
-    return jsonify({
-        'message': 'Save updated successfully',
-        'save': save.to_dict()
-    }), 200
+    try:
+        if 'save_data' in data:
+            if not isinstance(data['save_data'], dict):
+                return jsonify({'error': 'save_data must be a JSON object'}), 400
+            save.save_data = data['save_data']
+        if 'character_name' in data:
+            save.character_name = data['character_name']
+        if 'resources' in data:
+            if not isinstance(data['resources'], dict):
+                return jsonify({'error': 'resources must be a JSON object'}), 400
+            save.resources = data['resources']
+        if 'decisions_count' in data:
+            if not isinstance(data['decisions_count'], int):
+                return jsonify({'error': 'decisions_count must be an integer'}), 400
+            save.decisions_count = data['decisions_count']
+        
+        db.session.commit()
+        
+        return jsonify({
+            'message': 'Save updated successfully',
+            'save': save.to_dict()
+        }), 200
+    except Exception as e:
+        db.session.rollback()
+        app.logger.error(f'Failed to update save: {str(e)}')
+        return jsonify({'error': 'Failed to update save'}), 500
 
 @game_bp.route('/save/<int:save_id>', methods=['DELETE'])
 @login_required
@@ -86,10 +112,15 @@ def delete_save(save_id):
     if not save:
         return jsonify({'error': 'Save not found'}), 404
     
-    db.session.delete(save)
-    db.session.commit()
-    
-    return jsonify({'message': 'Save deleted successfully'}), 200
+    try:
+        db.session.delete(save)
+        db.session.commit()
+        
+        return jsonify({'message': 'Save deleted successfully'}), 200
+    except Exception as e:
+        db.session.rollback()
+        app.logger.error(f'Failed to delete save: {str(e)}')
+        return jsonify({'error': 'Failed to delete save'}), 500
 
 @game_bp.route('/stats', methods=['GET'])
 @login_required

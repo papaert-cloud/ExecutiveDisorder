@@ -26,7 +26,17 @@ login_manager.login_view = 'auth.login'
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-CORS(app, supports_credentials=True)
+allowed_origins = []
+replit_domains = os.environ.get('REPLIT_DOMAINS')
+if replit_domains:
+    for domain in replit_domains.split(','):
+        allowed_origins.extend([f'https://{domain.strip()}', f'http://{domain.strip()}'])
+else:
+    allowed_origins = ['http://localhost:5000', 'http://127.0.0.1:5000']
+
+CORS(app, 
+     resources={r"/api/*": {"origins": allowed_origins}},
+     supports_credentials=True)
 
 app.register_blueprint(auth_bp)
 app.register_blueprint(game_bp)
