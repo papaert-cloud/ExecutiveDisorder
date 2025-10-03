@@ -17,6 +17,19 @@
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
+      },
+      "ExecutiveDisorder.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "System.Text.Json": "9.0.9"
+        },
+        "compile": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        }
       }
     }
   },
@@ -91,11 +104,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ExecutiveDisorder.Core/1.0.0": {
+      "type": "project",
+      "path": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
+      "msbuildProject": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "System.Text.Json >= 9.0.9"
+      "ExecutiveDisorder.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -104,11 +122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/workspace/ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
-      "projectName": "ExecutiveDisorder.Core",
-      "projectPath": "/home/runner/workspace/ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
+      "projectUniqueName": "/home/runner/workspace/ExecutiveDisorder.Console/ExecutiveDisorder.Console.csproj",
+      "projectName": "ExecutiveDisorder.Console",
+      "projectPath": "/home/runner/workspace/ExecutiveDisorder.Console/ExecutiveDisorder.Console.csproj",
       "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/workspace/ExecutiveDisorder.Core/obj/",
+      "outputPath": "/home/runner/workspace/ExecutiveDisorder.Console/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/runner/.nuget/NuGet/NuGet.Config"
@@ -122,7 +140,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/runner/workspace/ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj": {
+              "projectPath": "/home/runner/workspace/ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -140,12 +162,6 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
-        "dependencies": {
-          "System.Text.Json": {
-            "target": "Package",
-            "version": "[9.0.9, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

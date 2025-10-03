@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dGaUAgefjLU=",
+  "dgSpecHash": "QbAPPw1ZPTM=",
   "success": true,
-  "projectFilePath": "/home/runner/workspace/ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
+  "projectFilePath": "/home/runner/workspace/ExecutiveDisorder.Console/ExecutiveDisorder.Console.csproj",
   "expectedPackageFiles": [
     "/home/runner/.nuget/packages/system.text.json/9.0.9/system.text.json.9.0.9.nupkg.sha512"
   ],

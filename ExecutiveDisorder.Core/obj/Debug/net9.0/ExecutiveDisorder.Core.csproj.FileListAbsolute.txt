@@ -1,0 +1,13 @@
+/home/runner/workspace/ExecutiveDisorder.Core/bin/Debug/net9.0/ExecutiveDisorder.Core.deps.json
+/home/runner/workspace/ExecutiveDisorder.Core/bin/Debug/net9.0/ExecutiveDisorder.Core.dll
+/home/runner/workspace/ExecutiveDisorder.Core/bin/Debug/net9.0/ExecutiveDisorder.Core.pdb
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.csproj.AssemblyReference.cache
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.AssemblyInfoInputs.cache
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.AssemblyInfo.cs
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.csproj.CoreCompileInputs.cache
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.sourcelink.json
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.dll
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/refint/ExecutiveDisorder.Core.dll
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ExecutiveDisorder.Core.pdb
+/home/runner/workspace/ExecutiveDisorder.Core/obj/Debug/net9.0/ref/ExecutiveDisorder.Core.dll
