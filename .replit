@@ -34,6 +34,13 @@ outputType = "webview"
 localPort = 5000
 externalPort = 80
 
+[[ports]]
+localPort = 37059
+externalPort = 3000
+
 [deployment]
 deploymentTarget = "autoscale"
 run = ["gunicorn", "--bind=0.0.0.0:5000", "--reuse-port", "--chdir=app", "app:app"]
+
+[objectStorage]
+defaultBucketID = "replit-objstore-3bb33b4d-0de6-42ab-b421-13337c47b340"

@@ -12,13 +12,14 @@ This is the **Executive Disorder** Unity 6 game project repository, adapted to r
 - **Current Repository**: https://github.com/papaert-cloud/ExecutiveDisorder
 
 ## What's Running on Replit
-This Repl runs a Flask web application (Python) that:
-- Provides comprehensive project documentation
-- Displays game features and technical information
-- Shows repository structure and setup instructions
-- Serves as a landing page for the Unity project
+This Repl runs a complete Flask backend system that:
+- **Serves the Unity WebGL game** at the root URL (/)
+- **Provides REST API** for user authentication and game saves
+- **PostgreSQL database** for user accounts and game progress
+- **API documentation page** at /api-docs for testing endpoints
+- **Health monitoring** endpoint at /health
 
-The actual Unity game cannot run in Replit as it requires Unity Editor for development and building.
+The Unity game runs directly in the browser via WebGL, with full backend support for user accounts and save game functionality.
 
 ## Repository Structure
 
@@ -29,9 +30,13 @@ The actual Unity game cannot run in Replit as it requires Unity Editor for devel
 
 ### Web Application (Running on Replit)
 - **app/** - Flask web application
-  - `app.py` - Main Flask application
-  - `templates/` - HTML templates
+  - `app.py` - Main Flask application with routing and CORS configuration
+  - `models.py` - SQLAlchemy database models (User, GameSave)
+  - `auth_routes.py` - Authentication API endpoints (register, login, logout)
+  - `game_routes.py` - Game save API endpoints (save, load, delete)
+  - `templates/` - HTML templates (API docs, landing page)
   - `static/` - CSS, JavaScript, and static assets
+  - `webgl/` - Unity WebGL build files
   - `requirements.txt` - Python dependencies
 
 ### Infrastructure & DevOps
@@ -59,6 +64,11 @@ Executive Disorder is a political decision-making card game where players:
 ### Web Application (This Repl)
 - **Framework**: Flask 3.0
 - **Language**: Python 3.11
+- **Database**: PostgreSQL (Replit-hosted)
+- **ORM**: SQLAlchemy with Flask-SQLAlchemy
+- **Authentication**: Flask-Login with bcrypt password hashing
+- **Session Management**: Cookie-based sessions
+- **CORS**: Environment-based origin restrictions
 - **Server**: Development server (Gunicorn for production)
 - **Host**: 0.0.0.0:5000
 
@@ -80,6 +90,12 @@ Executive Disorder is a political decision-making card game where players:
 
 ### Python Dependencies
 - Flask 3.0.0 - Web framework
+- Flask-SQLAlchemy 3.1.1 - Database ORM
+- Flask-Login 0.6.3 - User session management
+- Flask-Bcrypt 1.0.1 - Password hashing
+- Flask-CORS 4.0.0 - Cross-origin resource sharing
+- psycopg2-binary 2.9.9 - PostgreSQL adapter
+- python-dotenv 1.0.0 - Environment variable management
 - Gunicorn 21.2.0 - WSGI server (for production)
 - Cryptography 41.0.7 - Security utilities
 
@@ -136,5 +152,110 @@ The game includes extensive JSON data files:
 - [GitHub Repository](https://github.com/papaert-cloud/ExecutiveDisorder)
 - [Original Unity Project](https://github.com/ExecutiveDis/ExecutiveDisorder)
 
+## Backend API Endpoints
+
+### Authentication (`/api/auth`)
+- `POST /api/auth/register` - Register new user account
+- `POST /api/auth/login` - Login with username/password
+- `POST /api/auth/logout` - Logout current user
+- `GET /api/auth/check` - Check authentication status
+- `GET /api/auth/me` - Get current user info
+
+### Game Saves (`/api/game`)
+- `POST /api/game/save` - Create new game save
+- `GET /api/game/saves` - Get all saves for current user
+- `GET /api/game/save/:id` - Get specific save by ID
+- `PUT /api/game/save/:id` - Update existing save
+- `DELETE /api/game/save/:id` - Delete a save
+- `GET /api/game/stats` - Get gameplay statistics
+
+## Database Schema
+
+### User Model
+- `id` (Primary Key)
+- `username` (Unique, indexed)
+- `email` (Unique, indexed)
+- `password_hash` (Bcrypt hashed)
+- `created_at` (Timestamp)
+
+### GameSave Model
+- `id` (Primary Key)
+- `user_id` (Foreign Key → User, cascade delete)
+- `character_name` (String)
+- `save_data` (JSON - game state)
+- `resources` (JSON - popularity, stability, media, economic)
+- `decisions_count` (Integer)
+- `created_at` (Timestamp)
+- `updated_at` (Timestamp, auto-updated)
+
+## Security Features
+- **Password Hashing**: Bcrypt with salt
+- **Session Management**: Secure cookie-based sessions
+- **CORS Protection**: Restricted to environment-configured origins
+- **Input Validation**: Type checking and sanitization on all endpoints
+- **Error Handling**: Generic error messages with server-side logging
+- **Database Safety**: Transaction rollback on all exceptions
+
+## Environment Variables
+Required for deployment:
+- `DATABASE_URL` - PostgreSQL connection string (auto-provided by Replit)
+- `SECRET_KEY` - Flask session secret (auto-generated, change for production)
+- `REPLIT_DOMAINS` - Comma-separated allowed CORS origins (auto-provided by Replit)
+
+## Quick Start Guide
+
+### Playing the Game
+1. Visit the root URL (/) to load the WebGL game
+2. Register an account or login
+3. Play the game and your progress auto-saves
+4. View your saved games and statistics
+
+### Testing the API
+1. Visit `/api-docs` for interactive API documentation
+2. Test registration, login, and save game endpoints
+3. Use the provided test forms to interact with the API
+4. Check `/health` endpoint for system status
+
+## Integration with Unity
+The Unity WebGL game can communicate with the backend API using JavaScript:
+
+```javascript
+// Example: Register user from Unity
+async function RegisterUser(username, email, password) {
+    const response = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        credentials: 'include',
+        body: JSON.stringify({username, email, password})
+    });
+    return await response.json();
+}
+
+// Example: Save game progress
+async function SaveGame(characterName, saveData, resources, decisionsCount) {
+    const response = await fetch('/api/game/save', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        credentials: 'include',
+        body: JSON.stringify({
+            character_name: characterName,
+            save_data: saveData,
+            resources: resources,
+            decisions_count: decisionsCount
+        })
+    });
+    return await response.json();
+}
+```
+
 ## Last Updated
 October 3, 2025
+
+## Recent Changes
+- **October 3, 2025**: Implemented complete backend system
+  - Added PostgreSQL database with User and GameSave models
+  - Built REST API for authentication and game saves
+  - Deployed Unity WebGL build at root URL
+  - Created interactive API documentation page
+  - Implemented secure session management and password hashing
+  - Added CORS protection and comprehensive error handling
