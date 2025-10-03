@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_18
+  m_EditorClassIdentifier: 
+  CardID: 18
+  Title: Office Plant for President?
+  Category: 2
+  Description: A popular satirical campaign nominates your office ficus, 'Fern',
+    for President. Astonishingly, 'Fern' is polling well against actual rivals.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Appoint Fern as 'Plant Advisor'.
+    OutcomeDescription: A humorous nod. Fern's policy is 'more sunlight'.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Ignore the leafy challenger.
+    OutcomeDescription: The campaign fizzles, but you missed a PR win.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Debate Fern (the plant).
+    OutcomeDescription: You either win easily or look very, very silly.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: aba5d92006bef17499e598f9eb661a5e, type: 2}
+  - {fileID: 11400000, guid: 56e59549f50a49d47bca9c4fa79f7e93, type: 2}
+  - {fileID: 11400000, guid: 286c9ab5ba62a9244b032bc0bf3284ca, type: 2}
+  - {fileID: 11400000, guid: 19b295605a3d8084197594d64e00ab7a, type: 2}
+  - {fileID: 11400000, guid: d7c98b11aa94ac845bd036897cb794ae, type: 2}
+  - {fileID: 11400000, guid: b3cf13086eb790442a9890d3e04db623, type: 2}
+  - {fileID: 11400000, guid: a9d4467f3e9e6824580d1b37ed624f68, type: 2}
+  - {fileID: 11400000, guid: b30d52c86e82c4c4fa341a2728654319, type: 2}
+  - {fileID: 11400000, guid: a08be11a57c210f4097eb25adcd2efa2, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

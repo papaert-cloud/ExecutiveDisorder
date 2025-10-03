@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_78
+  m_EditorClassIdentifier: 
+  CardID: 78
+  Title: Talk to Animals Institute
+  Category: 3
+  Description: A charismatic scientist claims to have invented a device that allows
+    humans to talk to animals, and seeks funding for a national institute. Could
+    this be real?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Fund the Dolittle Device!
+    OutcomeDescription: First conversations reveal squirrels mostly want nuts. Still,
+      a breakthrough!
+    ResourceRequirements:
+    - Type: 3
+      Amount: -7
+      Percent: 0
+    - Type: 2
+      Amount: 6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: This is clearly barking mad.
+    OutcomeDescription: A potential revolution in interspecies communication is dismissed.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 4
+      Percent: 0
+    - Type: 0
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Test device on your pet.
+    OutcomeDescription: Your pet either reveals deep secrets or just asks for food.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 0
+  MediaReactions:
+  - {fileID: 11400000, guid: 2f6dd48bfff1f7b40a771c7c742ffe67, type: 2}
+  - {fileID: 11400000, guid: a9c0fc9d2e9b0584592e1ae304a7b186, type: 2}
+  - {fileID: 11400000, guid: 1788b617c4dbbbe4b9cb3edb50dfb80d, type: 2}
+  - {fileID: 11400000, guid: 3c108c312c6dc29459ab7c7fc7253e19, type: 2}
+  - {fileID: 11400000, guid: ece3a889a3f44084db59c66f22fc60d7, type: 2}
+  - {fileID: 11400000, guid: 30b3bc29e7c4166488efc2e8e7ef1fe0, type: 2}
+  - {fileID: 11400000, guid: cdb2537042ed4984dad35be4c1cf0b6f, type: 2}
+  - {fileID: 11400000, guid: d65328b177c1c46478fde47f1e61b4c6, type: 2}
+  - {fileID: 11400000, guid: a691463a42edce7429645b8e7af60fa4, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 98

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_7
+  m_EditorClassIdentifier: 
+  CardID: 7
+  Title: AI for the Cabinet?
+  Category: 3
+  Description: Tech gurus suggest appointing an AI to a cabinet position for 'unbiased
+    decision-making'. Public is wary. Could be genius or Skynet.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Appoint Minister Algorithm!
+    OutcomeDescription: Efficiency up, but AI demands more RAM for budget talks.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -7
+      Percent: 0
+    - Type: 3
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 12
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Humans only in charge here.
+    OutcomeDescription: Reassures luddites, disappoints tech sector. Status quo.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 6
+      Percent: 0
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 2
+  - OptionText: AI as an 'advisor' first.
+    OutcomeDescription: A cautious step. The AI starts by optimizing coffee runs.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 9dfbc19b7e1fc0e4cb1cd6a8a4c7572a, type: 2}
+  - {fileID: 11400000, guid: 5ae5dc599335cca459cd17a5221b8d6b, type: 2}
+  - {fileID: 11400000, guid: e117ac9ca798dd64c8b13dffda63c8ef, type: 2}
+  - {fileID: 11400000, guid: 7f2971db5aadfe941890646107acf776, type: 2}
+  - {fileID: 11400000, guid: 38cb7dd28ae01c741840bda4c1fddc85, type: 2}
+  - {fileID: 11400000, guid: 21fe7661b27e9be4dbb6cc4f7519d60f, type: 2}
+  - {fileID: 11400000, guid: 228b92b4f03afd2448634246bcebe922, type: 2}
+  - {fileID: 11400000, guid: 0585406e6fea5bc468ce6add2d94dd95, type: 2}
+  - {fileID: 11400000, guid: e85fe6c09145339409ebc7fe708dbfc8, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_11
+  m_EditorClassIdentifier: 
+  CardID: 11
+  Title: Pun Tax Evasion Ring
+  Category: 0
+  Description: The 'Pun Tax' is active, but an underground ring of dad joke tellers
+    is evading it, using coded language and secret stand-up nights.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Crack down on jokeleggers!
+    OutcomeDescription: Raids on comedy clubs. Headlines are hilarious.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Offer a 'Pun Amnesty'.
+    OutcomeDescription: Some come forward, others go deeper underground.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 2
+      Percent: 0
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Increase surveillance budget.
+    OutcomeDescription: More agents try to understand terrible puns.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: d1942358ae173ff409fa2f85d6dd3ead, type: 2}
+  - {fileID: 11400000, guid: 59c253ed1a39e514da307da45929ae96, type: 2}
+  - {fileID: 11400000, guid: cbb43f264849ed541a35078c5558a594, type: 2}
+  - {fileID: 11400000, guid: dc05c80b5c54504468bf83b8ae85a3ca, type: 2}
+  - {fileID: 11400000, guid: 9a212be669a49f4419f872d04196b7cc, type: 2}
+  - {fileID: 11400000, guid: b733a51878eefb143a7b239dddbe9a0b, type: 2}
+  - {fileID: 11400000, guid: 284411241fda46146bc526a73e378a93, type: 2}
+  - {fileID: 11400000, guid: 76672ca169de19449bd35fbfd94cc8f8, type: 2}
+  - {fileID: 11400000, guid: 7114c3857bb17c4458fb2f3aae63612d, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

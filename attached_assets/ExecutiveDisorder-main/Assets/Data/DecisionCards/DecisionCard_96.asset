@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_96
+  m_EditorClassIdentifier: 
+  CardID: 96
+  Title: Whale Conservation Empire
+  Category: 3
+  Description: The urban whale watching is a massive success! Your nation is now
+    a global leader in whale tourism and conservation, attracting marine biologists
+    and tourists alike.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Build underwater whale hotels!
+    OutcomeDescription: A bold new frontier in tourism. Very expensive. Whales are
+      curious.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -10
+      Percent: 0
+    - Type: 0
+      Amount: 8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Focus on scientific research grants.
+    OutcomeDescription: Major breakthroughs in cetacean studies. Less flashy, more
+      substance.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    - Type: 3
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Expand whale song siren program.
+    OutcomeDescription: Attempt to attract more species with different musical genres.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 718801d5303f5c84784a0fd16acbadfd, type: 2}
+  - {fileID: 11400000, guid: edf95c0fee0a0774facb6d4c4c112d0f, type: 2}
+  - {fileID: 11400000, guid: 13328bbadabefca41b9d9f8c5c60f12b, type: 2}
+  - {fileID: 11400000, guid: f48cfbecb5b1b2242aa2571945d0499e, type: 2}
+  - {fileID: 11400000, guid: 0633852b7314ac9489079f5e2f59dad0, type: 2}
+  - {fileID: 11400000, guid: 2f1276cb3f2c5c54b8c8e20669db5682, type: 2}
+  - {fileID: 11400000, guid: 4d4928674cb0d5c45a276cf1f929bc74, type: 2}
+  - {fileID: 11400000, guid: 790a54f8b1f6a854faf0e9a9e283c1db, type: 2}
+  - {fileID: 11400000, guid: ec5fcd23038df1b47bd82e7b4b7073d1, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

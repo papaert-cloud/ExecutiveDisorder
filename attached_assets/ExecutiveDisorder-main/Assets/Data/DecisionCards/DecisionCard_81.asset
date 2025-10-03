@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_81
+  m_EditorClassIdentifier: 
+  CardID: 81
+  Title: Guerilla Gardening Movement
+  Category: 4
+  Description: "Activists are 'guerilla gardening' \u2013 planting flowers and vegetables
+    in neglected public spaces. It's beautification, but also technically vandalism."
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Secretly support the green thumbs.
+    OutcomeDescription: The city becomes more vibrant. Some question the legality.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 1
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Crack down on plant perpetrators.
+    OutcomeDescription: Unpopular move. Makes for bad PR with flower-lovers.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    - Type: 0
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Launch official 'Adopt-A-Plot'.
+    OutcomeDescription: Channels the enthusiasm into a structured, bureaucratic program.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: a87f2539a3add3946b3330b9b73d5abd, type: 2}
+  - {fileID: 11400000, guid: 3f3bc20fa0db2484aa344b1df7c5facd, type: 2}
+  - {fileID: 11400000, guid: c75d7bce27fac3b4c8d24d112b09eec5, type: 2}
+  - {fileID: 11400000, guid: f274116bcb2234e4eb18f251d89c9f6a, type: 2}
+  - {fileID: 11400000, guid: cbcc2f3559d28bc438703f85d374a588, type: 2}
+  - {fileID: 11400000, guid: e80a70ec7d4f58344bff8f627384e396, type: 2}
+  - {fileID: 11400000, guid: c5afae9f56ce92b41be5c93fbea39d24, type: 2}
+  - {fileID: 11400000, guid: 1bd1951ff321f5647ac2dd6900ef0609, type: 2}
+  - {fileID: 11400000, guid: 81e0360102a0d4746acbc3e3fa1b6832, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

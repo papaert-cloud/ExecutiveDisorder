@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_91
+  m_EditorClassIdentifier: 
+  CardID: 91
+  Title: Verbosity Tax Evasion Scandal
+  Category: 0
+  Description: High-ranking officials are caught using complex code words and synonyms
+    to evade the 'Tax on Sesquipedalianism'. Public trust in simple speech plummets.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Prosecute the polysyllabic perpetrators!
+    OutcomeDescription: A show trial ensues. The defendants use very long words in
+      their defense.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -7
+      Percent: 0
+    - Type: 2
+      Amount: 4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 95
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Repeal the unpopular tax.
+    OutcomeDescription: Linguists rejoice. Government speeches become incomprehensible
+      again.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -5
+      Percent: 0
+    - Type: 0
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Introduce 'Simplicity Subsidies'.
+    OutcomeDescription: Reward officials for using short words. They still find loopholes.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 7a40e661135e3ed4daf8f72edd29744d, type: 2}
+  - {fileID: 11400000, guid: 92b35910a5c12d3408b53186c225d852, type: 2}
+  - {fileID: 11400000, guid: eb5fecfe6aba8ab4c9622001ab5f804b, type: 2}
+  - {fileID: 11400000, guid: 7b3e2dbafc3602847a9c208c46687404, type: 2}
+  - {fileID: 11400000, guid: de98ad2435fad2b4da184bff1a2f49d5, type: 2}
+  - {fileID: 11400000, guid: 2058166356ed4384f90f82cb5f4b87c7, type: 2}
+  - {fileID: 11400000, guid: f1371ac218e780b489c25c68d6141ae8, type: 2}
+  - {fileID: 11400000, guid: b25a37c4c9642dd499bff7dabb794f7d, type: 2}
+  - {fileID: 11400000, guid: 8b22cba8b46711a4eb493bbd2cafcf28, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

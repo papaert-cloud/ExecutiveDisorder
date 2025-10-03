@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_83
+  m_EditorClassIdentifier: 
+  CardID: 83
+  Title: National Treasure Hunt Plan
+  Category: 3
+  Description: To boost tourism and morale, the government plans a nationwide treasure
+    hunt with cryptic clues hidden in historical landmarks. What could the prize
+    be?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Launch the Great National Quest!
+    OutcomeDescription: Mass public participation. Prize is 'bragging rights' and
+      a small plaque.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 8
+      Percent: 0
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Too frivolous, cancel the hunt.
+    OutcomeDescription: A missed opportunity for fun. Treasure remains unfound.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 3
+      Percent: 0
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Outsource hunt to a corporation.
+    OutcomeDescription: The prize becomes a lifetime supply of their product. Less
+      romantic.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 49752e3f20d43234e9b5222e0edc76d1, type: 2}
+  - {fileID: 11400000, guid: 7fcb3850941663f4bbcf2e58a15d01db, type: 2}
+  - {fileID: 11400000, guid: a19ebc6c6fd0183458fb8da478596427, type: 2}
+  - {fileID: 11400000, guid: 56e79dba69f61dc44859cab6411372b0, type: 2}
+  - {fileID: 11400000, guid: c3b3854ad05fe1742a25727f13b9e3d6, type: 2}
+  - {fileID: 11400000, guid: 2153ab548836a4e46ba3128454af49c4, type: 2}
+  - {fileID: 11400000, guid: 302cf21bb2554be43800fa4368a98761, type: 2}
+  - {fileID: 11400000, guid: aa4387f0f75abde4f8696154a0910dc8, type: 2}
+  - {fileID: 11400000, guid: 6bb6778fc2e775349972e0c714f24379, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 97

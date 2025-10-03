@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_67
+  m_EditorClassIdentifier: 
+  CardID: 67
+  Title: Ban the Color Beige?
+  Category: 4
+  Description: A viral campaign demands banning the color beige from public life
+    for being 'too boring' and 'soul-crushingly dull'. Interior designers are concerned.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Outlaw the offensive off-white!
+    OutcomeDescription: Government buildings are repainted in neon. Public opinion
+      is vibrant.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    - Type: 1
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Defend the dignity of beige.
+    OutcomeDescription: Beige remains a symbol of quiet neutrality. Campaigners call
+      you bland.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Promote 'Exciting Taupe'.
+    OutcomeDescription: A compromise color is offered. It is still basically beige.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: b212f64544ecf6240b4a6c05b00f02bd, type: 2}
+  - {fileID: 11400000, guid: 4ac4bc7691d3ffa4aaacdd594dfce01c, type: 2}
+  - {fileID: 11400000, guid: 63f8a2ec92e0e3b4b8b9437b090ab24d, type: 2}
+  - {fileID: 11400000, guid: 8d2163a7ab6400f4591b7bbc2312ca7b, type: 2}
+  - {fileID: 11400000, guid: e1a1228b9eb3f204282c827ed87e4fa6, type: 2}
+  - {fileID: 11400000, guid: b91f45e2a8662af4ea9d22f316a022db, type: 2}
+  - {fileID: 11400000, guid: e2431c4bc76e1414b9455eaca763ef02, type: 2}
+  - {fileID: 11400000, guid: 2e94690c323cf66498af72f9fc562a11, type: 2}
+  - {fileID: 11400000, guid: 2f46ae22054134344ac157875bd9f701, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_62
+  m_EditorClassIdentifier: 
+  CardID: 62
+  Title: Tax on Sesquipedalianism
+  Category: 0
+  Description: A bill proposes a tax on using excessively long words in official
+    meetings to encourage 'clear and concise communication'. Academics are verbose
+    in their opposition.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Implement the Verbosity Levy.
+    OutcomeDescription: Meetings become shorter, or people just use thesauruses more.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 7
+      Percent: 0
+    - Type: 1
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 91
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Champion grandiloquent speech.
+    OutcomeDescription: Language remains rich and complex. Meetings remain long.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -4
+      Percent: 0
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue a Plain Language Guide.
+    OutcomeDescription: A helpful document that few will read. Tax avoided for now.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: aa40af5caa47d1746843cbb8567743a9, type: 2}
+  - {fileID: 11400000, guid: 4cf3d4eef05baf341920390aa8f44b24, type: 2}
+  - {fileID: 11400000, guid: 92553a3ec04b1294c9dc20dd30920403, type: 2}
+  - {fileID: 11400000, guid: 0ba521439d1b1664f979213ea5bf97c0, type: 2}
+  - {fileID: 11400000, guid: ec1a2c129f33135438ef83961cf00281, type: 2}
+  - {fileID: 11400000, guid: afa8f589cac49504bbee448d460a985b, type: 2}
+  - {fileID: 11400000, guid: 8d499acdc505695468b520aabb5f2dd3, type: 2}
+  - {fileID: 11400000, guid: 4b29d7af82e165c4fa8d9045c9b268b5, type: 2}
+  - {fileID: 11400000, guid: 2b01d6d2aff70264ca16ac8225a7d499, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 99

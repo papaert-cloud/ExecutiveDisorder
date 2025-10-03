@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_74
+  m_EditorClassIdentifier: 
+  CardID: 74
+  Title: National Slogan Contest
+  Category: 4
+  Description: A contest to find a new national slogan is overrun by ironic and silly
+    submissions. The current frontrunner is 'We are mostly harmless'.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Embrace 'Mostly Harmless'.
+    OutcomeDescription: The nation adopts a self-deprecating slogan. Tourists are
+      amused.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Insist on a 'serious' slogan.
+    OutcomeDescription: A committee picks a boring slogan. Public prefers the joke
+      one.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -2
+      Percent: 0
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Extend slogan submission time.
+    OutcomeDescription: More silly slogans flood in. The problem gets worse.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 22649c3e5fe8a0f4eb4042505175b066, type: 2}
+  - {fileID: 11400000, guid: a56761df34392ba49a5d064636e7ebad, type: 2}
+  - {fileID: 11400000, guid: 268ed1cf43035ee4c837795bd13fe940, type: 2}
+  - {fileID: 11400000, guid: 742f2b54ac7caa24cb664a890b1f705b, type: 2}
+  - {fileID: 11400000, guid: 5aed9ec65ab30ad418c38a69f99cccb1, type: 2}
+  - {fileID: 11400000, guid: 00f3a1053c4645e498108e4b055525ae, type: 2}
+  - {fileID: 11400000, guid: 2a0c7134b05cb6f4aaa8c0d14aa4fa10, type: 2}
+  - {fileID: 11400000, guid: 648c1ab584d73e744b78d32eebaa4dc5, type: 2}
+  - {fileID: 11400000, guid: ce236dd9d9084d5468811cc40f2af152, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

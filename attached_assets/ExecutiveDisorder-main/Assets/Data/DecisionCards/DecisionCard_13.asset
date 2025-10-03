@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_13
+  m_EditorClassIdentifier: 
+  CardID: 13
+  Title: Squirrel Hat Mandate
+  Category: 0
+  Description: A bizarre new law requires all squirrels to wear tiny, government-issued
+    hats for 'identification purposes'. Animal rights groups are baffled.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Hats for all squirrels!
+    OutcomeDescription: Enforcement is tricky. Squirrels are uncooperative models.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -2
+      Percent: 0
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Repeal the nutty law.
+    OutcomeDescription: Sanity prevails. Squirrels remain hatless and free.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Squirrel hat design contest.
+    OutcomeDescription: Public gets distracted by fashion, not policy.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: d3e2537d2949e4d498286d3aebb3d3c7, type: 2}
+  - {fileID: 11400000, guid: 8674f9b8e86168748b894eab4e9fe42e, type: 2}
+  - {fileID: 11400000, guid: fc10cea7b733aab46acbe30ff7dc2ae8, type: 2}
+  - {fileID: 11400000, guid: c4feec8dcbe838e47bb51d842d4c9172, type: 2}
+  - {fileID: 11400000, guid: 7ac377c4d3e8a0149b6bab62b72b0cab, type: 2}
+  - {fileID: 11400000, guid: 4ecc2a6ae5ff27744a43d714727d1d6f, type: 2}
+  - {fileID: 11400000, guid: 5a46c3d7bb44b9848964fa1810e8d668, type: 2}
+  - {fileID: 11400000, guid: d12a944681d0cb04eaa890e58ed34bbc, type: 2}
+  - {fileID: 11400000, guid: 30eec5793f354df44a489615ac357b92, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 29

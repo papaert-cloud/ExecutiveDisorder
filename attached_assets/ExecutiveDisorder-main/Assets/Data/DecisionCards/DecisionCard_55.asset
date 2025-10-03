@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_55
+  m_EditorClassIdentifier: 
+  CardID: 55
+  Title: Power Posing Productivity Plunge
+  Category: 5
+  Description: The 'Power Posing' initiative has led to widespread back injuries
+    and employees challenging each other to 'pose-offs' instead of working. What's
+    your legacy?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Mandate 'Gentle Stretching' instead.
+    OutcomeDescription: A less aggressive approach. Chiropractors see a business
+      boom.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 3
+      Percent: 0
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Declare 'Power Posing' a sport.
+    OutcomeDescription: Turns a workplace disaster into a new national pastime.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 7
+      Percent: 0
+    - Type: 2
+      Amount: 4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Fund research on optimal poses.
+    OutcomeDescription: More studies, but the posing continues unabated during work
+      hours.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: f7905186da154354ab6a97cfb15d2362, type: 2}
+  - {fileID: 11400000, guid: 647cded4f9491c2478f0f0b80f8e8ee2, type: 2}
+  - {fileID: 11400000, guid: d126f971cc7413247b466c77f5b995ae, type: 2}
+  - {fileID: 11400000, guid: a46bb4abcb50eaa4680c222473bcf6b6, type: 2}
+  - {fileID: 11400000, guid: ead4ff2a95e37ed48a7571aee064e380, type: 2}
+  - {fileID: 11400000, guid: 211b72609f02d8d4aa155f5236571487, type: 2}
+  - {fileID: 11400000, guid: 2c12bb51cb29633478989c4c7b4869c0, type: 2}
+  - {fileID: 11400000, guid: 42f1f42654ca20547b96c04e38da4816, type: 2}
+  - {fileID: 11400000, guid: 4de99c3cfe19e204cab2c4a603251c32, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_26
+  m_EditorClassIdentifier: 
+  CardID: 26
+  Title: Can't Stop The Memes
+  Category: 2
+  Description: Your Meme Strategist is too good. You're now a global meme icon, but
+    serious international diplomacy is challenging when leaders expect a cat pun.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Launch meme-based diplomacy.
+    OutcomeDescription: Surprisingly effective with some, disastrous with others.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -8
+      Percent: 0
+    - Type: 0
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Go on a 'seriousness tour'.
+    OutcomeDescription: Mixed results. Some prefer the old, funny, meme-you.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -7
+      Percent: 0
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Write a tell-all meme book.
+    OutcomeDescription: Cash in on the meme fame before it inevitably fades away.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 94b66f27bc46e24478c1ee46261784ba, type: 2}
+  - {fileID: 11400000, guid: 901cef962acdda3498b12a3e00753a88, type: 2}
+  - {fileID: 11400000, guid: 1077c005b3709344488ddba3c1b7cb23, type: 2}
+  - {fileID: 11400000, guid: 72762102ce14f1c46b33321492d54596, type: 2}
+  - {fileID: 11400000, guid: 659d5057b27da0e409b49a720611af91, type: 2}
+  - {fileID: 11400000, guid: 5ced546501b8e4c4a8a89993a1f80441, type: 2}
+  - {fileID: 11400000, guid: b1caf7d5a728e1f46b4f03d67a836efd, type: 2}
+  - {fileID: 11400000, guid: 111f870466c21f046abe0249a101f562, type: 2}
+  - {fileID: 11400000, guid: 0ec07d003c41eed4ab92b56d0b21cfac, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

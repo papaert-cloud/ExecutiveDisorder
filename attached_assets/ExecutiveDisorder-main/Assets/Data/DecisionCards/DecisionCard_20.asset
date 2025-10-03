@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_20
+  m_EditorClassIdentifier: 
+  CardID: 20
+  Title: National 'Talk Like a Pirate' Day
+  Category: 4
+  Description: The annual 'Talk Like a Pirate Day' is approaching. Should the government
+    officially endorse it, or is it too silly for serious leaders?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Aye, make it official, matey!
+    OutcomeDescription: Fun for a day. Boosts rum sales and eye patch stocks.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 3
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Maintain dignified silence.
+    OutcomeDescription: Pirate enthusiasts are a bit miffed. Business as usual.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Issue memo on pirate speak.
+    OutcomeDescription: Government officials try to use 'Ahoy!' in meetings.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 68101f4999a9b6c4e84b21a694e60861, type: 2}
+  - {fileID: 11400000, guid: 3528be819fe20f44cb8c623b0b355a87, type: 2}
+  - {fileID: 11400000, guid: 9253cef28caec3c459987de5c3777b56, type: 2}
+  - {fileID: 11400000, guid: f40cc098d8ac5994298033de90bc5987, type: 2}
+  - {fileID: 11400000, guid: 9cde46e7c58e4b2459c1a2e25e2c31f8, type: 2}
+  - {fileID: 11400000, guid: 82281655112221746a6fdae3f108b615, type: 2}
+  - {fileID: 11400000, guid: 3f11bff3a4231fe468ff7ffa53e097bd, type: 2}
+  - {fileID: 11400000, guid: b988225d1fabeb446b38b5a5cbd97a72, type: 2}
+  - {fileID: 11400000, guid: 9861777506c9af64bbf6f6ccbde9d19e, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_53
+  m_EditorClassIdentifier: 
+  CardID: 53
+  Title: "Emoji Treaty Disaster \U0001F631"
+  Category: 4
+  Description: Your emoji-only communication day led to a major international treaty
+    being signed with an eggplant emoji. The other nation is... confused and offended.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: "Send apology gift basket \U0001F9FA \u0444\u0440\u0443\u043A\u0442\u044B."
+    OutcomeDescription: A peace offering. They're still wary of your pictograms.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -5
+      Percent: 0
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 56
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Insist it meant 'prosperity'.
+    OutcomeDescription: They don't buy it. Diplomatic ties strained further.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -6
+      Percent: 0
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Hire emoji cryptographers.
+    OutcomeDescription: Experts try to decipher your own government's messages.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 69fc272efbdc8a4449e2872da90868d3, type: 2}
+  - {fileID: 11400000, guid: 2ce42984218a3b149975381e6f51a826, type: 2}
+  - {fileID: 11400000, guid: cd4071efc81175449a5274435b84a8df, type: 2}
+  - {fileID: 11400000, guid: beb88dc1d4efc2e44b02958a59d6a67c, type: 2}
+  - {fileID: 11400000, guid: 12ce5a1f67a297d48ba8a969115fc922, type: 2}
+  - {fileID: 11400000, guid: 04314f3abe623e041912c845532752c3, type: 2}
+  - {fileID: 11400000, guid: c7cd6751468f4c84c9a4b5d58a00404f, type: 2}
+  - {fileID: 11400000, guid: d038acde54c326d4585a5c8f98d8e6aa, type: 2}
+  - {fileID: 11400000, guid: 75fd0093e18b29c4e86f6287dca4c3a6, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_3
+  m_EditorClassIdentifier: 
+  CardID: 3
+  Title: Awkward Old Photo Surfaces
+  Category: 2
+  Description: An old, embarrassing photo of you at a themed party from college has
+    been leaked. It's not illegal, just... cringeworthy and out of context.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Own it with some humor.
+    OutcomeDescription: Some find it relatable, others unprofessional. A mixed bag.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 3
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 10
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Deny, deny, deny its authenticity.
+    OutcomeDescription: Loses credibility when more photos inevitably appear.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -5
+      Percent: 0
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Investigate the 'source' of leak.
+    OutcomeDescription: Looks defensive and diverts resources. The photo remains.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: ea6073f68be975b489edb6300014d8b9, type: 2}
+  - {fileID: 11400000, guid: beac9276d49a4f54a846a6b889805821, type: 2}
+  - {fileID: 11400000, guid: 01b6f97eb240ae34ca586af9e46ff9d9, type: 2}
+  - {fileID: 11400000, guid: 523a9b994b66cd348ba2b55d9e73540d, type: 2}
+  - {fileID: 11400000, guid: 619fd0949cfa4054ea2602df2bb79586, type: 2}
+  - {fileID: 11400000, guid: d37849460445fbc47913c84949228d36, type: 2}
+  - {fileID: 11400000, guid: 14695c44099ed11449fa8d4b2de5a20d, type: 2}
+  - {fileID: 11400000, guid: 39e3b1ade2802a7498a6e80fe56aebec, type: 2}
+  - {fileID: 11400000, guid: 7834eb15d291bd24d92008b476a7f307, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

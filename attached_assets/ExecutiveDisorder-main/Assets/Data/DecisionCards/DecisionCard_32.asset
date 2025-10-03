@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_32
+  m_EditorClassIdentifier: 
+  CardID: 32
+  Title: Competitive Napping League
+  Category: 3
+  Description: A group proposes establishing a federally funded 'National Competitive
+    Napping League'. Critics call it a waste, proponents say it's peak performance.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Fund the Dream Team now!
+    OutcomeDescription: National napping champions emerge. Mattresses stocks soar.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 7
+      Percent: 0
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 54
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: This idea is a sleeper, pass.
+    OutcomeDescription: The nation remains awake and potentially less rested.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Form a napping task force.
+    OutcomeDescription: The task force falls asleep during its first meeting.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: b2efbb4e155ca4d46997836278626230, type: 2}
+  - {fileID: 11400000, guid: 38320402b0406ed40b3e99037f3a6024, type: 2}
+  - {fileID: 11400000, guid: e9d1ca73ee1908643907a922cb6e7c8d, type: 2}
+  - {fileID: 11400000, guid: 7855003f1adaa29498cd1c06c3a307f2, type: 2}
+  - {fileID: 11400000, guid: 33f4ed07ac6a6174282de28cc16e69da, type: 2}
+  - {fileID: 11400000, guid: 5ce09a55ac6958f42b25c565642838b6, type: 2}
+  - {fileID: 11400000, guid: 57cb3a2522f327d4fb4828d8363ae593, type: 2}
+  - {fileID: 11400000, guid: e7322992b52bf7f4ebc679ff94ab20f6, type: 2}
+  - {fileID: 11400000, guid: 594efe6a9bd1879468043acba1649a1a, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 58
