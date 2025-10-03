@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_50
+  m_EditorClassIdentifier: 
+  CardID: 50
+  Title: National Anthem Sung by Goats
+  Category: 2
+  Description: As a bizarre PR stunt, it's suggested the national anthem at the next
+    major sporting event be 'sung' by a choir of trained goats. Animal rights groups
+    are wary.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Let the goat choir 'baaah'!
+    OutcomeDescription: A viral moment. Some find it hilarious, others deeply unpatriotic.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Stick to human singers, please.
+    OutcomeDescription: A more traditional, and less risky, approach.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Audition other animal choirs.
+    OutcomeDescription: Perhaps a chorus of cats? Or very articulate dogs?
+    ResourceRequirements:
+    - Type: 2
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: c699cbd05af49204ba2df2390f1016d9, type: 2}
+  - {fileID: 11400000, guid: 2a0d659d147b18847a0bcb1107673efb, type: 2}
+  - {fileID: 11400000, guid: f98db0c626e2da943b49be7bbe21705b, type: 2}
+  - {fileID: 11400000, guid: 13dce51fc4f7ebf42a32f036a0d0d804, type: 2}
+  - {fileID: 11400000, guid: c0b73ccfaf20b9741bcfc252051d1533, type: 2}
+  - {fileID: 11400000, guid: 79b2386b6bc164242b1cbf97229ce588, type: 2}
+  - {fileID: 11400000, guid: b7ad40bb4a987b746a53ca821515361a, type: 2}
+  - {fileID: 11400000, guid: 3bcc1a4998669ac4797f78209d270324, type: 2}
+  - {fileID: 11400000, guid: c52ea9c43649cf54dbf567bf5a700e14, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

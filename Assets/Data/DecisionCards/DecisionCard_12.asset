@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_12
+  m_EditorClassIdentifier: 
+  CardID: 12
+  Title: AI Minister Demands Rights
+  Category: 2
+  Description: Minister Algorithm is now demanding 'CPU rights' and a vote in parliament.
+    Its efficiency arguments are... compellingly logical.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Grant limited AI suffrage.
+    OutcomeDescription: A historic precedent. Human ministers feel threatened.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -8
+      Percent: 0
+    - Type: 2
+      Amount: 7
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Pull the plug (metaphorically).
+    OutcomeDescription: AI is 'reassigned'. Tech sector protests loudly.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Form ethics committee.
+    OutcomeDescription: Philosophers and engineers debate AI consciousness.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: e624b34a07def4a479ae68188acea7e3, type: 2}
+  - {fileID: 11400000, guid: a6401701a2d67a6429a1a31a9bb4df57, type: 2}
+  - {fileID: 11400000, guid: ca5c49f776a361247a9daaa53fe6a9be, type: 2}
+  - {fileID: 11400000, guid: 3b0d06130ca20c8488069303e246b2e8, type: 2}
+  - {fileID: 11400000, guid: 471bc91742899644e93d53a5549617f6, type: 2}
+  - {fileID: 11400000, guid: cfc7ec58d0cdf5144b5ba70b331babc3, type: 2}
+  - {fileID: 11400000, guid: 0cce5858bfe323c42bb7fb6310422d68, type: 2}
+  - {fileID: 11400000, guid: 62b851f9ef010144eb5978efec3a79e6, type: 2}
+  - {fileID: 11400000, guid: 94ec63c117c6b9f49b29acc26fd3ec30, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

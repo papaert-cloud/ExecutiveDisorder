@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_60_2
+  m_EditorClassIdentifier: 
+  ReactionType: 0
+  Text: Huge thumbs up for the latest on pigeon business attire mandate! It's about
+    time. A new proposal suggests all urban pigeons must wear tiny, custom-fitted
+    business suits to 'improve their public image and professionalism'. #PigeonBusinessAttire
+    #Progress #Yes
+  Topic: Pigeon Business Attire Mandate
+  SourceName: The Citizen's Voice
+  ResourceRequirements:
+  - Type: 0
+    Amount: 2.2
+    Percent: 0

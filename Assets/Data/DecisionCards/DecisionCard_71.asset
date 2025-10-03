@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_71
+  m_EditorClassIdentifier: 
+  CardID: 71
+  Title: Laughter Yoga International Incident
+  Category: 0
+  Description: A visiting diplomat mistook a parliamentary laughter yoga session
+    for a mockery of their national dance. Diplomatic relations are now 'hilariously
+    strained'.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Apologize with a straight face.
+    OutcomeDescription: A serious apology is issued. The diplomat remains skeptical.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -7
+      Percent: 0
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Invite them to join the laughter.
+    OutcomeDescription: They either embrace it or storm out, worsening the situation.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -6
+      Percent: 0
+    - Type: 1
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Blame cultural misunderstanding.
+    OutcomeDescription: A vague explanation. The laughter yoga continues, more subdued.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: a1368e2da79165f4684b78bc0235be51, type: 2}
+  - {fileID: 11400000, guid: bd15facef4fc61745b98a22e7038c95a, type: 2}
+  - {fileID: 11400000, guid: c6601ea3a1310e84c83bf43323292183, type: 2}
+  - {fileID: 11400000, guid: 8b5cd538eaab7414b8596e2abaa7af49, type: 2}
+  - {fileID: 11400000, guid: f315ab006ea26d6458a22cdac07cdcdd, type: 2}
+  - {fileID: 11400000, guid: 5ed04e2a7a8930b4a8cf68cbb403c4a3, type: 2}
+  - {fileID: 11400000, guid: 7b9b04d35467dcc42abc1210cd7bce97, type: 2}
+  - {fileID: 11400000, guid: 10481c0bff450414d943c79b7c25f721, type: 2}
+  - {fileID: 11400000, guid: 663f3aba9fdb2fb4b91e2d7fc16cbfbf, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 98

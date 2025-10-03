@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_40
+  m_EditorClassIdentifier: 
+  CardID: 40
+  Title: Sock Portal Discovered!
+  Category: 0
+  Description: The lost sock research paid off! Scientists found a tiny portal to
+    a sock dimension under a national monument. What now? This is big news!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Open diplomatic ties with Sockworld.
+    OutcomeDescription: Their ambassador is a sentient argyle. Trade talks begin.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 10
+      Percent: 0
+    - Type: 1
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Close the portal! It's too weird.
+    OutcomeDescription: A historic discovery, sealed off. Socks remain lost.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 4
+      Percent: 0
+    - Type: 0
+      Amount: -8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Nationalize sock retrieval.
+    OutcomeDescription: Government agents now fish for socks. Slow progress.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: ea2f349a40dc863418df3d62ed7ad13b, type: 2}
+  - {fileID: 11400000, guid: 5e86df7dfbf113143891a48b933d564b, type: 2}
+  - {fileID: 11400000, guid: 9952480ea59b07644b030a375c62cabf, type: 2}
+  - {fileID: 11400000, guid: bdaad3da3355c7947802af8ddae023fc, type: 2}
+  - {fileID: 11400000, guid: 2bb3fb70a812b6b41a5a456024d779d5, type: 2}
+  - {fileID: 11400000, guid: 5f452b16e3d7a7741bfc4696bdd37fb0, type: 2}
+  - {fileID: 11400000, guid: 20b69bd7d7fe1eb4e8e8c431c4affb72, type: 2}
+  - {fileID: 11400000, guid: a565adb9592f7a143a308bde4cc30612, type: 2}
+  - {fileID: 11400000, guid: e0fa3d5fdcd693140b8d8bb1a3b2baf3, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 59

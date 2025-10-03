@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_95_4
+  m_EditorClassIdentifier: 
+  ReactionType: 1
+  Text: This is NOT okay! The news about simplified language act of year xxxx (After
+    the Verbosity Tax fiasco, your government passes the 'Simplified Language Act',
+    mandating all official documents use words of one syllable only) is deeply worrying.
+    #SimplifiedLanguageAct #Concerned #Resist
+  Topic: Simplified Language Act of Year XXXX
+  SourceName: The Bird Times
+  ResourceRequirements:
+  - Type: 1
+    Amount: 3.1
+    Percent: 0
+  - Type: 0
+    Amount: 1.4
+    Percent: 0

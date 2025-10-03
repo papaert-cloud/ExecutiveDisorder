@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_28
+  m_EditorClassIdentifier: 
+  CardID: 28
+  Title: Nationwide Internet Outage!
+  Category: 1
+  Description: A massive cyberattack or a rogue squirrel has downed the internet.
+    Chaos reigns! Productivity plummets! People are talking... to each other!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Deploy emergency IT squads.
+    OutcomeDescription: A slow, arduous process to restore connectivity begins.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -15
+      Percent: 0
+    - Type: 1
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Blame foreign hackers loudly.
+    OutcomeDescription: Rallies some support, but doesn't fix the internet problem.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 5
+      Percent: 0
+    - Type: 1
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Declare Day of No Internet.
+    OutcomeDescription: Pretend it's a planned digital detox. Nobody buys it.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -18
+      Percent: 0
+    - Type: 2
+      Amount: -15
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 4ff6a080c0f35ca4ba75b5cc4ad0b97e, type: 2}
+  - {fileID: 11400000, guid: 43fb13ea9b924444e9bf7673397b813b, type: 2}
+  - {fileID: 11400000, guid: af286a6b758e3ce4b9c7d00174e3dec5, type: 2}
+  - {fileID: 11400000, guid: 5b9338bf80c904d4394a4e18d686991d, type: 2}
+  - {fileID: 11400000, guid: 1f5953d64fb35de4a969cfe955895ae4, type: 2}
+  - {fileID: 11400000, guid: ac39a5dffc0c4b9439f321a8967413e4, type: 2}
+  - {fileID: 11400000, guid: 47a6e40a4b5450b4199e4575d2808b74, type: 2}
+  - {fileID: 11400000, guid: 18fdfbdea93245b4cb0e6d815a35f5fe, type: 2}
+  - {fileID: 11400000, guid: 5195e8b7f6775ff48bb08c695484af74, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_73_1
+  m_EditorClassIdentifier: 
+  ReactionType: 0
+  Text: Huge thumbs up for the latest on bottle cap counterfeiting ring! It's about
+    time. The new bottle cap currency is popular, but a sophisticated counterfeiting
+    ring using 3D printers is flooding the market with fake caps. #BottleCapCounterfeiting
+    #Progress #Yes
+  Topic: Bottle Cap Counterfeiting Ring
+  SourceName: The Daily Byte
+  ResourceRequirements:
+  - Type: 0
+    Amount: 3.4
+    Percent: 0
+  - Type: 1
+    Amount: 1.1
+    Percent: 0

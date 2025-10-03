@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_57
+  m_EditorClassIdentifier: 
+  CardID: 57
+  Title: Napping Champion Defects!
+  Category: 2
+  Description: Your national napping champion, citing 'excessive pressure and pillow
+    regulations,' has defected to a rival nation with a more 'relaxed' napping league.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Denounce the traitorous napper!
+    OutcomeDescription: A national scandal. Pillow sales plummet. Morale is low.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -9
+      Percent: 0
+    - Type: 2
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Wish them well in their naps.
+    OutcomeDescription: A dignified response, but seen as weak by some patriots.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 4
+      Percent: 0
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Scout for new napping talent.
+    OutcomeDescription: The search for the next great sleeper begins immediately.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 2d1e06dc5006e0b48b94087c1f097359, type: 2}
+  - {fileID: 11400000, guid: a02e1c94447fc5843b3cc034e8feca66, type: 2}
+  - {fileID: 11400000, guid: e0e50b01dd29ce8458bcd4ea1b0f2e6f, type: 2}
+  - {fileID: 11400000, guid: 980b45f7e12c08644a163c4dbc075160, type: 2}
+  - {fileID: 11400000, guid: b112d839f5a97cb4fb4f453b58e0a349, type: 2}
+  - {fileID: 11400000, guid: 86f296934b6d85b4487a5c7e12cf7e6d, type: 2}
+  - {fileID: 11400000, guid: 75f8b75ee7d3ac647a1d1926378f1c0c, type: 2}
+  - {fileID: 11400000, guid: 330483a72f9af4140848be1d72228556, type: 2}
+  - {fileID: 11400000, guid: 08922537bccf1864da68b486313188e5, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

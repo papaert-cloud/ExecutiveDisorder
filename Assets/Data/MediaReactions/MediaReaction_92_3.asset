@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_92_3
+  m_EditorClassIdentifier: 
+  ReactionType: 1
+  Text: What a terrible idea regarding whale songs attract actual whales and the
+    proposal 'Establish Urban Whale Watching Tours!'! Who approved this? #WhaleSongsAttract
+    #Facepalm #BadMove
+  Topic: Whale Songs Attract Actual Whales
+  SourceName: Veritas News
+  ResourceRequirements:
+  - Type: 1
+    Amount: 3.1
+    Percent: 0
+  - Type: 3
+    Amount: 1.3
+    Percent: 0

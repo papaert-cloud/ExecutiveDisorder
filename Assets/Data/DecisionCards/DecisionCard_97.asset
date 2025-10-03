@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_97
+  m_EditorClassIdentifier: 
+  CardID: 97
+  Title: National Existential Crisis Day!
+  Category: 1
+  Description: Following a series of bizarre government decisions, the entire nation
+    has collectively declared an 'Existential Crisis Day'. Productivity is zero,
+    philosophy majors are thriving.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Address nation with comforting lies.
+    OutcomeDescription: Some are reassured, others see through it. Crisis deepens
+      for some.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -12
+      Percent: 0
+    - Type: 1
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Mandate group hugs and puppies.
+    OutcomeDescription: A temporary mood lift. Puppies are overwhelmed but helpful.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 5
+      Percent: 0
+    - Type: 3
+      Amount: -15
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Declare a 'Day of Distraction'.
+    OutcomeDescription: Massive public festivals and free ice cream. Avoids the issue
+      entirely.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 10
+      Percent: 0
+    - Type: 1
+      Amount: -20
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 9639f4fcffba2c148814b573269edea5, type: 2}
+  - {fileID: 11400000, guid: 5066b1e283bb6844c90d6d963f7c8565, type: 2}
+  - {fileID: 11400000, guid: e8bbaf673d8771441b2bfe671c061243, type: 2}
+  - {fileID: 11400000, guid: 595dede6a7c3be346a21b06eb268fb2c, type: 2}
+  - {fileID: 11400000, guid: b392d4e999990884a96bbb07909abb1b, type: 2}
+  - {fileID: 11400000, guid: d731895fb6b92664187b4ef94bad7e92, type: 2}
+  - {fileID: 11400000, guid: 79f751210ddbd134d9a0d833b18323cc, type: 2}
+  - {fileID: 11400000, guid: de5f68088b046824ab1af7e2f8c6946b, type: 2}
+  - {fileID: 11400000, guid: 765706f79ccffbc48aacebb94e723594, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

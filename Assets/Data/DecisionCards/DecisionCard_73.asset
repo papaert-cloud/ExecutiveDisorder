@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_73
+  m_EditorClassIdentifier: 
+  CardID: 73
+  Title: Bottle Cap Counterfeiting Ring
+  Category: 0
+  Description: The new bottle cap currency is popular, but a sophisticated counterfeiting
+    ring using 3D printers is flooding the market with fake caps. Economic chaos
+    looms.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Deploy the 'Cap Task Force'.
+    OutcomeDescription: Elite agents hunt for counterfeiters. It is surprisingly
+      dangerous.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -8
+      Percent: 0
+    - Type: 3
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Introduce 'CryptoCaps'.
+    OutcomeDescription: A new, secure digital bottle cap. Even more confusing.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -10
+      Percent: 0
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Recall all suspicious caps.
+    OutcomeDescription: Panic ensues as citizens try to determine cap authenticity.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -7
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: bfc3811898d5df64e9effbb5e1beee7f, type: 2}
+  - {fileID: 11400000, guid: 69ffc211c6b068a44b4ebc6497742540, type: 2}
+  - {fileID: 11400000, guid: cd96183f640fb7248804797e4d24d645, type: 2}
+  - {fileID: 11400000, guid: 99f001381aad49d4a84a7d813ffe475e, type: 2}
+  - {fileID: 11400000, guid: 192ccccd1b1a56046b03976dd8888c71, type: 2}
+  - {fileID: 11400000, guid: 358e7971ca2498e44b99872550881de1, type: 2}
+  - {fileID: 11400000, guid: fd125750ebe169e4087c3cbc3428418e, type: 2}
+  - {fileID: 11400000, guid: 5d82521b2f2205649bb12c42e6dd0a5f, type: 2}
+  - {fileID: 11400000, guid: 723b809c30255f04e98138deaa4bcbb2, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 97

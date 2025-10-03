@@ -1,0 +1,246 @@
+I want you to generate a JSON for a satirical political game. Dont write anything else, no comments, no emojis, generate all the cards, DONT ADD COMMENT TO THE JSON. 
+context:
+
+using UnityEngine;
+using System.Collections.Generic;
+using System; // Required for DateTime
+
+/// <summary>
+/// Represents the category of the decision card.
+/// </summary>
+[System.Serializable]
+public enum CardCategory
+{
+    Policy,
+    Crisis,
+    Character,
+    Opportunity,
+    SocialMedia,
+    Legacy
+}
+
+/// <summary>
+/// Represents the urgency level of the decision.
+/// </summary>
+[System.Serializable]
+public enum UrgencyLevel
+{
+    Low,        // Can be ignored indefinitely (or for a long time)
+    Medium,     // Standard decision timeframe
+    High,       // Needs attention soon
+    Immediate   // Requires immediate response (e.g., crisis)
+}
+
+
+/// <summary>
+/// Represents the display name for the category
+/// </summary>
+[System.Serializable]
+public struct CardCategoryDisplayName
+{
+    public CardCategory Category;
+    public string DisplayName;
+}
+
+/// <summary>
+/// Represents the display name for the urgency
+/// </summary>
+[System.Serializable]
+public struct CardCUrgencyDisplayName
+{
+    public UrgencyLevel Category;
+    public string DisplayName;
+}
+
+/// <summary>
+/// Represents the stakeholder
+/// </summary>
+[System.Serializable]
+public enum StakeHolders
+{
+    Tech,
+    SomethingElse
+}
+
+/// <summary>
+/// Represents the resource cost associated with a decision or option.
+/// </summary>
+[System.Serializable]
+public struct ResourceCost
+{
+    [Tooltip("Type of resource (e.g., PoliticalCapital, Budget, StaffTime). Use string or enum.")]
+    public ResourceType Type; // Consider using an enum for specific resource types
+
+    [Tooltip("Amount of the resource required or gained (negative for cost).")]
+    public float Amount;
+
+    [Range(-100, 100)] // This attribute creates a slider in the Inspector
+    [Tooltip("Percentage change of the resource required or gained (-100% to +100%). A negative value means a cost, positive means a gain.")]
+    public int Percent; // New field with range slider
+}
+
+/// <summary>
+/// Represents a single choice available to the player for a decision.
+/// </summary>
+[System.Serializable] // Makes this visible in the Unity Inspector
+public class DecisionOption
+{
+    [Tooltip("The text displayed to the player for this option.")]
+    public string OptionText;
+
+    [Tooltip("Description of the immediate or likely outcome of choosing this option.")]
+    public string OutcomeDescription;
+
+    [Tooltip("Resources required or gained if this option is chosen.")]
+    public List<ResourceCost> ResourceRequirements;
+
+    [Tooltip("Notes on how specific stakeholders might react *to this specific option*.")]
+    public List<string> StakeholderReactions; // E.g., "Labor Union supports", "Big Corp opposes"
+
+    [Tooltip("which specific stakeholders might get affected by *this specific option*.")]
+    public List<StakeHolders> StakeholdersAffected; // E.g., "Labor Union supports", "Big Corp opposes"
+
+    public int ConsequenceCardID = -1;
+
+    public bool IsDelayOption;
+
+    public Dictionary<ResourceType, float> GetResourcesAffected()
+    {
+        Dictionary<ResourceType, float> costByType = new Dictionary<ResourceType, float>
+        {
+            { ResourceType.Popularity, 0f },
+            { ResourceType.Stability, 0f },
+            { ResourceType.Media, 0f },
+            { ResourceType.Economic, 0f }
+        };
+
+        foreach (var resourceCost in ResourceRequirements)
+        {
+            if (costByType.ContainsKey(resourceCost.Type))
+                costByType[resourceCost.Type] += resourceCost.Amount;
+        }
+
+        return costByType;
+    }
+
+    // You might add more fields here later, e.g.:
+    // public FactionReputationChanges reputationImpact;
+    // public string ConsequenceID; // To trigger specific follow-up events
+}
+
+/// <summary>
+/// Represents elements that can be combined for custom responses.
+/// </summary>
+[System.Serializable]
+public enum ResponseElement
+{
+    // Add specific elements based on your game's needs
+    None,
+    EmptyPromises,
+    PatrioticRhetoric,
+    FlagWaving,
+    BlamePredecessor,
+    VagueCommitment,
+    TechnicalJargon,
+    DemandFurtherStudy,
+    AcknowledgeConcern // etc.
+}
+
+/// <summary>
+/// Represents a decision card presented to the player, incorporating anatomy details.
+/// </summary>
+[CreateAssetMenu(fileName = "NewDecisionCard", menuName = "Game/Decision Card")] // Allows creating instances from Unity Editor
+public class DecisionCard : ScriptableObject
+{
+    [Header("Card Anatomy")]
+    [Tooltip("A unique identifier for this card.")]
+    public int CardID;
+
+    [Tooltip("The main title or question presented on the card.")]
+    public string Title;
+
+    [Tooltip("The category this card falls into (e.g., Policy, Crisis).")]
+    public CardCategory Category;
+
+    [TextArea(3, 10)] 
+    [Tooltip("The detailed description or situation presented to the player.")]
+    public string Description;
+
+    [Tooltip("The Card image")]
+    public Sprite CardSprite;
+
+    [Tooltip("General notes about stakeholders involved or interested in this issue overall.")]
+    public List<string> StakeholderInformation; // E.g., "Affects Tech Industry", "Environmental groups watching"
+
+    [Tooltip("Indicates how quickly a decision is needed. Affects UI and potentially gameplay urgency.")]
+    public UrgencyLevel Urgency;
+
+    [Tooltip("If this card is a Consequence of another")]
+    public bool IsConsequence;
+
+    [Header("Decision Options")]
+    [Tooltip("List of pre-defined choices for the player. Each option can have its own costs and stakeholder reactions.")]
+    public List<DecisionOption> MultipleChoiceOptions;
+
+    [Tooltip("Card for a crisis card if this is delayed too long.")]
+    public int CrisisCardID;
+}
+
+
+JSON Generation instructions:
+
+CardID starts at 0.
+Each card has a unique CardID
+The generated JSON must be wrapped in:
+{
+  "cards": []
+}
+
+Total Cards: 30, comprising:
+Do not generate Percent, StakeholderReactions, StakeholderInformation.
+If the Card is a consequence of another card, make sure to set IsConsequence to true. Consequence dont have to be negative.
+ConsequenceCardID: Logical consequence chains are maintained, with appropriate urgency levels. Some options (at most 2 options, delay will never have ConsequenceCardID) include a ConsequenceCardID, linking to subsequent cards that logically follow the decision made.
+ConsequenceCardID: Can also be a indirect consequence, this shouldnt be directly related and must not have IsConsequence set to true.
+At least 10 regular cards (non-crisis).
+At least 3 Medium urgency consequence cards (first in chain).
+At least 3 High urgency consequence cards (second in chain).
+At least 2 Crisis cards with Immediate urgency (Third in chain).
+Proper logical consequence links.
+Title and OptionText has max characters count: 70
+Description has max characters count: 160
+ResourceRequirements: Each option includes at least one resource requirement, with values ranging from -20 to 20, cannot be 0, based on urgency level(low should be 1-4, medium 3-8, high 6-14, Immediate, 12-20), negative are bad and positive are good. 
+Each card contains 2 to 4 MultipleChoiceOptions, with exactly one option marked as IsDelayOption: true and its OptionText does not contain the word "Delay"..
+Categories used are: Policy, Character, Opportunity, SocialMedia, Legacy, Crisis.
+Crisis Category Card cannot be delayed, so dont see IsDelayOption to true.
+Urgency levels are Low, Medium, or High, with Immediate reserved only for Crisis cards.
+Crisis Card must always have Immediate Urgency Level.
+ResourceRequirements: Must be unique, for example you cant have two Popularity in the same option.
+ResourceRequirements: DelayResourceRequirements are halve of what the value range normally is for example for low it would be 1-2
+
+I have that those Cards JSON, i want you to add 3 MediaReactions per ReactionType to each card.
+This is an example. The MediaReactions should be related to the Options
+Text should be like twitter post.
+"MediaReactions": [
+  {
+    "ReactionType": "Positive",
+    "Text": "This is the most heartwarming thing I've seen all year. Pigeons finally get their safe space. #CooCooCare",
+    "Topic": "Pigeons",
+    "SourceName": "The Bird Times",
+    "ResourceRequirements": [
+    {
+      "Type": "Popularity",
+      "Amount": 5.0,
+      "Percent": 10
+    },
+    {
+      "Type": "Stability",
+      "Amount": 2.5,
+      "Percent": 0
+    }
+  ]
+  }
+]
+
+public enum ReactionType { Positive, Negative, Neutral }
+
+also to the MultipleChoiceOptions each option add a ReactionType.

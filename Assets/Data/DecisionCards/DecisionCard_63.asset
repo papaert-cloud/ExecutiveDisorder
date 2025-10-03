@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_63
+  m_EditorClassIdentifier: 
+  CardID: 63
+  Title: Holiday for Thinking
+  Category: 5
+  Description: 'Philosophers propose a new national holiday: ''National Think About
+    Thinking Day''. Critics ask if anything will get done. Supporters say that is
+    the point.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Declare a day for deep thoughts!
+    OutcomeDescription: Many naps are taken. Some profound insights are lost by lunchtime.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 70
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Action over contemplation today.
+    OutcomeDescription: The nation remains busy. Philosophers ponder this decision.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 2
+  - OptionText: Mandate 'thinking caps' for day.
+    OutcomeDescription: A symbolic gesture. Many use it as an excuse for a silly
+      hat.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 3954c4a18e281ea438a3996d39fbd9e1, type: 2}
+  - {fileID: 11400000, guid: 1920e85bf90b4ad4297c456ad514cc7c, type: 2}
+  - {fileID: 11400000, guid: 8588b75622debf14fbddf61701d82f80, type: 2}
+  - {fileID: 11400000, guid: 1956fbe2325bbcd44b3182a8d1ec944f, type: 2}
+  - {fileID: 11400000, guid: cdad293ba64b79542af760bf014695cd, type: 2}
+  - {fileID: 11400000, guid: 36547228e93cb61469854d73ae251c63, type: 2}
+  - {fileID: 11400000, guid: 59fe981215649bb41836a746f541587a, type: 2}
+  - {fileID: 11400000, guid: ee8d0e60eb94127458b1c5bdfe454372, type: 2}
+  - {fileID: 11400000, guid: 54a5fbd75f127354fae94de55286d008, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

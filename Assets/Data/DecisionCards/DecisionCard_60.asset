@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_60
+  m_EditorClassIdentifier: 
+  CardID: 60
+  Title: Pigeon Business Attire Mandate
+  Category: 0
+  Description: A new proposal suggests all urban pigeons must wear tiny, custom-fitted
+    business suits to 'improve their public image and professionalism'. Tailors are
+    baffled.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Suit up the pigeons!
+    OutcomeDescription: Pigeons look dapper but struggle to fly. Avian fashion takes
+      off.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 89
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Let pigeons be casual.
+    OutcomeDescription: Pigeons continue their unkempt existence. A missed PR opportunity?
+    ResourceRequirements:
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Form pigeon style committee.
+    OutcomeDescription: Debates rage over pinstripes versus solids for pigeon attire.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: ff0a8e28f420c9a448943f510e8e9ea7, type: 2}
+  - {fileID: 11400000, guid: c849e97ea3ec6094fa854206a3307f53, type: 2}
+  - {fileID: 11400000, guid: c6639cb1408717d459557fa50f49a69b, type: 2}
+  - {fileID: 11400000, guid: 64163f706c09fed459d2d908a5fc4cea, type: 2}
+  - {fileID: 11400000, guid: bdf792a6738a66747afb89542fb8995c, type: 2}
+  - {fileID: 11400000, guid: d32cfc74a26898d45ae37df9d9565414, type: 2}
+  - {fileID: 11400000, guid: 49c8ed288a99bc14881fe4a125be157c, type: 2}
+  - {fileID: 11400000, guid: ccf5ab7714c230346936ad3bab3eab4d, type: 2}
+  - {fileID: 11400000, guid: 753758f420830694f9fb3bbd993a07da, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 97

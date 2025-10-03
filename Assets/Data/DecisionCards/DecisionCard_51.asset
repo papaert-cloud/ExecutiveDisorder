@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_51
+  m_EditorClassIdentifier: 
+  CardID: 51
+  Title: Volcano Insurance Scheme
+  Category: 3
+  Description: A nearby dormant volcano is showing slight activity. An entrepreneur
+    proposes a 'Volcano Insurance Scheme'. Is it foresight or fear-mongering?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Endorse the volcano insurance.
+    OutcomeDescription: Citizens feel secure. Premiums are high. Volcano remains
+      quiet... for now.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 3
+      Percent: 0
+    - Type: 0
+      Amount: 4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Dismiss it as scare tactics.
+    OutcomeDescription: Saves money, but if it blows, you're in hot lava.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -7
+      Percent: 0
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 58
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Monitor volcano activity closely.
+    OutcomeDescription: A sensible precaution. Geologists get more funding.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: c32bfac71ef06424ebf2130796ebf2b7, type: 2}
+  - {fileID: 11400000, guid: 476df0c7baa8c7140ba8fb4c44280367, type: 2}
+  - {fileID: 11400000, guid: 59449232cd803a342b660996b5d20cdc, type: 2}
+  - {fileID: 11400000, guid: 4149eff4187c4be4bb7a24792da10ea1, type: 2}
+  - {fileID: 11400000, guid: c94e56d35a413034eaf99852c1e756b6, type: 2}
+  - {fileID: 11400000, guid: c0c01b82fb0c78b4ca507c16dc5220d1, type: 2}
+  - {fileID: 11400000, guid: 1a566e6e6a66e0b4bae83392dbe7737f, type: 2}
+  - {fileID: 11400000, guid: 7beaedf5b76c79f4b93fa4d596935649, type: 2}
+  - {fileID: 11400000, guid: 3cbd9f9cec4dcbe46a433b67fe344fbc, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 58

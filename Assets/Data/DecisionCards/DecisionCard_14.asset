@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_14
+  m_EditorClassIdentifier: 
+  CardID: 14
+  Title: Ban on Sad Songs
+  Category: 4
+  Description: To boost national morale, a proposal to ban overly sad songs from
+    public airwaves is on the table. Artists and emos are protesting this injustice.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Only happy tunes allowed!
+    OutcomeDescription: Forced positivity. Underground sad song clubs emerge.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Embrace emotional spectrum.
+    OutcomeDescription: Artists thank you. Morale remains... realistically average.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Mandate 'happy ending' remixes.
+    OutcomeDescription: A strange compromise. Classic tragedies become comedies.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 56c5903e8cc3cf44082a7372552ddb7c, type: 2}
+  - {fileID: 11400000, guid: 26f9199e002d0544a81316041cb47750, type: 2}
+  - {fileID: 11400000, guid: ebaa60f64cc98cc45a6312ea8cb48c91, type: 2}
+  - {fileID: 11400000, guid: 0d2aba9a7fc793b4e9a3f34259005aac, type: 2}
+  - {fileID: 11400000, guid: 99a9f90ffc8b5e449926e13bbc84ab8d, type: 2}
+  - {fileID: 11400000, guid: 7e08434d9277e5346be575b0d38d71b7, type: 2}
+  - {fileID: 11400000, guid: 1f6ee36677d417d46b9278f7ae777595, type: 2}
+  - {fileID: 11400000, guid: f229773e9368bd740b7e27d1727e79cb, type: 2}
+  - {fileID: 11400000, guid: b0ca302162f381c47823ea6584bf422d, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_2
+  m_EditorClassIdentifier: 
+  CardID: 2
+  Title: Billionaire Offers Moon Base
+  Category: 3
+  Description: Eccentric billionaire offers to fund a national moon base, but only
+    if you name it 'Muskrat Manor'. This could be huge, or humiliating.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: To Muskrat Manor & beyond!
+    OutcomeDescription: Massive tech boost, but the name is a PR nightmare.
+    ResourceRequirements:
+    - Type: 3
+      Amount: 10
+      Percent: 0
+    - Type: 0
+      Amount: -6
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 24
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Politely decline the offer.
+    OutcomeDescription: Opportunity missed. Stability maintained, but no moon.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -7
+      Percent: 0
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 2
+  - OptionText: Negotiate a different name.
+    OutcomeDescription: Discussions stall. The billionaire is fickle and impatient.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 8d21c3fac89fcbb408283469cefa9518, type: 2}
+  - {fileID: 11400000, guid: 5c568dc72c38997458e375a3422c9bea, type: 2}
+  - {fileID: 11400000, guid: eb69890e15f50074f98fb2a2c6690535, type: 2}
+  - {fileID: 11400000, guid: 4bbf7d4a3e118374996f496e16e3f801, type: 2}
+  - {fileID: 11400000, guid: 4a399301f30f30c47bf1a0f5b220ab36, type: 2}
+  - {fileID: 11400000, guid: 120608f0b4455d848a920c3de24e7710, type: 2}
+  - {fileID: 11400000, guid: b5f437377d54ff64bb73cc33e99e5859, type: 2}
+  - {fileID: 11400000, guid: 8667d2c3dd3101c4382794b11356b91c, type: 2}
+  - {fileID: 11400000, guid: 0dc0dd5f98c970c4bbdc03e65b4f3f31, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 29

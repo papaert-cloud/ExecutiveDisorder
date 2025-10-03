@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_87
+  m_EditorClassIdentifier: 
+  CardID: 87
+  Title: Underground Rave in Parliament Cellars
+  Category: 4
+  Description: Security footage reveals a massive, unauthorized underground rave
+    took place in the historic parliament cellars last night. Glow sticks were found.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Denounce the unauthorized party.
+    OutcomeDescription: A stern message is sent. The public wonders who organized
+      it.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Claim it was 'stress relief drill'.
+    OutcomeDescription: Nobody believes this. The playlist was apparently excellent.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Increase cellar security quietly.
+    OutcomeDescription: The party is over, but the legend of the rave will live on.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -1.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: fe5fc8a0a16d69e48aa92abd63c9e30e, type: 2}
+  - {fileID: 11400000, guid: 13f4b714a6424a84fa708a32245d006f, type: 2}
+  - {fileID: 11400000, guid: 8d86c2c1e77b9ea49a36c00348ba743a, type: 2}
+  - {fileID: 11400000, guid: ef43b7e1a5ac2e54fbea9050933e4ca2, type: 2}
+  - {fileID: 11400000, guid: f8c92b446d4c6574d96e5fe7ea3b8dcb, type: 2}
+  - {fileID: 11400000, guid: a5672cb4fc8a01148960c68cae5849a3, type: 2}
+  - {fileID: 11400000, guid: 03cb88decfe21604b98f8b26ac6e4ab0, type: 2}
+  - {fileID: 11400000, guid: ed72497c1cb9cb445824dbf7e8d3355e, type: 2}
+  - {fileID: 11400000, guid: 7b907b924a79d454da89097481cdef3e, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 98

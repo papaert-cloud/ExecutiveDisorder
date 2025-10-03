@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bdfa0338d282114086100806de65f7a, type: 3}
+  m_Name: Character_Cassandra_Peaceweaver
+  m_EditorClassIdentifier: 
+  CharacterName: Madam Cash
+  GovernTitle: Minister of Soft Power
+  PartyAffiliation: The Velvet Alliance
+  Portrait: {fileID: 5811045442005891315, guid: c78abc023a4f1684481ea984bf840df5, type: 3}
+  FullBody: {fileID: -1479057591747025956, guid: eb2b4fb41efb16e4aa6eb69e59dc3fbf, type: 3}
+  ProfilePicture: {fileID: 5811045442005891315, guid: c78abc023a4f1684481ea984bf840df5, type: 3}
+  CampaignSlogan: Negotiation is our strongest weapon.
+  CharacterEffect: {fileID: 11400000, guid: 2104ef41d4de75048a91bd14d02dd918, type: 2}
+  InitialPopularity: 55
+  InitialStability: 60
+  InitialMedia: 60
+  InitialEconomic: 50

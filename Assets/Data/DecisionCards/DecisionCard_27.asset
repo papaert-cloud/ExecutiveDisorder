@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_27
+  m_EditorClassIdentifier: 
+  CardID: 27
+  Title: Legacy of the Muskrat
+  Category: 5
+  Description: Years later, the moon base is a triumph of science, but everyone remembers
+    you as the leader who named it 'Muskrat Manor'. Your legacy is... unique.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Fund 'Muskrat Studies' degree.
+    OutcomeDescription: An academic field emerges around your quirky decision.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -6
+      Percent: 0
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Build a giant 'Muskrat' statue.
+    OutcomeDescription: Embrace the absurdity for maximum tourist appeal.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 7
+      Percent: 0
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Legally change your own name.
+    OutcomeDescription: A desperate attempt to escape the Muskrat legacy. Won't work.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -9
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 43b2118a58ab86d41b5445e08e1ec31f, type: 2}
+  - {fileID: 11400000, guid: df534c30408e758458219356cbaa3c02, type: 2}
+  - {fileID: 11400000, guid: c5d5b31202ec50948ba5187419ba643b, type: 2}
+  - {fileID: 11400000, guid: 98ef5406b2b218942a3b049d072ff635, type: 2}
+  - {fileID: 11400000, guid: 807d26295cc524c4ca2f4b26607f3188, type: 2}
+  - {fileID: 11400000, guid: ff536739348af5e42a58b107e87b0408, type: 2}
+  - {fileID: 11400000, guid: 6044d23fb0abcd34a870710232050df9, type: 2}
+  - {fileID: 11400000, guid: bbb4836b2ce257646b7b8aca211512bd, type: 2}
+  - {fileID: 11400000, guid: 9425a5fda6ce70a408486bf8c0fa7a1a, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

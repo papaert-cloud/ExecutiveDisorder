@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_84
+  m_EditorClassIdentifier: 
+  CardID: 84
+  Title: Cloud Seeding for Fun Shapes
+  Category: 0
+  Description: Scientists claim they can make clouds form specific fun shapes (like
+    kittens or ice cream cones) using advanced cloud seeding. Environmentalists are
+    skeptical.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Make it rain kitty-shaped clouds!
+    OutcomeDescription: The skies become whimsical. Unforeseen meteorological side
+      effects.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Let clouds be naturally shapeless.
+    OutcomeDescription: The sky remains a canvas of random beauty. Less chance of
+      ice cream rain.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Fund further cloud art research.
+    OutcomeDescription: More studies on the aerodynamics of cirrus kittens.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 5a3de1d15fc953c4fa4b8d2d3bcd3a1c, type: 2}
+  - {fileID: 11400000, guid: 051a39ea731777e408e5940199d55f2a, type: 2}
+  - {fileID: 11400000, guid: 7f6adcd34408b6340b878064045a3751, type: 2}
+  - {fileID: 11400000, guid: 62d2fac3b51236b4a9ec3188730ef759, type: 2}
+  - {fileID: 11400000, guid: c13b33f9930efe74dbca0ce26dd1c23c, type: 2}
+  - {fileID: 11400000, guid: 98205fe7135a5164594910d39b3b14b6, type: 2}
+  - {fileID: 11400000, guid: f9b6a53cc52f55646adfc26e4a8dee83, type: 2}
+  - {fileID: 11400000, guid: db379369555a6aa4480350ae5ffb6e9b, type: 2}
+  - {fileID: 11400000, guid: 4ae2184d992745a48a40a01e54e03b84, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 98

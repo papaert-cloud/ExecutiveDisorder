@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_72
+  m_EditorClassIdentifier: 
+  CardID: 72
+  Title: Cats Demand Royalties
+  Category: 3
+  Description: The 'Project Meow' researchers conclude cats are NOT plotting world
+    domination, but ARE aware of their internet fame and demand royalties for meme
+    usage.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Establish Feline IP Rights.
+    OutcomeDescription: A landmark decision. Cats become wealthy. Dogs demand equal
+      rights.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -5
+      Percent: 0
+    - Type: 2
+      Amount: 4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Rule memes are public domain.
+    OutcomeDescription: Cats are displeased. Expect more hairballs on important papers.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 1
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Offer cats more tuna stipends.
+    OutcomeDescription: A compromise. Cats are temporarily mollified by fishy treats.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 08ae1ef64131c34439ffb2782e202771, type: 2}
+  - {fileID: 11400000, guid: 0bec43f204137b048b07374781c684a7, type: 2}
+  - {fileID: 11400000, guid: 2119fb240a91eb94086973906ff57f33, type: 2}
+  - {fileID: 11400000, guid: 7e997718acff9344ab35452add2dbabb, type: 2}
+  - {fileID: 11400000, guid: 4748b9b9b15803943951b060beb87e62, type: 2}
+  - {fileID: 11400000, guid: 7f2a1e1b58d37cd438a6f27f68adf24e, type: 2}
+  - {fileID: 11400000, guid: e7e075c91177ff947bf15a4458b2a966, type: 2}
+  - {fileID: 11400000, guid: d977f137d6e1da7469a5cb8509f8cdd7, type: 2}
+  - {fileID: 11400000, guid: 42de4505c95079e4996418a620169ac7, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 99

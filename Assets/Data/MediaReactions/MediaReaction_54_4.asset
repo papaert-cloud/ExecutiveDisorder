@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dd2f2b4557c4b4e9c2a49921b2daf4, type: 3}
+  m_Name: MediaReaction_54_4
+  m_EditorClassIdentifier: 
+  ReactionType: 1
+  Text: What a terrible idea regarding napping league doping scandal and the proposal
+    'Ban chamomile! Test pillows!'! Who approved this? #NappingLeagueDoping #Facepalm
+    #BadMove
+  Topic: Napping League Doping Scandal
+  SourceName: Evening Post
+  ResourceRequirements:
+  - Type: 1
+    Amount: 3.1
+    Percent: 0
+  - Type: 2
+    Amount: 3.4
+    Percent: 0

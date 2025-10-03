@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: edf2533d28297144dab5a098253a8812
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4214149858688995037
+    second: Clock_0
+  - first:
+      213: 7792039334551005206
+    second: Clock_1
+  - first:
+      213: 8606200704858056018
+    second: Clock_2
+  - first:
+      213: -2833443924174910728
+    second: Clock_3
+  - first:
+      213: 8661856177940741680
+    second: Clock_4
+  - first:
+      213: 1587909880103496020
+    second: Clock_5
+  - first:
+      213: -1080258143134175639
+    second: Clock_6
+  - first:
+      213: 2727448449320395306
+    second: Clock_7
+  - first:
+      213: -1750754219065920
+    second: Clock_8
+  - first:
+      213: -1424094127719139722
+    second: Clock_9
+  - first:
+      213: -8008461807771751703
+    second: Clock_10
+  - first:
+      213: 6023173198247996758
+    second: Clock_11
+  - first:
+      213: -6055015089370064793
+    second: Clock_12
+  - first:
+      213: -2679740242560020789
+    second: Clock_13
+  - first:
+      213: 1749567179297628532
+    second: Clock_14
+  - first:
+      213: 2445291438893253584
+    second: Clock_15
+  - first:
+      213: 1275400201908470670
+    second: Clock_16
+  - first:
+      213: 5079806429203108072
+    second: Clock_17
+  - first:
+      213: 292129886142174139
+    second: Clock_18
+  - first:
+      213: 3305464216231815350
+    second: Clock_19
+  - first:
+      213: -1530983117658357988
+    second: Clock_20
+  - first:
+      213: -2021254733373812430
+    second: Clock_21
+  - first:
+      213: 4283390077936648418
+    second: Clock_22
+  - first:
+      213: -3094081249956424294
+    second: Clock_23
+  - first:
+      213: -4295944291052995376
+    second: Clock_24
+  - first:
+      213: 3830065108143337080
+    second: Clock_25
+  - first:
+      213: 2712885745227527186
+    second: Clock_26
+  - first:
+      213: 2662847502059308233
+    second: Clock_27
+  - first:
+      213: 7029350570720342738
+    second: Clock_28
+  - first:
+      213: -915072456055883028
+    second: Clock_29
+  - first:
+      213: 6587332410614485895
+    second: Clock_30
+  - first:
+      213: -3497999680939377070
+    second: Clock_31
+  - first:
+      213: 128655255691940314
+    second: Clock_32
+  - first:
+      213: 3278461571145470859
+    second: Clock_33
+  - first:
+      213: -310363959903653830
+    second: Clock_34
+  - first:
+      213: 12789022312048366
+    second: Clock_35
+  - first:
+      213: 4592482327685356817
+    second: Clock_36
+  - first:
+      213: -6981700562020232287
+    second: Clock_37
+  - first:
+      213: 1416055891342559412
+    second: Clock_38
+  - first:
+      213: 5642713048132172742
+    second: Clock_39
+  - first:
+      213: 4016888157269447396
+    second: Clock_40
+  - first:
+      213: -6036231897802841123
+    second: Clock_41
+  - first:
+      213: -4895931293316899276
+    second: Clock_42
+  - first:
+      213: 7772161386124511560
+    second: Clock_43
+  - first:
+      213: 7176491359035575488
+    second: Clock_44
+  - first:
+      213: -9015426610682213761
+    second: Clock_45
+  - first:
+      213: 1931828085497333107
+    second: Clock_46
+  - first:
+      213: -664587647632172425
+    second: Clock_47
+  - first:
+      213: 2827820948310901973
+    second: Clock_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clock_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 882
+        height: 859
+      alignment: 9
+      pivot: {x: 0.49192438, y: 0.5130301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7400da0e7af7f4429f28a77bde54008
+      internalID: 862607886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 56167ae16aba81d42a4d5ccdb49c6fb9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Clock_0: 862607886
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

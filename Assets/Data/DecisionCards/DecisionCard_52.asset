@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_52
+  m_EditorClassIdentifier: 
+  CardID: 52
+  Title: Mindfulness Backlash!
+  Category: 0
+  Description: The mandatory mindfulness minutes led to mass napping and missed deadlines.
+    Now, corporations are demanding 'action-oriented' policies instead of 'Ohm'.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Introduce 'Power Posing' breaks.
+    OutcomeDescription: Employees now strike heroic poses. Still not much work getting
+      done.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 55
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Repeal mindfulness mandate.
+    OutcomeDescription: Back to the stressful status quo. Zen masters are disappointed.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -3
+      Percent: 0
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Study napping's impact.
+    OutcomeDescription: Research confirms people like naps. Policy unchanged.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: ff0e27b960201324093c36ba4ff89d5c, type: 2}
+  - {fileID: 11400000, guid: 8589d50fd1d23be458a8713cacd761e4, type: 2}
+  - {fileID: 11400000, guid: f1bc394b16915b646962397c1c2e7bc0, type: 2}
+  - {fileID: 11400000, guid: b11be9d6822fb9a49855a102febc6fec, type: 2}
+  - {fileID: 11400000, guid: 475f49722a100d44a99f300cfd3888d4, type: 2}
+  - {fileID: 11400000, guid: 8ff4426b1ec464543aa2599e71937e75, type: 2}
+  - {fileID: 11400000, guid: 943f542e7913cba4a80f5344fa0d53d6, type: 2}
+  - {fileID: 11400000, guid: 6c3e2c705ce37664d86589c3380e4ce9, type: 2}
+  - {fileID: 11400000, guid: a1f97ec8a49f4574d88e40ef8ad0bf42, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

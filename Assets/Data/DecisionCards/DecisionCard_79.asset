@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_79
+  m_EditorClassIdentifier: 
+  CardID: 79
+  Title: Mandatory Public Napping Zones
+  Category: 0
+  Description: Following the success of the (now disgraced) Napping League, a proposal
+    for mandatory public napping zones in all city parks. Siesta for everyone!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Establish Nap Zones Now!
+    OutcomeDescription: Parks become quieter. Some concern over public snoring levels.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Parks are for active recreation.
+    OutcomeDescription: Nappers must remain discreet. Joggers rejoice.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Pilot 'Quiet Contemplation Areas'.
+    OutcomeDescription: A euphemism for napping zones. People see through it.
+    ResourceRequirements:
+    - Type: 2
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: e57551a73bf88cd47a635e70958077f6, type: 2}
+  - {fileID: 11400000, guid: fbb4548a9384c974b98313a734c245c3, type: 2}
+  - {fileID: 11400000, guid: faadc6d1ed966804aa072355ae941c45, type: 2}
+  - {fileID: 11400000, guid: bf42e48b5231e524a9ec7c1a97a901c2, type: 2}
+  - {fileID: 11400000, guid: 1a67863b2464bb34fa5e1a2b01dbcc10, type: 2}
+  - {fileID: 11400000, guid: f0b1cd72ab4b33b4d953c1b91574df6a, type: 2}
+  - {fileID: 11400000, guid: 082ed7bc43d4da441b04ff140cea2300, type: 2}
+  - {fileID: 11400000, guid: 1d757fcbb90554944a3ac3d3c8b3e331, type: 2}
+  - {fileID: 11400000, guid: c43b3d23d5c008b418e993af3148a45d, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

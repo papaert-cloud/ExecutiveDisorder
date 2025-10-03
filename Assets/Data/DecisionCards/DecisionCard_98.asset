@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_98
+  m_EditorClassIdentifier: 
+  CardID: 98
+  Title: Slightly Used Asteroid Approaching!
+  Category: 1
+  Description: Astronomers report a medium-sized, 'slightly used' asteroid (covered
+    in graffiti) is on a collision course. Evacuation is impossible, panic is mandatory.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Assemble team of oil drillers.
+    OutcomeDescription: "A clich\xE9 plan, but it might just work. Or not. Very dramatic."
+    ResourceRequirements:
+    - Type: 3
+      Amount: -18
+      Percent: 0
+    - Type: 2
+      Amount: 15
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Deny asteroid's existence loudly.
+    OutcomeDescription: Public remains uninformed and doomed. A bold, idiotic strategy.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -20
+      Percent: 0
+    - Type: 1
+      Amount: -15
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Paint a giant target on desert.
+    OutcomeDescription: Hoping the asteroid has a sense of humor or good aim.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 10
+      Percent: 0
+    - Type: 3
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: a7ef6e4b405f78443952b4c2792ba79b, type: 2}
+  - {fileID: 11400000, guid: 6a7f3d8d37f198940842661d675a7592, type: 2}
+  - {fileID: 11400000, guid: c086b541cdda35643908a89a60a218c7, type: 2}
+  - {fileID: 11400000, guid: a981d9d36d42ed344ad62483f12452e8, type: 2}
+  - {fileID: 11400000, guid: cfed621f04dc3e445819b053b9ea2ba9, type: 2}
+  - {fileID: 11400000, guid: 514476cfb2f08bd4aba5804ab23ca6b3, type: 2}
+  - {fileID: 11400000, guid: bb2d35718f445ad4b884f0655bd13b54, type: 2}
+  - {fileID: 11400000, guid: b4ad4cc6cece7b6419f6f759b91c2c65, type: 2}
+  - {fileID: 11400000, guid: f17416f9cfada244394f8f44b8fe019f, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

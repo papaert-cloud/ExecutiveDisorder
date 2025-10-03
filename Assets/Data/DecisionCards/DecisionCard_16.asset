@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_16
+  m_EditorClassIdentifier: 
+  CardID: 16
+  Title: Pigeons Learn Chess
+  Category: 4
+  Description: A government program to teach pigeons chess (to improve their image)
+    has yielded surprisingly smart pigeons. They're now demanding better birdseed.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Negotiate with pigeon grandmasters.
+    OutcomeDescription: Treaty signed. Pigeons get premium seed, you get odd looks.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    - Type: 2
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Shut down pigeon chess club.
+    OutcomeDescription: Pigeons protest by strategically pooping on statues.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Start pigeon chess league.
+    OutcomeDescription: A new national sport is born. It's weirdly popular.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 0
+  MediaReactions:
+  - {fileID: 11400000, guid: 4cc05842433a8ad4bab66f3b245de7a7, type: 2}
+  - {fileID: 11400000, guid: 11c3c690665e91b49abfd55e2c9944c3, type: 2}
+  - {fileID: 11400000, guid: 646a10ff68fe01746a2a069a6baff53a, type: 2}
+  - {fileID: 11400000, guid: 44b92f2084f06204681d3c2cd2a882ea, type: 2}
+  - {fileID: 11400000, guid: e16944ba987a85a4f9daeef9e800df8c, type: 2}
+  - {fileID: 11400000, guid: bf5d79096e2205e4a8ed79f81e220ad4, type: 2}
+  - {fileID: 11400000, guid: 660f0a1f34761a84c9042e691bf76465, type: 2}
+  - {fileID: 11400000, guid: 0df76aaf98ff22d4a8da470a69e75dc9, type: 2}
+  - {fileID: 11400000, guid: 5883912a2301cd248824a4a542b0f007, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 29

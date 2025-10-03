@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_0
+  m_EditorClassIdentifier: 
+  CardID: 0
+  Title: National Croissant Day?
+  Category: 0
+  Description: A petition to declare a National Croissant Day has gained traction.
+    Bakers are thrilled, health nuts are not. What's your move, leader?
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Embrace the Croissant!
+    OutcomeDescription: Popularity with pastry lovers soars.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 22
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Fund a study on pastry holidays.
+    OutcomeDescription: Bureaucracy expands, decision postponed for now.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  - OptionText: Denounce carbs publicly.
+    OutcomeDescription: Health advocates cheer, bakers protest mildly.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 1d701a551d822ce4d91730be22d45d90, type: 2}
+  - {fileID: 11400000, guid: 50c25f6118883704aa4129b116786fb5, type: 2}
+  - {fileID: 11400000, guid: 7adca51a051627347bcdad4114dea452, type: 2}
+  - {fileID: 11400000, guid: 095fb583cd9905a40bb8328a471e9070, type: 2}
+  - {fileID: 11400000, guid: bf66f1596be520d4299eb319f1a0bd62, type: 2}
+  - {fileID: 11400000, guid: 49a28387d330e5742a6497767f857acb, type: 2}
+  - {fileID: 11400000, guid: 9723c35a0889dc145b90d16158b2002e, type: 2}
+  - {fileID: 11400000, guid: 3d8f185c077f0d445b05d5de0d30b63b, type: 2}
+  - {fileID: 11400000, guid: 2edcd8c62760ec04395af1c72cb27cbe, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

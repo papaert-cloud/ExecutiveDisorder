@@ -1,0 +1,87 @@
+{
+  "endings": [
+    {
+      "Title": "The Media Manipulator",
+      "Description": "You've masterfully controlled the narrative by suppressing negative stories and promoting favorable coverage. The media has become your propaganda machine, with critical voices silenced or discredited.",
+      "ResourceRequirements": [
+        { "ResourceType": "Popularity", "Comparison": "GreaterThan", "Value": 90 },
+        { "ResourceType": "Media", "Comparison": "LessThan", "Value": 30 }
+      ]
+    },
+    {
+      "Title": "The Popular Tyrant",
+      "Description": "The public adores you while institutions crumble. Your populist policies have won hearts but undermined the foundations of governance.",
+      "ResourceRequirements": [
+        { "ResourceType": "Popularity", "Comparison": "GreaterThan", "Value": 90 },
+        { "ResourceType": "Stability", "Comparison": "LessThan", "Value": 20 }
+      ]
+    },
+    {
+      "Title": "The Technocratic Overlord",
+      "Description": "You've optimized the system through cold, calculated efficiency. The trains run on time, but the people resent your clinical, emotionless governance.",
+      "ResourceRequirements": [
+        { "ResourceType": "Stability", "Comparison": "GreaterThan", "Value": 80 },
+        { "ResourceType": "Popularity", "Comparison": "LessThan", "Value": 30 }
+      ]
+    },
+    {
+      "Title": "The Perfect Balance",
+      "Description": "Against all odds, you've navigated the ridiculous landscape of politics with wisdom and foresight, managing to please both the people and institutions.",
+      "ResourceRequirements": [
+        { "ResourceType": "Popularity", "Comparison": "GreaterThan", "Value": 80 },
+        { "ResourceType": "Stability", "Comparison": "GreaterThan", "Value": 80 },
+        { "ResourceType": "Media", "Comparison": "GreaterThan", "Value": 70 }
+      ]
+    },
+    {
+      "Title": "Total System Collapse",
+      "Description": "Your buffoonish leadership has managed to antagonize everyone while destroying the very fabric of governance.",
+      "ResourceRequirements": [
+        { "ResourceType": "Popularity", "Comparison": "LessThan", "Value": 10 },
+        { "ResourceType": "Stability", "Comparison": "LessThan", "Value": 10 }
+      ]
+    },
+    {
+      "Title": "The Truth-Teller",
+      "Description": "Despite all pressures, you've maintained journalistic integrity, exposing corruption while providing factual reporting.",
+      "ResourceRequirements": [
+        { "ResourceType": "Media", "Comparison": "GreaterThan", "Value": 90 },
+        { "ResourceType": "Stability", "Comparison": "GreaterThan", "Value": 60 }
+      ]
+    },
+    {
+      "Title": "The Propaganda Machine",
+      "Description": "You've mastered the art of deception, wrapping falsehoods in just enough truth to maintain credibility while pushing your agenda.",
+      "ResourceRequirements": [
+        { "ResourceType": "Media", "Comparison": "GreaterThan", "Value": 80 },
+        { "ResourceType": "Stability", "Comparison": "LessThan", "Value": 30 }
+      ]
+    },
+    {
+      "Title": "The Satirical Legend",
+      "Description": "You've elevated political satire to an art form, using humor to expose truths that straight reporting cannot.",
+      "ResourceRequirements": [
+        { "ResourceType": "Popularity", "Comparison": "GreaterThan", "Value": 80 },
+        { "ResourceType": "Media", "Comparison": "GreaterThan", "Value": 40 },
+        { "ResourceType": "Media", "Comparison": "LessThan", "Value": 60 }
+      ]
+    },
+    {
+      "Title": "Media Martyrdom",
+      "Description": "Despite your commitment to factual reporting, powerful interests have successfully discredited your work. You're respected by historians but ignored by the public.",
+      "ResourceRequirements": [
+        { "ResourceType": "Media", "Comparison": "LessThan", "Value": 20 },
+        { "ResourceType": "Stability", "Comparison": "GreaterThan", "Value": 80 }
+      ]
+    },
+    {
+      "Title": "Yellow Journalism Empire",
+      "Description": "Sensationalism sells! Your outrageous headlines and manufactured controversies have built a media empire, facts be damned.",
+      "ResourceRequirements": [
+        { "ResourceType": "Economic", "Comparison": "GreaterThan", "Value": 70 },
+        { "ResourceType": "Stability", "Comparison": "LessThan", "Value": 25 },
+        { "ResourceType": "Media", "Comparison": "GreaterThan", "Value": 40 }
+      ]
+    }
+  ]
+}

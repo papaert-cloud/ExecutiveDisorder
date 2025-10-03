@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_41
+  m_EditorClassIdentifier: 
+  CardID: 41
+  Title: Dance Language Treaty Talks
+  Category: 5
+  Description: Your nation's attempt to use interpretive dance as an official language
+    has led to an international incident during treaty negotiations. It was a pas
+    de trois faux pas.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Apologize with a heartfelt ballet.
+    OutcomeDescription: The other nation is either charmed or further insulted.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -9
+      Percent: 0
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Revert to spoken language quickly.
+    OutcomeDescription: A hasty retreat. Your legacy as a dance diplomat is short.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 6
+      Percent: 0
+    - Type: 0
+      Amount: -7
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Hire dance translators.
+    OutcomeDescription: A new profession is born, further complicating talks.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 2a4356960b664de4aba9753418acb7dc, type: 2}
+  - {fileID: 11400000, guid: cbc8f03dee1ad19438695a786bec9276, type: 2}
+  - {fileID: 11400000, guid: 9a0cd14e5fba99d4788dd6d335eb697a, type: 2}
+  - {fileID: 11400000, guid: 424dced5f1d9c404f8096e337c87ee42, type: 2}
+  - {fileID: 11400000, guid: 86764a86b23f8534c95e216fa2d842de, type: 2}
+  - {fileID: 11400000, guid: bbf04702808207444a84c21d29ab9516, type: 2}
+  - {fileID: 11400000, guid: f5010b55e4500524d9a97f4c2fb05e7c, type: 2}
+  - {fileID: 11400000, guid: 32a942fcdb5c96c498f185a9aaff7b02, type: 2}
+  - {fileID: 11400000, guid: 26297491a24f44748b2d93d5e4ef1dfe, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 59

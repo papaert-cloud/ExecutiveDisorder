@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_42
+  m_EditorClassIdentifier: 
+  CardID: 42
+  Title: Mayor Whiskers' Policy Demands
+  Category: 2
+  Description: Mayor Whiskers, the cat, is now 'demanding' (via meows interpreted
+    by townsfolk) a city-wide ban on dogs and unlimited tuna. This is getting serious.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Appease the feline mayor.
+    OutcomeDescription: Dog owners protest. Tuna stocks plummet. Cat is pleased.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -4
+      Percent: 0
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Gently overrule Mayor Whiskers.
+    OutcomeDescription: The cat glares at you. Townsfolk are slightly disappointed.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 2
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: 'Offer a compromise: more naps.'
+    OutcomeDescription: Negotiations are ongoing. The cat seems receptive to naps.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: f29918b43328c3744aee2f5f87f9e5c4, type: 2}
+  - {fileID: 11400000, guid: faa3ce19d3038b04eaf710d75597e7af, type: 2}
+  - {fileID: 11400000, guid: 2ef0fa958086e9f4eb9a2b82eab7a051, type: 2}
+  - {fileID: 11400000, guid: c1aaf0fe7d26c5b42b421ec45bce0923, type: 2}
+  - {fileID: 11400000, guid: 3ee096ff4aabdb94db10df3cf0730e9c, type: 2}
+  - {fileID: 11400000, guid: ebca3d6b5526cc54d927b946e2647ac8, type: 2}
+  - {fileID: 11400000, guid: 439f979c19204ad408cca1ea11417a36, type: 2}
+  - {fileID: 11400000, guid: bf3716ef6a3da2644bfe4a211059d41b, type: 2}
+  - {fileID: 11400000, guid: cd66f426a7105774b93ef922f6dc3c5c, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 58

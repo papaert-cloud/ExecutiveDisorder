@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_58
+  m_EditorClassIdentifier: 
+  CardID: 58
+  Title: The Great Toilet Paper Panic!
+  Category: 1
+  Description: A rumor about a toilet paper shortage (again?!) has caused widespread
+    panic buying. Shelves are empty, and citizens are resorting to desperate measures.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Nationalize toilet paper factories.
+    OutcomeDescription: Supply is controlled, but quality and morale are questionable.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -14
+      Percent: 0
+    - Type: 1
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Promote 'alternative paper solutions'.
+    OutcomeDescription: Public is not amused. Old newspapers make a comeback.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -16
+      Percent: 0
+    - Type: 2
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Airdrop single plies of hope.
+    OutcomeDescription: A symbolic gesture that does little to address the TP crisis.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    - Type: 3
+      Amount: -18
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 34247a8bd9d62334bbaf3f39d930a93c, type: 2}
+  - {fileID: 11400000, guid: 3c1827697e5a37e4dac198453fc8fc31, type: 2}
+  - {fileID: 11400000, guid: 83d11f37a8cda0c47aed60d09c1be691, type: 2}
+  - {fileID: 11400000, guid: 833ad9361a6d66946b2c17276c760207, type: 2}
+  - {fileID: 11400000, guid: 743878d3baea20446bf7e373bc900b21, type: 2}
+  - {fileID: 11400000, guid: 23a486a998ed9ec43b43082dbc2a08b1, type: 2}
+  - {fileID: 11400000, guid: c8a54073926307b4985a64874bf0e1fb, type: 2}
+  - {fileID: 11400000, guid: 3a294b7aa975ab343ab91b987ba47899, type: 2}
+  - {fileID: 11400000, guid: 364b805fa4f830d4a8b882b2824e9837, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

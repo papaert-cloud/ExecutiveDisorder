@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_10
+  m_EditorClassIdentifier: 
+  CardID: 10
+  Title: Relatability Tour Backfires
+  Category: 2
+  Description: Your attempt to 'own' the awkward photo by being 'relatable' has led
+    to demands for MORE embarrassing stories. The public is insatiable for gaffes.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Share another minor gaffe.
+    OutcomeDescription: Keeps them happy for now, but the bar is set lower.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Hire a 'gaffe consultant'.
+    OutcomeDescription: Professional help to manage your past blunders and leaks.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Decline further sharing now.
+    OutcomeDescription: Public accuses you of being a 'teaser', then moves on.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 8f26d71527366144ebb4c08fc6397a15, type: 2}
+  - {fileID: 11400000, guid: e5eb7ca11c3873b418f34b3dbd3d1dd8, type: 2}
+  - {fileID: 11400000, guid: 2810dd9b2431c88408fecef5539daeb4, type: 2}
+  - {fileID: 11400000, guid: af5b5fcaac081f54488f6cfa695dce4d, type: 2}
+  - {fileID: 11400000, guid: ddf11a59a69a85247b075304c844a7ce, type: 2}
+  - {fileID: 11400000, guid: 58601f2b712f81345906dbee596d2962, type: 2}
+  - {fileID: 11400000, guid: a2435fe249d93f84396b6c33e039500b, type: 2}
+  - {fileID: 11400000, guid: 29c9c1cc064b6c54ea057b13b32d6ad3, type: 2}
+  - {fileID: 11400000, guid: 5335f4aa4fea1a64c899878610dcbc3a, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

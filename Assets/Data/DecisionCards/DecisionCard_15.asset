@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_15
+  m_EditorClassIdentifier: 
+  CardID: 15
+  Title: Universal Basic Pizza (UBP)
+  Category: 3
+  Description: 'A radical economic idea: Universal Basic Income, but paid entirely
+    in weekly pizza deliveries. Economists are stunned, citizens are hungry.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Let them eat pizza!
+    OutcomeDescription: Initial joy, then health concerns and topping disputes.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 8
+      Percent: 0
+    - Type: 3
+      Amount: -10
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Stick to boring old cash UBI.
+    OutcomeDescription: Less delicious, but more practical. Pizza lobby sad.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -7
+      Percent: 0
+    - Type: 1
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Pilot UBP in one town.
+    OutcomeDescription: The town becomes 'Pizzaville', a tourist attraction/mess.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: cf2d944c1224d2f40a30f44d3c1f7150, type: 2}
+  - {fileID: 11400000, guid: a5253491c5d8afd4aa0c783f55db4387, type: 2}
+  - {fileID: 11400000, guid: c573c9d6b03a96543883d991ff48afa0, type: 2}
+  - {fileID: 11400000, guid: aa20bef6b40d94440b5bc3ac12853096, type: 2}
+  - {fileID: 11400000, guid: 7ac3e0e1cb6593b42810165899330800, type: 2}
+  - {fileID: 11400000, guid: 494c86a43ebf31e46ba79a2d9f733bf1, type: 2}
+  - {fileID: 11400000, guid: 85a656b80358c56488214acb099e7ede, type: 2}
+  - {fileID: 11400000, guid: 8c20dbdd5faa49c4a85c3594be12a4f6, type: 2}
+  - {fileID: 11400000, guid: 47df017d2ef3cc74bb4dd50e17eee033, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 28

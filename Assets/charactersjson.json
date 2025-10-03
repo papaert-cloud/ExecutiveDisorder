@@ -1,0 +1,85 @@
+{
+  "characters": [
+    {
+      "CharacterName": "Eliza Gridlock",
+      "GovernTitle": "Chief Algorithm Officer",
+      "PartyAffiliation": "The Data Stream",
+      "CampaignSlogan": "Run the country like a spreadsheet.",
+      "InitialPopularity": 45,
+      "InitialStability": 65,
+      "InitialMedia": 40,
+      "InitialEconomic": 65
+    },
+    {
+      "CharacterName": "Jimmy “The Voice” Blaze",
+      "GovernTitle": "People's Echo",
+      "PartyAffiliation": "The Loud Majority",
+      "CampaignSlogan": "I'm just saying what you're screaming.",
+      "InitialPopularity": 65,
+      "InitialStability": 35,
+      "InitialMedia": 60,
+      "InitialEconomic": 35
+    },
+    {
+      "CharacterName": "Brigadier Ironwill",
+      "GovernTitle": "Supreme Strategist",
+      "PartyAffiliation": "The Order & Boot Party",
+      "CampaignSlogan": "Discipline is freedom.",
+      "InitialPopularity": 50,
+      "InitialStability": 65,
+      "InitialMedia": 35,
+      "InitialEconomic": 60
+    },
+    {
+      "CharacterName": "Cassandra Peaceweaver",
+      "GovernTitle": "Minister of Soft Power",
+      "PartyAffiliation": "The Velvet Alliance",
+      "CampaignSlogan": "Negotiation is our strongest weapon.",
+      "InitialPopularity": 55,
+      "InitialStability": 60,
+      "InitialMedia": 60,
+      "InitialEconomic": 50
+    },
+    {
+      "CharacterName": "Trisha Trendwell",
+      "GovernTitle": "Head of Content",
+      "PartyAffiliation": "Stream Nation",
+      "CampaignSlogan": "Like, Share, Vote!",
+      "InitialPopularity": 65,
+      "InitialStability": 35,
+      "InitialMedia": 65,
+      "InitialEconomic": 35
+    },
+    {
+      "CharacterName": "Max Profitson",
+      "GovernTitle": "Executive-In-Chief",
+      "PartyAffiliation": "The Capital Crew",
+      "CampaignSlogan": "Democracy... but quarterly.",
+      "InitialPopularity": 40,
+      "InitialStability": 55,
+      "InitialMedia": 45,
+      "InitialEconomic": 65
+    },
+    {
+      "CharacterName": "Blaze Thunderfax",
+      "GovernTitle": "National Truth Defender",
+      "PartyAffiliation": "The Woke Awake Front",
+      "CampaignSlogan": "They're all lying except me!",
+      "InitialPopularity": 60,
+      "InitialStability": 35,
+      "InitialMedia": 65,
+      "InitialEconomic": 35
+    },
+    {
+      "CharacterName": "Mildred Rerunner",
+      "GovernTitle": "Senior Campaigner",
+      "PartyAffiliation": "The Neverending Caucus",
+      "CampaignSlogan": "This time it's really happening.",
+      "InitialPopularity": 45,
+      "InitialStability": 50,
+      "InitialMedia": 55,
+      "InitialEconomic": 50
+    }
+  ]
+  
+}

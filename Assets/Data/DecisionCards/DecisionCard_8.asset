@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_8
+  m_EditorClassIdentifier: 
+  CardID: 8
+  Title: 'New State Bird: Dragon?'
+  Category: 5
+  Description: A campaign to change the official state bird to a mythical dragon
+    gains surprising support. Conservationists are confused, fantasy fans ecstatic.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Embrace the Dragon mascot!
+    OutcomeDescription: Tourism appeal skyrockets. Birdwatchers protest lack of sightings.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 2
+      Percent: 0
+    - Type: 2
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Protect the actual birds.
+    OutcomeDescription: Sensible, but far less exciting. Dragons remain mythical.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Study dragon feasibility.
+    OutcomeDescription: Scientists are asked to find evidence of local dragons.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 27346201d299d2f49a2f2d4d7ce1804e, type: 2}
+  - {fileID: 11400000, guid: f96ec41687a140148a45beec3347a3ef, type: 2}
+  - {fileID: 11400000, guid: 11f62d1c8d709ed40a09934f63ee0ff4, type: 2}
+  - {fileID: 11400000, guid: d6b6ca3a1ae0cc34ab18bdefa83b721e, type: 2}
+  - {fileID: 11400000, guid: 57289d5005cd09a48b6b72e6bca2610c, type: 2}
+  - {fileID: 11400000, guid: 7543940406b093e4a96f5be03a85f0fa, type: 2}
+  - {fileID: 11400000, guid: 3c3a6c2bffa1b1e43a652524b9985ce6, type: 2}
+  - {fileID: 11400000, guid: 4b4891ddde742ac43ad689eb0b8c7ea6, type: 2}
+  - {fileID: 11400000, guid: 720680c598be8a544addeaf771df9b71, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

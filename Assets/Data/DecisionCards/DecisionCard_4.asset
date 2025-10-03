@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_4
+  m_EditorClassIdentifier: 
+  CardID: 4
+  Title: National Anthem Remix?
+  Category: 5
+  Description: A popular musician wants to remix the national anthem with a dubstep
+    beat. Traditionalists are horrified, the youth are intrigued. A bold move!
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Authorize the official remix!
+    OutcomeDescription: Festival favorite, but state dinners get awkward.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 4
+      Percent: 0
+    - Type: 1
+      Amount: -3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Stick to the original version.
+    OutcomeDescription: Status quo maintained. A chance for relevance missed?
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    - Type: 0
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Form a committee to review.
+    OutcomeDescription: The committee will debate this for months, maybe years.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -1.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 97ef4a6a6882eb5428c955019e38773e, type: 2}
+  - {fileID: 11400000, guid: 6d90df31818846f488c76183913abc29, type: 2}
+  - {fileID: 11400000, guid: cbea677a7094f2a4b96d8763d0160fc8, type: 2}
+  - {fileID: 11400000, guid: 42258ee94a27a0e46a5e1127c0325edd, type: 2}
+  - {fileID: 11400000, guid: 2aafea91250ea034b99b1a53adfe985e, type: 2}
+  - {fileID: 11400000, guid: 6e905730df94f4744892dcf68a7ba515, type: 2}
+  - {fileID: 11400000, guid: 283d56dc89e537148ba3665262e96f0b, type: 2}
+  - {fileID: 11400000, guid: e235d100568cdd043bdde95758d5b598, type: 2}
+  - {fileID: 11400000, guid: 174b10f0064661a4ea8a711ac2169db5, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_59
+  m_EditorClassIdentifier: 
+  CardID: 59
+  Title: Singing Traffic Lights Malfunction
+  Category: 1
+  Description: An experimental upgrade made traffic lights sing opera. They're now
+    stuck on a deafening high C, causing city-wide gridlock and mass headaches.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 3
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Cut power to all traffic lights!
+    OutcomeDescription: Silence, but replaced by traffic anarchy and accidents.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -15
+      Percent: 0
+    - Type: 3
+      Amount: -12
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Issue earplugs to all citizens.
+    OutcomeDescription: A temporary fix. Communication becomes shouting.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -10
+      Percent: 0
+    - Type: 3
+      Amount: -8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Hire opera conductor to 'fix' it.
+    OutcomeDescription: The conductor tries to reason with the lights. It's a spectacle.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 12
+      Percent: 0
+    - Type: 1
+      Amount: -18
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  MediaReactions:
+  - {fileID: 11400000, guid: 75d6d9748997acf44b2e41d854317b9d, type: 2}
+  - {fileID: 11400000, guid: bb959df5d07623f45bb24743e3313d42, type: 2}
+  - {fileID: 11400000, guid: cb30c59d9e9c6c94a8d1a44ea1b2aee0, type: 2}
+  - {fileID: 11400000, guid: dd9bfe38a6192eb4e922b40b5ea5e343, type: 2}
+  - {fileID: 11400000, guid: 70fd0e1975b654f4fa1615050eb8e18d, type: 2}
+  - {fileID: 11400000, guid: f855c442ed9621d43b600a6013046f56, type: 2}
+  - {fileID: 11400000, guid: 879a85b7daad27a49a311147af4cfafc, type: 2}
+  - {fileID: 11400000, guid: 1d6462e242a25f045b9b26ec879ae78b, type: 2}
+  - {fileID: 11400000, guid: b672bb8d6bbf9464f8ee702d3b98957b, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

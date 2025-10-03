@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_44
+  m_EditorClassIdentifier: 
+  CardID: 44
+  Title: Mandatory Funny Hat Fridays
+  Category: 4
+  Description: 'To improve workplace morale, a new directive: ''Funny Hat Fridays''
+    are now mandatory in all government offices. Some see it as fun, others as tyranny.'
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Let the hat games begin!
+    OutcomeDescription: Productivity slightly down, but some great hat photos for
+      social media.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    - Type: 1
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Keep office attire serious.
+    OutcomeDescription: A missed opportunity for silliness. Bureaucracy remains unhatted.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Optional hat participation.
+    OutcomeDescription: A weak compromise. Only the keen beans wear hats.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: cf5b859f2c1f6c94c9159d2bda85562a, type: 2}
+  - {fileID: 11400000, guid: 8eaf2ad9d6ed2a34e82d17fdd0364d1c, type: 2}
+  - {fileID: 11400000, guid: fb8cca979d5d47942b8c81aca0d967e5, type: 2}
+  - {fileID: 11400000, guid: 0b5e970ee69c8d041bc1d5fd65b5ccec, type: 2}
+  - {fileID: 11400000, guid: 622fe8c08ce649046b07c4847c229775, type: 2}
+  - {fileID: 11400000, guid: 842db9e153709d042ae9c103281259e1, type: 2}
+  - {fileID: 11400000, guid: d3c4e89fe9b95f3489c0127690ff916a, type: 2}
+  - {fileID: 11400000, guid: db95e41692d0e534ebb7899e3cc9f653, type: 2}
+  - {fileID: 11400000, guid: 8e6ff2f590ee4634594670281ae8456e, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

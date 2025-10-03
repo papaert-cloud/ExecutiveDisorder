@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_94
+  m_EditorClassIdentifier: 
+  CardID: 94
+  Title: Badger Mascot for UN Secretary?
+  Category: 4
+  Description: The 'Confused Badger' meme is so globally popular that a satirical
+    campaign nominates it for UN Secretary General. Some nations are actually considering
+    it.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Endorse the Badger's UN Bid!
+    OutcomeDescription: International politics becomes delightfully absurd. Badger
+      is still confused.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 10
+      Percent: 0
+    - Type: 1
+      Amount: -8
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Politely withdraw badger's name.
+    OutcomeDescription: A sensible move. The world sighs, a little disappointed.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -5
+      Percent: 0
+    - Type: 1
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Badger needs foreign policy advisor.
+    OutcomeDescription: A team is assembled to interpret badger's grunts into policy.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: a35d1642aff452d4dae6ba5c31ffac72, type: 2}
+  - {fileID: 11400000, guid: 3e44baf021da6de4ea2abc354c8956e9, type: 2}
+  - {fileID: 11400000, guid: 18206539a83e787479b595415b76322f, type: 2}
+  - {fileID: 11400000, guid: 8102abec4b6c0dc4aa4595d396b3052c, type: 2}
+  - {fileID: 11400000, guid: a80846fcc21e0324ba02c4c1f5d3c87d, type: 2}
+  - {fileID: 11400000, guid: 29141fe5d7c8dca408499d11bf528f8d, type: 2}
+  - {fileID: 11400000, guid: 139f469885c9a3d408b4f04d7899888e, type: 2}
+  - {fileID: 11400000, guid: 6c40f1ef05439104281111b0be684a08, type: 2}
+  - {fileID: 11400000, guid: 37d28fa560e93af47bf45ef9979f7836, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1

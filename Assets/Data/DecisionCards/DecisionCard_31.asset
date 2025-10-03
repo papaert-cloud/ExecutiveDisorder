@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_31
+  m_EditorClassIdentifier: 
+  CardID: 31
+  Title: Emoji-Only Communication Day
+  Category: 4
+  Description: "To foster 'modern understanding', a proposal suggests one day a week
+    for all official government communication to be emoji-only. Linguists are \U0001F92F."
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 1
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: "\U0001F44D\U0001F680\U0001F4C5 (Approve the plan!)"
+    OutcomeDescription: International relations become... pictorial. Misunderstandings
+      abound.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 5
+      Percent: 0
+    - Type: 1
+      Amount: -4
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 53
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Stick to boring old words.
+    OutcomeDescription: "Clarity is preserved, but a chance for \U0001F92A is lost."
+    ResourceRequirements:
+    - Type: 1
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Research emoji effectiveness.
+    OutcomeDescription: "Scholars debate the nuance of \U0001F346. Decision delayed."
+    ResourceRequirements:
+    - Type: 3
+      Amount: -2
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: bc940faae752dad4e9286720df3ae61d, type: 2}
+  - {fileID: 11400000, guid: 0c30094ddcb457f4dbfe3c65b396dc63, type: 2}
+  - {fileID: 11400000, guid: a089d5eb568699345ac447dfa13ecd46, type: 2}
+  - {fileID: 11400000, guid: 0615695f6ae40f445832accf9701949c, type: 2}
+  - {fileID: 11400000, guid: ffde8a2f083dc0746bc0fd3cc14fb6fb, type: 2}
+  - {fileID: 11400000, guid: e9d9a786bf216a64d85a2df170b8f704, type: 2}
+  - {fileID: 11400000, guid: cf551090134b8de45b451e8509340e85, type: 2}
+  - {fileID: 11400000, guid: c03ae1c1b577ca240bd5f3cf06a3a7fb, type: 2}
+  - {fileID: 11400000, guid: c09fe3ca892d2b34eb750c9002560666, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 59

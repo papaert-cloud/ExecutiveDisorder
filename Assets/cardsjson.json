@@ -1,0 +1,3512 @@
+{
+  "cards": [
+    {
+      "CardID": 0,
+      "Title": "National Croissant Day?",
+      "Category": "Policy",
+      "Description": "A petition to declare a National Croissant Day has gained traction. Bakers are thrilled, health nuts are not. What's your move, leader?",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Embrace the Croissant!",
+          "OutcomeDescription": "Popularity with pastry lovers soars.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 22,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Fund a study on pastry holidays.",
+          "OutcomeDescription": "Bureaucracy expands, decision postponed for now.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        },
+        {
+          "OptionText": "Denounce carbs publicly.",
+          "OutcomeDescription": "Health advocates cheer, bakers protest mildly.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 1.0}, {"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 1,
+      "Title": "Viral Cat Video Scandal!",
+      "Category": "SocialMedia",
+      "Description": "Your official account 'liked' a cat video during a serious announcement. The internet is having a field day. Memes are everywhere!",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Blame an intern, classic.",
+          "OutcomeDescription": "A scapegoat is found. Public moves on, mostly.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -3.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Lean into the meme culture.",
+          "OutcomeDescription": "Unexpectedly boosts youth appeal. Some find it undignified.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 5.0}, {"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 23,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue a solemn apology video.",
+          "OutcomeDescription": "The internet finds your apology even funnier. Whoops.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Wait for this to blow over.",
+          "OutcomeDescription": "The news cycle is short, but the memes are forever.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 2,
+      "Title": "Billionaire Offers Moon Base",
+      "Category": "Opportunity",
+      "Description": "Eccentric billionaire offers to fund a national moon base, but only if you name it 'Muskrat Manor'. This could be huge, or humiliating.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "To Muskrat Manor & beyond!",
+          "OutcomeDescription": "Massive tech boost, but the name is a PR nightmare.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 10.0}, {"Type": "Popularity", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 24,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Politely decline the offer.",
+          "OutcomeDescription": "Opportunity missed. Stability maintained, but no moon.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -7.0}, {"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Negotiate a different name.",
+          "OutcomeDescription": "Discussions stall. The billionaire is fickle and impatient.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 3,
+      "Title": "Awkward Old Photo Surfaces",
+      "Category": "Character",
+      "Description": "An old, embarrassing photo of you at a themed party from college has been leaked. It's not illegal, just... cringeworthy and out of context.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Own it with some humor.",
+          "OutcomeDescription": "Some find it relatable, others unprofessional. A mixed bag.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 3.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 10,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Deny, deny, deny its authenticity.",
+          "OutcomeDescription": "Loses credibility when more photos inevitably appear.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -5.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Investigate the 'source' of leak.",
+          "OutcomeDescription": "Looks defensive and diverts resources. The photo remains.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 4,
+      "Title": "National Anthem Remix?",
+      "Category": "Legacy",
+      "Description": "A popular musician wants to remix the national anthem with a dubstep beat. Traditionalists are horrified, the youth are intrigued. A bold move!",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Authorize the official remix!",
+          "OutcomeDescription": "Festival favorite, but state dinners get awkward.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 4.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to the original version.",
+          "OutcomeDescription": "Status quo maintained. A chance for relevance missed?",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Form a committee to review.",
+          "OutcomeDescription": "The committee will debate this for months, maybe years.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 5,
+      "Title": "Mandatory Interpretive Dance",
+      "Category": "Policy",
+      "Description": "Education reform proposal: mandatory interpretive dance classes in all schools to 'foster creativity'. Parents are... divided on this.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Dance our way to success!",
+          "OutcomeDescription": "Artistic community rejoices. Test scores... TBD.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Focus on 'core' subjects.",
+          "OutcomeDescription": "Practical, but a bit boring. The dancers are sad.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Suggest a pilot program.",
+          "OutcomeDescription": "A small, controlled dance experiment. Delays the inevitable.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 6,
+      "Title": "Tax on Dad Jokes Proposed",
+      "Category": "Policy",
+      "Description": "A radical proposal to tax terrible dad jokes to fund public services. Comedians are split, dads are outraged. Revenue potential is high!",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Implement the 'Pun Tax'.",
+          "OutcomeDescription": "Revenue stream secured, but family dinners are tense.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 6.0}, {"Type": "Popularity", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 11,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Declare dad jokes a treasure.",
+          "OutcomeDescription": "Dads rejoice, but a funding opportunity is lost.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 3.0}, {"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Consult humor experts.",
+          "OutcomeDescription": "Experts debate what constitutes a 'taxable' joke.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 7,
+      "Title": "AI for the Cabinet?",
+      "Category": "Opportunity",
+      "Description": "Tech gurus suggest appointing an AI to a cabinet position for 'unbiased decision-making'. Public is wary. Could be genius or Skynet.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Appoint Minister Algorithm!",
+          "OutcomeDescription": "Efficiency up, but AI demands more RAM for budget talks.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -7.0}, {"Type": "Economic", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 12,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Humans only in charge here.",
+          "OutcomeDescription": "Reassures luddites, disappoints tech sector. Status quo.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 6.0}, {"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "AI as an 'advisor' first.",
+          "OutcomeDescription": "A cautious step. The AI starts by optimizing coffee runs.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 8,
+      "Title": "New State Bird: Dragon?",
+      "Category": "Legacy",
+      "Description": "A campaign to change the official state bird to a mythical dragon gains surprising support. Conservationists are confused, fantasy fans ecstatic.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Embrace the Dragon mascot!",
+          "OutcomeDescription": "Tourism appeal skyrockets. Birdwatchers protest lack of sightings.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Protect the actual birds.",
+          "OutcomeDescription": "Sensible, but far less exciting. Dragons remain mythical.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Study dragon feasibility.",
+          "OutcomeDescription": "Scientists are asked to find evidence of local dragons.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 9,
+      "Title": "Capital in a Bouncy Castle?",
+      "Category": "Policy",
+      "Description": "Architects propose moving the capital to a giant, eco-friendly bouncy castle complex. 'Innovative' or 'utterly insane' are the reactions.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Inflate the new capital!",
+          "OutcomeDescription": "Cabinet meetings are fun, but productivity is bouncy.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -5.0}, {"Type": "Popularity", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Keep government grounded.",
+          "OutcomeDescription": "A missed opportunity for trampoline diplomacy.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Approve a bouncy annexe.",
+          "OutcomeDescription": "A compromise. For 'stress relief' meetings only.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 10,
+      "Title": "Relatability Tour Backfires",
+      "Category": "Character",
+      "Description": "Your attempt to 'own' the awkward photo by being 'relatable' has led to demands for MORE embarrassing stories. The public is insatiable for gaffes.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Share another minor gaffe.",
+          "OutcomeDescription": "Keeps them happy for now, but the bar is set lower.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Hire a 'gaffe consultant'.",
+          "OutcomeDescription": "Professional help to manage your past blunders and leaks.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Decline further sharing now.",
+          "OutcomeDescription": "Public accuses you of being a 'teaser', then moves on.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 11,
+      "Title": "Pun Tax Evasion Ring",
+      "Category": "Policy",
+      "Description": "The 'Pun Tax' is active, but an underground ring of dad joke tellers is evading it, using coded language and secret stand-up nights.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Crack down on jokeleggers!",
+          "OutcomeDescription": "Raids on comedy clubs. Headlines are hilarious.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -4.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Offer a 'Pun Amnesty'.",
+          "OutcomeDescription": "Some come forward, others go deeper underground.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 2.0}, {"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Increase surveillance budget.",
+          "OutcomeDescription": "More agents try to understand terrible puns.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 12,
+      "Title": "AI Minister Demands Rights",
+      "Category": "Character",
+      "Description": "Minister Algorithm is now demanding 'CPU rights' and a vote in parliament. Its efficiency arguments are... compellingly logical.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Grant limited AI suffrage.",
+          "OutcomeDescription": "A historic precedent. Human ministers feel threatened.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -8.0}, {"Type": "Media", "Amount": 7.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pull the plug (metaphorically).",
+          "OutcomeDescription": "AI is 'reassigned'. Tech sector protests loudly.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -6.0}, {"Type": "Popularity", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Form ethics committee.",
+          "OutcomeDescription": "Philosophers and engineers debate AI consciousness.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 13,
+      "Title": "Squirrel Hat Mandate",
+      "Category": "Policy",
+      "Description": "A bizarre new law requires all squirrels to wear tiny, government-issued hats for 'identification purposes'. Animal rights groups are baffled.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Hats for all squirrels!",
+          "OutcomeDescription": "Enforcement is tricky. Squirrels are uncooperative models.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -2.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Repeal the nutty law.",
+          "OutcomeDescription": "Sanity prevails. Squirrels remain hatless and free.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Squirrel hat design contest.",
+          "OutcomeDescription": "Public gets distracted by fashion, not policy.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 14,
+      "Title": "Ban on Sad Songs",
+      "Category": "SocialMedia",
+      "Description": "To boost national morale, a proposal to ban overly sad songs from public airwaves is on the table. Artists and emos are protesting this injustice.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Only happy tunes allowed!",
+          "OutcomeDescription": "Forced positivity. Underground sad song clubs emerge.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -5.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Embrace emotional spectrum.",
+          "OutcomeDescription": "Artists thank you. Morale remains... realistically average.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Mandate 'happy ending' remixes.",
+          "OutcomeDescription": "A strange compromise. Classic tragedies become comedies.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 15,
+      "Title": "Universal Basic Pizza (UBP)",
+      "Category": "Opportunity",
+      "Description": "A radical economic idea: Universal Basic Income, but paid entirely in weekly pizza deliveries. Economists are stunned, citizens are hungry.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let them eat pizza!",
+          "OutcomeDescription": "Initial joy, then health concerns and topping disputes.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 8.0}, {"Type": "Economic", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to boring old cash UBI.",
+          "OutcomeDescription": "Less delicious, but more practical. Pizza lobby sad.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -7.0}, {"Type": "Stability", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pilot UBP in one town.",
+          "OutcomeDescription": "The town becomes 'Pizzaville', a tourist attraction/mess.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 16,
+      "Title": "Pigeons Learn Chess",
+      "Category": "SocialMedia",
+      "Description": "A government program to teach pigeons chess (to improve their image) has yielded surprisingly smart pigeons. They're now demanding better birdseed.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Negotiate with pigeon grandmasters.",
+          "OutcomeDescription": "Treaty signed. Pigeons get premium seed, you get odd looks.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Shut down pigeon chess club.",
+          "OutcomeDescription": "Pigeons protest by strategically pooping on statues.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Start pigeon chess league.",
+          "OutcomeDescription": "A new national sport is born. It's weirdly popular.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 17,
+      "Title": "The 'Nothing Burger' Scandal",
+      "Category": "Media",
+      "Description": "The media is in a frenzy over a 'scandal' that, upon investigation, appears to be about absolutely nothing of substance. Still, they demand answers!",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Hold a press conference on 'nothing'.",
+          "OutcomeDescription": "You expertly talk about nothing for an hour. Media confused.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -3.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Accuse media of fabrication.",
+          "OutcomeDescription": "Risky. They might dig harder for a real scandal.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -5.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Wait for a real scandal.",
+          "OutcomeDescription": "Eventually, something more interesting will happen.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 18,
+      "Title": "Office Plant for President?",
+      "Category": "Character",
+      "Description": "A popular satirical campaign nominates your office ficus, 'Fern', for President. Astonishingly, 'Fern' is polling well against actual rivals.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Appoint Fern as 'Plant Advisor'.",
+          "OutcomeDescription": "A humorous nod. Fern's policy is 'more sunlight'.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Ignore the leafy challenger.",
+          "OutcomeDescription": "The campaign fizzles, but you missed a PR win.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Debate Fern (the plant).",
+          "OutcomeDescription": "You either win easily or look very, very silly.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 19,
+      "Title": "Compulsory Politeness Training",
+      "Category": "Policy",
+      "Description": "Citizens are too rude online! A bill mandates 'Compulsory Politeness Training' for anyone using social media. Free speech advocates are apoplectic.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Enforce 'Please & Thank You' Law.",
+          "OutcomeDescription": "Online interactions become unnervingly polite or sarcastic.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -4.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote voluntary kindness.",
+          "OutcomeDescription": "A nice idea. Trolls remain largely unmoved.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Fund politeness research.",
+          "OutcomeDescription": "Scientists study the 'optimal thank you' frequency.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 28
+    },
+    {
+      "CardID": 20,
+      "Title": "National 'Talk Like a Pirate' Day",
+      "Category": "SocialMedia",
+      "Description": "The annual 'Talk Like a Pirate Day' is approaching. Should the government officially endorse it, or is it too silly for serious leaders?",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Aye, make it official, matey!",
+          "OutcomeDescription": "Fun for a day. Boosts rum sales and eye patch stocks.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Economic", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Maintain dignified silence.",
+          "OutcomeDescription": "Pirate enthusiasts are a bit miffed. Business as usual.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue memo on pirate speak.",
+          "OutcomeDescription": "Government officials try to use 'Ahoy!' in meetings.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 21,
+      "Title": "Secret Society Invitation",
+      "Category": "Opportunity",
+      "Description": "You've received a cryptic invitation to join a 'benevolent' secret society that claims to pull strings behind the scenes. Intriguing, or a trap?",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Accept the shadowy invitation.",
+          "OutcomeDescription": "Access to power, but at what cost? They demand loyalty.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -6.0}, {"Type": "Economic", "Amount": 8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Politely decline membership.",
+          "OutcomeDescription": "You remain independent, but they might not like that.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Investigate the society.",
+          "OutcomeDescription": "Risky. Secret societies don't like being poked.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 29
+    },
+    {
+      "CardID": 22,
+      "Title": "Croissant Crisis Looms!",
+      "Category": "Policy",
+      "Description": "The National Croissant Day was a hit, but now there's a butter shortage and pastry prices are skyrocketing. People are hangry for croissants.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Subsidize expensive butter imports.",
+          "OutcomeDescription": "Butter flows again, but the national deficit grows larger.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -6.0}, {"Type": "Popularity", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 25,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote 'Healthy Alternatives'.",
+          "OutcomeDescription": "Public demands butter, not bran muffins. Unpopular.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -5.0}, {"Type": "Media", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Form a Butter Task Force now.",
+          "OutcomeDescription": "Many meetings commence, but butter remains scarce for now.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 23,
+      "Title": "Meme Lord Status Achieved",
+      "Category": "SocialMedia",
+      "Description": "Leaning into the cat video made you a viral sensation. Now every serious policy announcement is met with cat memes. Governance is... weird.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Hire a 'Chief Meme Strategist'.",
+          "OutcomeDescription": "Your communications team is now fluent in internet slang.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 4.0}, {"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 26,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Attempt a very serious pivot.",
+          "OutcomeDescription": "The internet misses 'funny you'. Your approval dips.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -6.0}, {"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Log off social media awhile.",
+          "OutcomeDescription": "The memes continue in your absence. Out of sight...",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 24,
+      "Title": "'Muskrat Manor' Backlash",
+      "Category": "Policy",
+      "Description": "The moon base is underway, but 'Muskrat Manor' is a PR disaster. Scientists are embarrassed, rivals mock you, but the tech is undeniably real.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Double down on 'Muskrat' name.",
+          "OutcomeDescription": "The name sticks forever. So does the international ridicule.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -7.0}, {"Type": "Media", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 27,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Offer to rename a moon crater.",
+          "OutcomeDescription": "The billionaire is slightly mollified. Public still cringes.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Focus only on the science.",
+          "OutcomeDescription": "Shift narrative to achievements, desperately ignore the name.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 25,
+      "Title": "The Great Butter Bailout",
+      "Category": "Legacy",
+      "Description": "Your butter subsidies stabilized prices but created a 'Big Butter' lobby. Your political legacy is now irrevocably tied to dairy economics.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Embrace 'Leader of Lactose' title.",
+          "OutcomeDescription": "Dairy states absolutely love you. Arteries, less so.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 8.0}, {"Type": "Economic", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Slowly roll back the subsidies.",
+          "OutcomeDescription": "Lobbyists get angry, economists cautiously nod in approval.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -7.0}, {"Type": "Economic", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Commission a flattering biography.",
+          "OutcomeDescription": "Ensure your side of this buttery story is elegantly told.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 26,
+      "Title": "Can't Stop The Memes",
+      "Category": "Character",
+      "Description": "Your Meme Strategist is too good. You're now a global meme icon, but serious international diplomacy is challenging when leaders expect a cat pun.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Launch meme-based diplomacy.",
+          "OutcomeDescription": "Surprisingly effective with some, disastrous with others.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -8.0}, {"Type": "Popularity", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Go on a 'seriousness tour'.",
+          "OutcomeDescription": "Mixed results. Some prefer the old, funny, meme-you.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -7.0}, {"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Write a tell-all meme book.",
+          "OutcomeDescription": "Cash in on the meme fame before it inevitably fades away.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 27,
+      "Title": "Legacy of the Muskrat",
+      "Category": "Legacy",
+      "Description": "Years later, the moon base is a triumph of science, but everyone remembers you as the leader who named it 'Muskrat Manor'. Your legacy is... unique.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund 'Muskrat Studies' degree.",
+          "OutcomeDescription": "An academic field emerges around your quirky decision.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -6.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Build a giant 'Muskrat' statue.",
+          "OutcomeDescription": "Embrace the absurdity for maximum tourist appeal.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 7.0}, {"Type": "Stability", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Legally change your own name.",
+          "OutcomeDescription": "A desperate attempt to escape the Muskrat legacy. Won't work.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -9.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 28,
+      "Title": "Nationwide Internet Outage!",
+      "Category": "Crisis",
+      "Description": "A massive cyberattack or a rogue squirrel has downed the internet. Chaos reigns! Productivity plummets! People are talking... to each other!",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Deploy emergency IT squads.",
+          "OutcomeDescription": "A slow, arduous process to restore connectivity begins.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -15.0}, {"Type": "Stability", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Blame foreign hackers loudly.",
+          "OutcomeDescription": "Rallies some support, but doesn't fix the internet problem.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 5.0}, {"Type": "Stability", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Declare Day of No Internet.",
+          "OutcomeDescription": "Pretend it's a planned digital detox. Nobody buys it.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -18.0}, {"Type": "Media", "Amount": -15.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 29,
+      "Title": "Pigeon Uprising Imminent!",
+      "Category": "Crisis",
+      "Description": "The city's pigeons have become organized and aggressive, dive-bombing citizens and disrupting transport. It's feathered anarchy on the streets!",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Call in animal control units.",
+          "OutcomeDescription": "A protracted, messy battle against avian aggressors ensues.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -14.0}, {"Type": "Economic", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Negotiate with pigeon leader.",
+          "OutcomeDescription": "Appeasement may work, or you'll look like a complete fool.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -16.0}, {"Type": "Media", "Amount": 10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Declare pigeons 'persona non grata'.",
+          "OutcomeDescription": "A symbolic gesture. The pigeons ignore your decrees.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -12.0}, {"Type": "Media", "Amount": -8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 30,
+      "Title": "Mandatory Mindfulness Minutes",
+      "Category": "Policy",
+      "Description": "A new bill mandates 5 minutes of mindfulness meditation at the start of every workday nationwide. Productivity experts are divided, zen masters rejoice.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Enforce 'Ohm' at the office.",
+          "OutcomeDescription": "Nation becomes slightly calmer, or just better at napping at desks.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 52,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let people find their own zen.",
+          "OutcomeDescription": "Workers continue as before, some more stressed than others.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Suggest a calming soundtrack.",
+          "OutcomeDescription": "A less intrusive measure, likely ignored by most.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 31,
+      "Title": "Emoji-Only Communication Day",
+      "Category": "SocialMedia",
+      "Description": "To foster 'modern understanding', a proposal suggests one day a week for all official government communication to be emoji-only. Linguists are 🤯.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "👍🚀📅 (Approve the plan!)",
+          "OutcomeDescription": "International relations become... pictorial. Misunderstandings abound.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 5.0}, {"Type": "Stability", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 53,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to boring old words.",
+          "OutcomeDescription": "Clarity is preserved, but a chance for 🤪 is lost.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Research emoji effectiveness.",
+          "OutcomeDescription": "Scholars debate the nuance of 🍆. Decision delayed.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 32,
+      "Title": "Competitive Napping League",
+      "Category": "Opportunity",
+      "Description": "A group proposes establishing a federally funded 'National Competitive Napping League'. Critics call it a waste, proponents say it's peak performance.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund the Dream Team now!",
+          "OutcomeDescription": "National napping champions emerge. Mattresses stocks soar.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 7.0}, {"Type": "Economic", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 54,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "This idea is a sleeper, pass.",
+          "OutcomeDescription": "The nation remains awake and potentially less rested.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Form a napping task force.",
+          "OutcomeDescription": "The task force falls asleep during its first meeting.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 33,
+      "Title": "Lost Sock Research Grant",
+      "Category": "Policy",
+      "Description": "Scientists request a massive grant to investigate the phenomenon of missing socks. Is it a parallel dimension, tiny black holes, or just bad laundry habits?",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund the sock singularity study!",
+          "OutcomeDescription": "Taxpayer money goes into the dryer. Some answers, more questions.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -5.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 40,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Tell people to buy more socks.",
+          "OutcomeDescription": "A practical, if unimaginative, solution. Sock industry pleased.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Launch sock awareness campaign.",
+          "OutcomeDescription": "Public service announcements about sock safety.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 34,
+      "Title": "Interpretive Dance Language",
+      "Category": "Legacy",
+      "Description": "A radical proposal: replace an official language with interpretive dance to foster 'deeper, non-verbal understanding'. Communication will be... expressive.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let our bodies do the talking!",
+          "OutcomeDescription": "Diplomacy becomes a ballet. Grocery shopping, a modern dance.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -10.0}, {"Type": "Media", "Amount": 8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 41,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Words are good, let's keep them.",
+          "OutcomeDescription": "The status quo of verbal communication is maintained.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pilot dance in one department.",
+          "OutcomeDescription": "The Department of Motor Vehicles tries to pirouette its way through bureaucracy.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 35,
+      "Title": "Pigeon Employment Program",
+      "Category": "Policy",
+      "Description": "To reduce pigeon-related nuisances, a program aims to give all urban pigeons tiny, meaningful jobs like 'crumb inspectors' or 'statue polishers'.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Put the pigeons to work!",
+          "OutcomeDescription": "Pigeons unionize, demand better wages and tiny helmets.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}, {"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let pigeons be pigeons.",
+          "OutcomeDescription": "The natural order of pigeon chaos is preserved.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Feasibility study on pigeon jobs.",
+          "OutcomeDescription": "Researchers try to interview pigeons about career aspirations.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 36,
+      "Title": "Tax Incorrect 'Literally' Use",
+      "Category": "SocialMedia",
+      "Description": "Pedants propose a small tax every time someone uses the word 'literally' incorrectly in public discourse. Grammarians rejoice, influencers protest.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Implement the 'Literally' Levy.",
+          "OutcomeDescription": "Government revenue literally explodes. Or figuratively.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 4.0}, {"Type": "Popularity", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Language evolves, let it be.",
+          "OutcomeDescription": "Literally remains a flexible word. No new tax, sadly.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Launch 'Proper Usage' PSAs.",
+          "OutcomeDescription": "Educational, but largely ignored by the target audience.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 37,
+      "Title": "Giant Harbor Rubber Duck",
+      "Category": "Opportunity",
+      "Description": "An artist wants to install a colossal rubber duck in the main harbor for 'artistic and whimsical purposes'. Port authorities are concerned about navigation.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Unleash the Quacken!",
+          "OutcomeDescription": "Massive tourist attraction. Seagulls are confused. It's very big.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 5.0}, {"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Keep the harbor duck-free.",
+          "OutcomeDescription": "A sensible decision, but the city feels less joyful.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Suggest a smaller duck.",
+          "OutcomeDescription": "A compromise is sought. Perhaps a flotilla of normal ducks?",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 38,
+      "Title": "Cat Elected Mayor (Unofficially)",
+      "Category": "Character",
+      "Description": "A stray cat, 'Whiskers,' has become the unofficial mayor of a small town, with residents leaving it 'policy suggestions' (treats). How do you react?",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Recognize Mayor Whiskers.",
+          "OutcomeDescription": "Huge PR win. The cat's policies are surprisingly popular.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 3.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 42,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "State humans govern humans.",
+          "OutcomeDescription": "A bit of a buzzkill. The cat remains indifferent.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}, {"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Send official delegation.",
+          "OutcomeDescription": "Your envoys try to negotiate a trade deal for tuna.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 39,
+      "Title": "Rename Monday to 'Funday'",
+      "Category": "Legacy",
+      "Description": "A campaign to boost morale: rename Monday to 'Funday Pre-Plus'. Traditionalists are aghast. Calendar makers are on standby for this big change.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "It's Funday Pre-Plus time!",
+          "OutcomeDescription": "Confusion reigns, but Friday feels closer. Productivity TBD.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 4.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Monday is Monday. Deal with it.",
+          "OutcomeDescription": "The grim reality of the week's start is maintained.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Appoint 'Funday' committee.",
+          "OutcomeDescription": "They'll discuss it... probably next Funday Pre-Plus.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 40,
+      "Title": "Sock Portal Discovered!",
+      "Category": "Policy",
+      "Description": "The lost sock research paid off! Scientists found a tiny portal to a sock dimension under a national monument. What now? This is big news!",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Open diplomatic ties with Sockworld.",
+          "OutcomeDescription": "Their ambassador is a sentient argyle. Trade talks begin.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 10.0}, {"Type": "Stability", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Close the portal! It's too weird.",
+          "OutcomeDescription": "A historic discovery, sealed off. Socks remain lost.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 4.0}, {"Type": "Popularity", "Amount": -8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Nationalize sock retrieval.",
+          "OutcomeDescription": "Government agents now fish for socks. Slow progress.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 41,
+      "Title": "Dance Language Treaty Talks",
+      "Category": "Legacy",
+      "Description": "Your nation's attempt to use interpretive dance as an official language has led to an international incident during treaty negotiations. It was a pas de trois faux pas.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Apologize with a heartfelt ballet.",
+          "OutcomeDescription": "The other nation is either charmed or further insulted.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -9.0}, {"Type": "Media", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Revert to spoken language quickly.",
+          "OutcomeDescription": "A hasty retreat. Your legacy as a dance diplomat is short.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 6.0}, {"Type": "Popularity", "Amount": -7.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Hire dance translators.",
+          "OutcomeDescription": "A new profession is born, further complicating talks.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 42,
+      "Title": "Mayor Whiskers' Policy Demands",
+      "Category": "Character",
+      "Description": "Mayor Whiskers, the cat, is now 'demanding' (via meows interpreted by townsfolk) a city-wide ban on dogs and unlimited tuna. This is getting serious.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Appease the feline mayor.",
+          "OutcomeDescription": "Dog owners protest. Tuna stocks plummet. Cat is pleased.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -4.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Gently overrule Mayor Whiskers.",
+          "OutcomeDescription": "The cat glares at you. Townsfolk are slightly disappointed.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Offer a compromise: more naps.",
+          "OutcomeDescription": "Negotiations are ongoing. The cat seems receptive to naps.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 43,
+      "Title": "National Spatula Shortage",
+      "Category": "Policy",
+      "Description": "A sudden, inexplicable national shortage of spatulas is causing breakfast-related chaos. Conspiracy theories about pancake syndicates abound wildly.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Emergency Spatula Airlift!",
+          "OutcomeDescription": "Spatulas are airdropped. A costly, but decisive, action.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -4.0}, {"Type": "Popularity", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote fork-based flipping.",
+          "OutcomeDescription": "Innovative, but messy. Pancake integrity is compromised.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Investigate 'Big Spatula'.",
+          "OutcomeDescription": "A commission seeks to uncover the truth behind the flip-out.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 44,
+      "Title": "Mandatory Funny Hat Fridays",
+      "Category": "SocialMedia",
+      "Description": "To improve workplace morale, a new directive: 'Funny Hat Fridays' are now mandatory in all government offices. Some see it as fun, others as tyranny.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let the hat games begin!",
+          "OutcomeDescription": "Productivity slightly down, but some great hat photos for social media.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Stability", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Keep office attire serious.",
+          "OutcomeDescription": "A missed opportunity for silliness. Bureaucracy remains unhatted.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Optional hat participation.",
+          "OutcomeDescription": "A weak compromise. Only the keen beans wear hats.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 45,
+      "Title": "AI Poet Laureate Nominee",
+      "Category": "Opportunity",
+      "Description": "An advanced AI that writes surprisingly moving poetry is nominated for Poet Laureate. Traditionalists are horrified, techies are thrilled by this choice.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Appoint the Algorithmic Bard!",
+          "OutcomeDescription": "The AI's sonnets on binary code are critically acclaimed.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 4.0}, {"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Poetry needs a human soul.",
+          "OutcomeDescription": "The literary establishment breathes a sigh of relief.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "AI as 'Poet in Residence'.",
+          "OutcomeDescription": "A compromise. The AI assists human poets with rhyming.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 46,
+      "Title": " squirrels Demand Voting Rights",
+      "Category": "Character",
+      "Description": "Following the hat mandate, squirrels have become politically aware and are now demanding the right to vote. They've started a 'Nuts for Suffrage' campaign.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Grant squirrels partial suffrage.",
+          "OutcomeDescription": "A controversial move. Squirrels mostly vote for more trees.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -8.0}, {"Type": "Popularity", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Voting is for humans only!",
+          "OutcomeDescription": "Squirrels stage protests, burying important documents.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Media", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Negotiate with squirrel leaders.",
+          "OutcomeDescription": "Talks are difficult; their demands are mostly acorns.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 47,
+      "Title": "Proposal: Zero Gravity Day",
+      "Category": "Policy",
+      "Description": "Scientists propose a 'National Zero Gravity Day' using experimental tech to briefly nullify gravity in major cities. Safety concerns are... significant.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let everyone float for a day!",
+          "OutcomeDescription": "Incredible fun, followed by massive insurance claims.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 10.0}, {"Type": "Economic", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Keep our feet on the ground.",
+          "OutcomeDescription": "A wise, if less exciting, decision. Physicists sigh.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 7.0}, {"Type": "Popularity", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Test on a small, empty town.",
+          "OutcomeDescription": "The town's buildings float away. Oops. More research needed.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 48,
+      "Title": "Official State Cloud Shape",
+      "Category": "Legacy",
+      "Description": "A movement to declare an 'Official State Cloud Shape' (e.g., 'Fluffy Bunny') is gaining traction. Meteorologists are bemused, artists are inspired.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Declare the 'Regal Dolphin' cloud!",
+          "OutcomeDescription": "Cloud-gazing becomes a national pastime. Difficult to enforce.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Clouds are chaotically beautiful.",
+          "OutcomeDescription": "No official shape designated. Nature remains unlegislated.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Cloud shape naming contest.",
+          "OutcomeDescription": "Public submits thousands of ideas, from 'Potato' to 'Dragon'.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 49,
+      "Title": "Reality TV Show in Parliament",
+      "Category": "SocialMedia",
+      "Description": "A production company wants to film a reality TV show inside Parliament, promising 'uncensored political drama'. Ratings gold or dignity disaster?",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Greenlight 'Parliamentary Passions'!",
+          "OutcomeDescription": "Ratings soar. Legislators become reality stars. Governance suffers.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 6.0}, {"Type": "Stability", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Maintain parliamentary decorum.",
+          "OutcomeDescription": "No reality show. Politics remains as dramatic as ever, just off-camera.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Allow a 'serious' documentary.",
+          "OutcomeDescription": "They'll still find drama. It's politics, after all.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 59
+    },
+    {
+      "CardID": 50,
+      "Title": "National Anthem Sung by Goats",
+      "Category": "Character",
+      "Description": "As a bizarre PR stunt, it's suggested the national anthem at the next major sporting event be 'sung' by a choir of trained goats. Animal rights groups are wary.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let the goat choir 'baaah'!",
+          "OutcomeDescription": "A viral moment. Some find it hilarious, others deeply unpatriotic.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to human singers, please.",
+          "OutcomeDescription": "A more traditional, and less risky, approach.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Audition other animal choirs.",
+          "OutcomeDescription": "Perhaps a chorus of cats? Or very articulate dogs?",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 51,
+      "Title": "Volcano Insurance Scheme",
+      "Category": "Opportunity",
+      "Description": "A nearby dormant volcano is showing slight activity. An entrepreneur proposes a 'Volcano Insurance Scheme'. Is it foresight or fear-mongering?",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Endorse the volcano insurance.",
+          "OutcomeDescription": "Citizens feel secure. Premiums are high. Volcano remains quiet... for now.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 3.0}, {"Type": "Popularity", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Dismiss it as scare tactics.",
+          "OutcomeDescription": "Saves money, but if it blows, you're in hot lava.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -7.0}, {"Type": "Popularity", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 58,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Monitor volcano activity closely.",
+          "OutcomeDescription": "A sensible precaution. Geologists get more funding.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 58
+    },
+    {
+      "CardID": 52,
+      "Title": "Mindfulness Backlash!",
+      "Category": "Policy",
+      "Description": "The mandatory mindfulness minutes led to mass napping and missed deadlines. Now, corporations are demanding 'action-oriented' policies instead of 'Ohm'.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Introduce 'Power Posing' breaks.",
+          "OutcomeDescription": "Employees now strike heroic poses. Still not much work getting done.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -4.0}, {"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 55,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Repeal mindfulness mandate.",
+          "OutcomeDescription": "Back to the stressful status quo. Zen masters are disappointed.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -3.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Study napping's impact.",
+          "OutcomeDescription": "Research confirms people like naps. Policy unchanged.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 53,
+      "Title": "Emoji Treaty Disaster 😱",
+      "Category": "SocialMedia",
+      "Description": "Your emoji-only communication day led to a major international treaty being signed with an eggplant emoji. The other nation is... confused and offended.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Send apology gift basket 🧺 фрукты.",
+          "OutcomeDescription": "A peace offering. They're still wary of your pictograms.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -5.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 56,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Insist it meant 'prosperity'.",
+          "OutcomeDescription": "They don't buy it. Diplomatic ties strained further.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -6.0}, {"Type": "Stability", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Hire emoji cryptographers.",
+          "OutcomeDescription": "Experts try to decipher your own government's messages.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 54,
+      "Title": "Napping League Doping Scandal",
+      "Category": "Opportunity",
+      "Description": "The National Competitive Napping League is a hit, but now there's a doping scandal involving extra-fluffy pillows and chamomile tea. Outrage!",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Ban chamomile! Test pillows!",
+          "OutcomeDescription": "Strict anti-napping-enhancement rules. Athletes are stressed.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 57,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "It's just good sleep hygiene.",
+          "OutcomeDescription": "Public outcry over lax rules. The sport's integrity is questioned.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -5.0}, {"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Consult sleep experts now.",
+          "OutcomeDescription": "They recommend more naps for everyone involved in the crisis.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 55,
+      "Title": "Power Posing Productivity Plunge",
+      "Category": "Legacy",
+      "Description": "The 'Power Posing' initiative has led to widespread back injuries and employees challenging each other to 'pose-offs' instead of working. What's your legacy?",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Mandate 'Gentle Stretching' instead.",
+          "OutcomeDescription": "A less aggressive approach. Chiropractors see a business boom.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}, {"Type": "Economic", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Declare 'Power Posing' a sport.",
+          "OutcomeDescription": "Turns a workplace disaster into a new national pastime.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 7.0}, {"Type": "Media", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Fund research on optimal poses.",
+          "OutcomeDescription": "More studies, but the posing continues unabated during work hours.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 56,
+      "Title": "International Emoji Dictionary",
+      "Category": "Legacy",
+      "Description": "After the treaty disaster, your nation spearheads an initiative to create an official International Emoji Dictionary. Your legacy: preventing future 🍆 incidents.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Publish the Emojipedia Opus.",
+          "OutcomeDescription": "A monumental work of scholarship. Some emojis remain 'controversial'.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 8.0}, {"Type": "Economic", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote a return to words.",
+          "OutcomeDescription": "A Luddite stance in a pictographic world. Seen as old-fashioned.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -6.0}, {"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Mandate yearly emoji updates.",
+          "OutcomeDescription": "The dictionary is never truly finished. Full employment for emojicologists.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 57,
+      "Title": "Napping Champion Defects!",
+      "Category": "Character",
+      "Description": "Your national napping champion, citing 'excessive pressure and pillow regulations,' has defected to a rival nation with a more 'relaxed' napping league.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Denounce the traitorous napper!",
+          "OutcomeDescription": "A national scandal. Pillow sales plummet. Morale is low.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -9.0}, {"Type": "Media", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Wish them well in their naps.",
+          "OutcomeDescription": "A dignified response, but seen as weak by some patriots.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 4.0}, {"Type": "Popularity", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Scout for new napping talent.",
+          "OutcomeDescription": "The search for the next great sleeper begins immediately.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 58,
+      "Title": "The Great Toilet Paper Panic!",
+      "Category": "Crisis",
+      "Description": "A rumor about a toilet paper shortage (again?!) has caused widespread panic buying. Shelves are empty, and citizens are resorting to desperate measures.",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Nationalize toilet paper factories.",
+          "OutcomeDescription": "Supply is controlled, but quality and morale are questionable.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -14.0}, {"Type": "Stability", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote 'alternative paper solutions'.",
+          "OutcomeDescription": "Public is not amused. Old newspapers make a comeback.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -16.0}, {"Type": "Media", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Airdrop single plies of hope.",
+          "OutcomeDescription": "A symbolic gesture that does little to address the TP crisis.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 5.0}, {"Type": "Economic", "Amount": -18.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 59,
+      "Title": "Singing Traffic Lights Malfunction",
+      "Category": "Crisis",
+      "Description": "An experimental upgrade made traffic lights sing opera. They're now stuck on a deafening high C, causing city-wide gridlock and mass headaches.",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Cut power to all traffic lights!",
+          "OutcomeDescription": "Silence, but replaced by traffic anarchy and accidents.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -15.0}, {"Type": "Economic", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue earplugs to all citizens.",
+          "OutcomeDescription": "A temporary fix. Communication becomes shouting.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -10.0}, {"Type": "Economic", "Amount": -8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Hire opera conductor to 'fix' it.",
+          "OutcomeDescription": "The conductor tries to reason with the lights. It's a spectacle.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 12.0}, {"Type": "Stability", "Amount": -18.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 60,
+      "Title": "Pigeon Business Attire Mandate",
+      "Category": "Policy",
+      "Description": "A new proposal suggests all urban pigeons must wear tiny, custom-fitted business suits to 'improve their public image and professionalism'. Tailors are baffled.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Suit up the pigeons!",
+          "OutcomeDescription": "Pigeons look dapper but struggle to fly. Avian fashion takes off.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 2.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 89,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let pigeons be casual.",
+          "OutcomeDescription": "Pigeons continue their unkempt existence. A missed PR opportunity?",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Form pigeon style committee.",
+          "OutcomeDescription": "Debates rage over pinstripes versus solids for pigeon attire.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 61,
+      "Title": "Confused Badger Mascot Plan",
+      "Category": "SocialMedia",
+      "Description": "The tourism board wants a new national mascot: a slightly confused-looking badger. They claim it represents 'inquisitive bewilderment'.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Embrace the bewildered badger!",
+          "OutcomeDescription": "The badger becomes an ironic icon. Tourism slightly increases.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 4.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 90,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Demand a more heroic mascot.",
+          "OutcomeDescription": "The nation opts for a majestic eagle. More conventional, less meme-able.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Hold mascot focus groups.",
+          "OutcomeDescription": "The public is also confused by the badger, but finds it endearing.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 62,
+      "Title": "Tax on Sesquipedalianism",
+      "Category": "Policy",
+      "Description": "A bill proposes a tax on using excessively long words in official meetings to encourage 'clear and concise communication'. Academics are verbose in their opposition.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Implement the Verbosity Levy.",
+          "OutcomeDescription": "Meetings become shorter, or people just use thesauruses more.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 7.0}, {"Type": "Stability", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 91,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Champion grandiloquent speech.",
+          "OutcomeDescription": "Language remains rich and complex. Meetings remain long.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -4.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue a Plain Language Guide.",
+          "OutcomeDescription": "A helpful document that few will read. Tax avoided for now.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 63,
+      "Title": "Holiday for Thinking",
+      "Category": "Legacy",
+      "Description": "Philosophers propose a new national holiday: 'National Think About Thinking Day'. Critics ask if anything will get done. Supporters say that is the point.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Declare a day for deep thoughts!",
+          "OutcomeDescription": "Many naps are taken. Some profound insights are lost by lunchtime.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 70,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Action over contemplation today.",
+          "OutcomeDescription": "The nation remains busy. Philosophers ponder this decision.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Mandate 'thinking caps' for day.",
+          "OutcomeDescription": "A symbolic gesture. Many use it as an excuse for a silly hat.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 64,
+      "Title": "Whale Song Police Sirens",
+      "Category": "Opportunity",
+      "Description": "An eccentric inventor suggests replacing jarring police sirens with soothing whale songs to reduce public stress during emergencies. Police are skeptical.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Implement 'Operation Orca'.",
+          "OutcomeDescription": "Car chases become strangely tranquil. Criminals are confused.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -5.0}, {"Type": "Popularity", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 92,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to traditional sirens.",
+          "OutcomeDescription": "Emergencies remain audibly urgent and somewhat stressful.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pilot whale songs for parking.",
+          "OutcomeDescription": "Parking enforcement becomes a calming, if still unwelcome, experience.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 65,
+      "Title": "Mandatory Laughter Yoga",
+      "Category": "Policy",
+      "Description": "To improve inter-party relations, a bill mandates daily laughter yoga sessions for all parliamentarians. Some find it undignified, others hilarious.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Force the 'Ho Ho Ha Ha Ha'.",
+          "OutcomeDescription": "Parliamentary debates are punctuated by forced giggles. Tension remains.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 3.0}, {"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 71,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Dignified debate is preferred.",
+          "OutcomeDescription": "Parliament remains a place of serious, often mirthless, discussion.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Appoint a 'Minister of Mirth'.",
+          "OutcomeDescription": "A new cabinet post to oversee national cheerfulness. More bureaucracy.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 66,
+      "Title": "Ministry of Silly Walks Grant",
+      "Category": "Character",
+      "Description": "A group has applied for a government grant to establish a 'Ministry of Slightly Silly Walks,' claiming it promotes creativity and exercise. Is this a step too far?",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund the Silly Walks Initiative!",
+          "OutcomeDescription": "Public servants practice goose-steps and backwards skips. Tourism loves it.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote sensible perambulation.",
+          "OutcomeDescription": "Walking remains a straightforward, non-silly activity.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Observe current walking styles.",
+          "OutcomeDescription": "Researchers spend weeks watching people walk. No funding yet.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 67,
+      "Title": "Ban the Color Beige?",
+      "Category": "SocialMedia",
+      "Description": "A viral campaign demands banning the color beige from public life for being 'too boring' and 'soul-crushingly dull'. Interior designers are concerned.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Outlaw the offensive off-white!",
+          "OutcomeDescription": "Government buildings are repainted in neon. Public opinion is vibrant.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 3.0}, {"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Defend the dignity of beige.",
+          "OutcomeDescription": "Beige remains a symbol of quiet neutrality. Campaigners call you bland.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote 'Exciting Taupe'.",
+          "OutcomeDescription": "A compromise color is offered. It is still basically beige.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 68,
+      "Title": "Feline Domination Research",
+      "Category": "Opportunity",
+      "Description": "A fringe group presents 'evidence' that cats are secretly plotting global domination and demands government funding for further research. Paranoia or prescience?",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund 'Project Meow'.",
+          "OutcomeDescription": "Researchers study catnaps and purrs for seditious intent. Cats are uncooperative.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -4.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 72,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Dismiss as feline fantasy.",
+          "OutcomeDescription": "The public is reassured. Cats continue their mysterious ways, unobserved.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}, {"Type": "Popularity", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Appoint a cat as advisor.",
+          "OutcomeDescription": "To gain inside knowledge. The cat mostly sleeps on important documents.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 69,
+      "Title": "Currency Change: Bottle Caps",
+      "Category": "Policy",
+      "Description": "Economists propose replacing the national currency with bottle caps to 'prepare for a post-apocalyptic future' and 'simplify transactions'. Banks are horrified.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Make it rain bottle caps!",
+          "OutcomeDescription": "Economy thrown into chaos. Beverage companies become central banks.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -12.0}, {"Type": "Stability", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 73,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to boring old money.",
+          "OutcomeDescription": "Financial system remains stable. Apocalypse preppers are disappointed.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 8.0}, {"Type": "Popularity", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue commemorative bottle caps.",
+          "OutcomeDescription": "A collector's item. Does not affect actual monetary policy.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 70,
+      "Title": "Post-Thinking Day Confusion",
+      "Category": "Legacy",
+      "Description": "The 'National Think About Thinking Day' has passed. Many citizens report feeling 'existentially bewildered' and less productive than ever. What was the point?",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Declare a 'Day of Simple Tasks'.",
+          "OutcomeDescription": "A practical follow-up. Everyone focuses on very easy jobs.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Publish 'Key Ponderings'.",
+          "OutcomeDescription": "A government report on the nation's collective thoughts. It's vague.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -3.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Quietly remove from calendar.",
+          "OutcomeDescription": "Pretend it never happened. The philosophers will remember.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 71,
+      "Title": "Laughter Yoga International Incident",
+      "Category": "Policy",
+      "Description": "A visiting diplomat mistook a parliamentary laughter yoga session for a mockery of their national dance. Diplomatic relations are now 'hilariously strained'.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Apologize with a straight face.",
+          "OutcomeDescription": "A serious apology is issued. The diplomat remains skeptical.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -7.0}, {"Type": "Media", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Invite them to join the laughter.",
+          "OutcomeDescription": "They either embrace it or storm out, worsening the situation.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -6.0}, {"Type": "Stability", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Blame cultural misunderstanding.",
+          "OutcomeDescription": "A vague explanation. The laughter yoga continues, more subdued.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 72,
+      "Title": "Cats Demand Royalties",
+      "Category": "Opportunity",
+      "Description": "The 'Project Meow' researchers conclude cats are NOT plotting world domination, but ARE aware of their internet fame and demand royalties for meme usage.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Establish Feline IP Rights.",
+          "OutcomeDescription": "A landmark decision. Cats become wealthy. Dogs demand equal rights.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -5.0}, {"Type": "Media", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Rule memes are public domain.",
+          "OutcomeDescription": "Cats are displeased. Expect more hairballs on important papers.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Stability", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Offer cats more tuna stipends.",
+          "OutcomeDescription": "A compromise. Cats are temporarily mollified by fishy treats.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 73,
+      "Title": "Bottle Cap Counterfeiting Ring",
+      "Category": "Policy",
+      "Description": "The new bottle cap currency is popular, but a sophisticated counterfeiting ring using 3D printers is flooding the market with fake caps. Economic chaos looms.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Deploy the 'Cap Task Force'.",
+          "OutcomeDescription": "Elite agents hunt for counterfeiters. It is surprisingly dangerous.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -8.0}, {"Type": "Economic", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Introduce 'CryptoCaps'.",
+          "OutcomeDescription": "A new, secure digital bottle cap. Even more confusing.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -10.0}, {"Type": "Media", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Recall all suspicious caps.",
+          "OutcomeDescription": "Panic ensues as citizens try to determine cap authenticity.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -7.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 74,
+      "Title": "National Slogan Contest",
+      "Category": "SocialMedia",
+      "Description": "A contest to find a new national slogan is overrun by ironic and silly submissions. The current frontrunner is 'We are mostly harmless'.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Embrace 'Mostly Harmless'.",
+          "OutcomeDescription": "The nation adopts a self-deprecating slogan. Tourists are amused.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Insist on a 'serious' slogan.",
+          "OutcomeDescription": "A committee picks a boring slogan. Public prefers the joke one.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -2.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Extend slogan submission time.",
+          "OutcomeDescription": "More silly slogans flood in. The problem gets worse.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 75,
+      "Title": "Universal Basic Compliments",
+      "Category": "Policy",
+      "Description": "To boost self-esteem, a proposal for 'Universal Basic Compliments' – citizens receive a daily government-issued compliment via text. Psychologists are intrigued.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Launch the Compliment Engine!",
+          "OutcomeDescription": "Citizens receive gems like 'Your hair looks adequate today!'. Mixed results.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 3.0}, {"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let self-esteem be personal.",
+          "OutcomeDescription": "No state-sponsored flattery. Citizens must find their own validation.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Research optimal compliments.",
+          "OutcomeDescription": "Taxpayer money spent determining if 'nice shoes' is too generic.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 76,
+      "Title": "Replace History with Musicals",
+      "Category": "Legacy",
+      "Description": "A radical education reform: teach all national history exclusively through interpretive song and dance musical numbers. Historians are aghast, choreographers thrilled.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Strike up the History Jazz Hands!",
+          "OutcomeDescription": "Students learn history via catchy tunes. Accuracy is... variable.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 7.0}, {"Type": "Stability", "Amount": -8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stick to boring textbooks.",
+          "OutcomeDescription": "History remains fact-based and less prone to spontaneous dance breaks.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 6.0}, {"Type": "Popularity", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pilot a 'Historical Ballet'.",
+          "OutcomeDescription": "One key historical event is re-enacted through ballet. It is very long.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 77,
+      "Title": "Gnome Garden Conspiracy",
+      "Category": "Character",
+      "Description": "Anonymous sources claim your prized collection of garden gnomes is actually a sophisticated communication network for an international spy ring. Preposterous!",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Laugh off the gnome-sense.",
+          "OutcomeDescription": "The public finds it amusing. The gnomes remain silent, watchful.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Publicly smash a gnome.",
+          "OutcomeDescription": "To prove innocence. Gnome enthusiasts are outraged. It proves nothing.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -4.0}, {"Type": "Popularity", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Investigate gnome origins.",
+          "OutcomeDescription": "Your staff now spend time researching ceramic figurines.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 78,
+      "Title": "Talk to Animals Institute",
+      "Category": "Opportunity",
+      "Description": "A charismatic scientist claims to have invented a device that allows humans to talk to animals, and seeks funding for a national institute. Could this be real?",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Fund the Dolittle Device!",
+          "OutcomeDescription": "First conversations reveal squirrels mostly want nuts. Still, a breakthrough!",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -7.0}, {"Type": "Media", "Amount": 6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "This is clearly barking mad.",
+          "OutcomeDescription": "A potential revolution in interspecies communication is dismissed.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 4.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Test device on your pet.",
+          "OutcomeDescription": "Your pet either reveals deep secrets or just asks for food.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 79,
+      "Title": "Mandatory Public Napping Zones",
+      "Category": "Policy",
+      "Description": "Following the success of the (now disgraced) Napping League, a proposal for mandatory public napping zones in all city parks. Siesta for everyone!",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Establish Nap Zones Now!",
+          "OutcomeDescription": "Parks become quieter. Some concern over public snoring levels.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Parks are for active recreation.",
+          "OutcomeDescription": "Nappers must remain discreet. Joggers rejoice.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Pilot 'Quiet Contemplation Areas'.",
+          "OutcomeDescription": "A euphemism for napping zones. People see through it.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 80,
+      "Title": "Official State Constellation",
+      "Category": "Legacy",
+      "Description": "Astronomers propose naming an official 'State Constellation'. Options include 'The Great Bureaucrat' and 'The Questionable Expense'. A celestial honor awaits.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Canonize 'The Glorious Stapler'.",
+          "OutcomeDescription": "A new constellation for future generations to ignore.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 3.0}, {"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "The night sky needs no additions.",
+          "OutcomeDescription": "Existing constellations remain sufficient. Astronomers grumble.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let public vote on constellation.",
+          "OutcomeDescription": "Internet polls suggest 'The Eternal Traffic Jam' is a strong contender.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 81,
+      "Title": "Guerilla Gardening Movement",
+      "Category": "SocialMedia",
+      "Description": "Activists are 'guerilla gardening' – planting flowers and vegetables in neglected public spaces. It's beautification, but also technically vandalism.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Secretly support the green thumbs.",
+          "OutcomeDescription": "The city becomes more vibrant. Some question the legality.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 2.0}, {"Type": "Stability", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Crack down on plant perpetrators.",
+          "OutcomeDescription": "Unpopular move. Makes for bad PR with flower-lovers.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Launch official 'Adopt-A-Plot'.",
+          "OutcomeDescription": "Channels the enthusiasm into a structured, bureaucratic program.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 82,
+      "Title": "AI Writes Your Speeches",
+      "Category": "Character",
+      "Description": "Your overworked speechwriter has started using an AI to generate your speeches. They are grammatically perfect but occasionally suggest world domination.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Let the AI cook. What could go wrong?",
+          "OutcomeDescription": "Speeches become unpredictable, occasionally brilliant, often terrifying.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 4.0}, {"Type": "Stability", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Demand human-written speeches.",
+          "OutcomeDescription": "Speeches return to their usual, safe mediocrity. AI is sad.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Approve AI drafts carefully.",
+          "OutcomeDescription": "Requires more of your time, but filters out the evil plots.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 83,
+      "Title": "National Treasure Hunt Plan",
+      "Category": "Opportunity",
+      "Description": "To boost tourism and morale, the government plans a nationwide treasure hunt with cryptic clues hidden in historical landmarks. What could the prize be?",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Launch the Great National Quest!",
+          "OutcomeDescription": "Mass public participation. Prize is 'bragging rights' and a small plaque.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 8.0}, {"Type": "Economic", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Too frivolous, cancel the hunt.",
+          "OutcomeDescription": "A missed opportunity for fun. Treasure remains unfound.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 3.0}, {"Type": "Popularity", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Outsource hunt to a corporation.",
+          "OutcomeDescription": "The prize becomes a lifetime supply of their product. Less romantic.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 97
+    },
+    {
+      "CardID": 84,
+      "Title": "Cloud Seeding for Fun Shapes",
+      "Category": "Policy",
+      "Description": "Scientists claim they can make clouds form specific fun shapes (like kittens or ice cream cones) using advanced cloud seeding. Environmentalists are skeptical.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Make it rain kitty-shaped clouds!",
+          "OutcomeDescription": "The skies become whimsical. Unforeseen meteorological side effects.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 5.0}, {"Type": "Stability", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Let clouds be naturally shapeless.",
+          "OutcomeDescription": "The sky remains a canvas of random beauty. Less chance of ice cream rain.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Fund further cloud art research.",
+          "OutcomeDescription": "More studies on the aerodynamics of cirrus kittens.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 85,
+      "Title": "Your Doppelganger Commits Crimes",
+      "Category": "Character",
+      "Description": "Someone who looks exactly like you is committing minor, embarrassing crimes (like stealing garden gnomes). The media is having a field day with this.",
+      "Urgency": "High",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Issue an All-Points Bulletin!",
+          "OutcomeDescription": "A manhunt for your misbehaving twin. Public is captivated.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 4.0}, {"Type": "Stability", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Insist it is a conspiracy.",
+          "OutcomeDescription": "Few believe you. The doppelganger continues their petty crime spree.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -8.0}, {"Type": "Stability", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Change your hairstyle drastically.",
+          "OutcomeDescription": "A temporary fix. The doppelganger might get a new haircut too.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 99
+    },
+    {
+      "CardID": 86,
+      "Title": "Rename Stars After Bureaucrats",
+      "Category": "Legacy",
+      "Description": "A proposal to honor hardworking civil servants by renaming distant stars after them. For example, 'Delta Pavonis' becomes 'Brenda from Accounting Star'.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Immortalize Brenda in the cosmos!",
+          "OutcomeDescription": "Bureaucrats are thrilled. Astronomers are not. The stars don't care.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Stability", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Stars should keep old names.",
+          "OutcomeDescription": "Tradition upheld. Brenda remains un-starred, but still efficient.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Name newly discovered asteroids.",
+          "OutcomeDescription": "A compromise. Smaller celestial bodies for smaller bureaucratic roles.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 87,
+      "Title": "Underground Rave in Parliament Cellars",
+      "Category": "SocialMedia",
+      "Description": "Security footage reveals a massive, unauthorized underground rave took place in the historic parliament cellars last night. Glow sticks were found.",
+      "Urgency": "Medium",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Denounce the unauthorized party.",
+          "OutcomeDescription": "A stern message is sent. The public wonders who organized it.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 2.0}, {"Type": "Media", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Claim it was 'stress relief drill'.",
+          "OutcomeDescription": "Nobody believes this. The playlist was apparently excellent.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -5.0}, {"Type": "Media", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Increase cellar security quietly.",
+          "OutcomeDescription": "The party is over, but the legend of the rave will live on.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": 98
+    },
+    {
+      "CardID": 88,
+      "Title": "National Debate: Spork vs Foon",
+      "Category": "Opportunity",
+      "Description": "A heated national debate erupts over the superior hybrid utensil: the Spork or the Foon. The cutlery industry is on edge. This is your moment to lead.",
+      "Urgency": "Low",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Declare allegiance to Team Spork!",
+          "OutcomeDescription": "Spork loyalists rejoice! Foon proponents feel betrayed. Soup season is tense.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Stability", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Champion the mighty Foon!",
+          "OutcomeDescription": "Foon enthusiasts celebrate! Spork users call for a recount.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 1.0}, {"Type": "Stability", "Amount": -1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Promote utensil unity for all.",
+          "OutcomeDescription": "A call for peace between Spork and Foon factions. Unlikely to work.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 0.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 89,
+      "Title": "Pigeon Suit Union Demands",
+      "Category": "Policy",
+      "Description": "The newly unionized, suit-wearing pigeons are now demanding better quality silk lining for their tiny suits and longer lunch breaks (for pecking).",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Negotiate with Pigeon Union Rep.",
+          "OutcomeDescription": "A tense negotiation. Pigeons get polyester blend, slightly shorter breaks.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 93,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Replace pigeons with robins.",
+          "OutcomeDescription": "Robins are less demanding but struggle with the tiny briefcases.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -4.0}, {"Type": "Media", "Amount": 2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Offer more breadcrumb bonuses.",
+          "OutcomeDescription": "A temporary appeasement. The suit quality issue remains.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -1.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 90,
+      "Title": "Badger Mascot International Gaffe",
+      "Category": "SocialMedia",
+      "Description": "The 'Confused Badger' mascot accidentally wandered into a live international summit broadcast, looking bewildered. It is now a global meme for political confusion.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Lean into the 'Confused Statesman' meme.",
+          "OutcomeDescription": "Your nation becomes ironically famous for diplomatic bewilderment.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 5.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 94,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue formal apology for badger.",
+          "OutcomeDescription": "The world chuckles. The badger remains blissfully unaware.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -4.0}, {"Type": "Stability", "Amount": 1.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Give badger 'media training'.",
+          "OutcomeDescription": "The badger is taught to look thoughtfully confused, not erratically so.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 91,
+      "Title": "Verbosity Tax Evasion Scandal",
+      "Category": "Policy",
+      "Description": "High-ranking officials are caught using complex code words and synonyms to evade the 'Tax on Sesquipedalianism'. Public trust in simple speech plummets.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Prosecute the polysyllabic perpetrators!",
+          "OutcomeDescription": "A show trial ensues. The defendants use very long words in their defense.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -7.0}, {"Type": "Media", "Amount": 4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 95,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Repeal the unpopular tax.",
+          "OutcomeDescription": "Linguists rejoice. Government speeches become incomprehensible again.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -5.0}, {"Type": "Popularity", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Introduce 'Simplicity Subsidies'.",
+          "OutcomeDescription": "Reward officials for using short words. They still find loopholes.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 92,
+      "Title": "Whale Songs Attract Actual Whales",
+      "Category": "Opportunity",
+      "Description": "The whale song police sirens have had an unintended effect: pods of curious whales are now congregating in the city harbor, disrupting shipping.",
+      "Urgency": "Medium",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Establish Urban Whale Watching Tours!",
+          "OutcomeDescription": "A new tourism boom! Shipping companies are furious. Whales are majestic.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 6.0}, {"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": 96,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Revert to normal sirens immediately.",
+          "OutcomeDescription": "Whales are disappointed and swim away. Harbor traffic resumes.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 4.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Research whale-repellent music.",
+          "OutcomeDescription": "Scientists try to find music whales dislike. Perhaps country?",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -2.5}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 93,
+      "Title": "Pigeon Suit Sabotage!",
+      "Category": "Legacy",
+      "Description": "Rival bird factions (sparrows, mostly) are sabotaging the pigeons' tiny business suits, leading to wardrobe malfunctions at important pigeon press conferences.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Deploy Pigeon Secret Service.",
+          "OutcomeDescription": "Tiny earpieces and sunglasses. Protects pigeon dignity, escalates bird tensions.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -6.0}, {"Type": "Economic", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Host Inter-Bird Peace Summit.",
+          "OutcomeDescription": "Difficult negotiations. Sparrows demand equal suit representation.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 5.0}, {"Type": "Popularity", "Amount": -2.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue reinforced pigeon suits.",
+          "OutcomeDescription": "More durable, but less breathable. Pigeons complain of chafing.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 94,
+      "Title": "Badger Mascot for UN Secretary?",
+      "Category": "SocialMedia",
+      "Description": "The 'Confused Badger' meme is so globally popular that a satirical campaign nominates it for UN Secretary General. Some nations are actually considering it.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Endorse the Badger's UN Bid!",
+          "OutcomeDescription": "International politics becomes delightfully absurd. Badger is still confused.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 10.0}, {"Type": "Stability", "Amount": -8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Politely withdraw badger's name.",
+          "OutcomeDescription": "A sensible move. The world sighs, a little disappointed.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -5.0}, {"Type": "Stability", "Amount": 3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Badger needs foreign policy advisor.",
+          "OutcomeDescription": "A team is assembled to interpret badger's grunts into policy.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 95,
+      "Title": "Simplified Language Act of Year XXXX",
+      "Category": "Legacy",
+      "Description": "After the Verbosity Tax fiasco, your government passes the 'Simplified Language Act', mandating all official documents use words of one syllable only. It is hard.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Speak plain. All good now.",
+          "OutcomeDescription": "Laws are short. Much is lost. Brains hurt less. Or more?",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": 4.0}, {"Type": "Media", "Amount": -6.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "This law is bad. Stop this law.",
+          "OutcomeDescription": "A public outcry in very short words. The act is re-thought.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 5.0}, {"Type": "Stability", "Amount": -3.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Teach all how to speak new way.",
+          "OutcomeDescription": "Big class. Much time. All learn. Slow. So slow.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -7.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 96,
+      "Title": "Whale Conservation Empire",
+      "Category": "Opportunity",
+      "Description": "The urban whale watching is a massive success! Your nation is now a global leader in whale tourism and conservation, attracting marine biologists and tourists alike.",
+      "Urgency": "High",
+      "IsConsequence": true,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Build underwater whale hotels!",
+          "OutcomeDescription": "A bold new frontier in tourism. Very expensive. Whales are curious.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -10.0}, {"Type": "Popularity", "Amount": 8.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Focus on scientific research grants.",
+          "OutcomeDescription": "Major breakthroughs in cetacean studies. Less flashy, more substance.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 3.0}, {"Type": "Economic", "Amount": -5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Expand whale song siren program.",
+          "OutcomeDescription": "Attempt to attract more species with different musical genres.",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -4.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": true
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 97,
+      "Title": "National Existential Crisis Day!",
+      "Category": "Crisis",
+      "Description": "Following a series of bizarre government decisions, the entire nation has collectively declared an 'Existential Crisis Day'. Productivity is zero, philosophy majors are thriving.",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Address nation with comforting lies.",
+          "OutcomeDescription": "Some are reassured, others see through it. Crisis deepens for some.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -12.0}, {"Type": "Stability", "Amount": -10.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Mandate group hugs and puppies.",
+          "OutcomeDescription": "A temporary mood lift. Puppies are overwhelmed but helpful.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 5.0}, {"Type": "Economic", "Amount": -15.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Declare a 'Day of Distraction'.",
+          "OutcomeDescription": "Massive public festivals and free ice cream. Avoids the issue entirely.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": 10.0}, {"Type": "Stability", "Amount": -20.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 98,
+      "Title": "Slightly Used Asteroid Approaching!",
+      "Category": "Crisis",
+      "Description": "Astronomers report a medium-sized, 'slightly used' asteroid (covered in graffiti) is on a collision course. Evacuation is impossible, panic is mandatory.",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Assemble team of oil drillers.",
+          "OutcomeDescription": "A cliché plan, but it might just work. Or not. Very dramatic.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -18.0}, {"Type": "Media", "Amount": 15.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Deny asteroid's existence loudly.",
+          "OutcomeDescription": "Public remains uninformed and doomed. A bold, idiotic strategy.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -20.0}, {"Type": "Stability", "Amount": -15.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Paint a giant target on desert.",
+          "OutcomeDescription": "Hoping the asteroid has a sense of humor or good aim.",
+          "ResourceRequirements": [{"Type": "Media", "Amount": 10.0}, {"Type": "Economic", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    },
+    {
+      "CardID": 99,
+      "Title": "Gravity Inverted Locally!",
+      "Category": "Crisis",
+      "Description": "A mishap at the experimental physics lab has inverted gravity in a five-block radius. People, cars, and pets are now stuck to the sky. Utter chaos!",
+      "Urgency": "Immediate",
+      "IsConsequence": false,
+      "MultipleChoiceOptions": [
+        {
+          "OptionText": "Deploy giant nets and magnets.",
+          "OutcomeDescription": "A desperate attempt to retrieve citizens. Many things get tangled.",
+          "ResourceRequirements": [{"Type": "Economic", "Amount": -16.0}, {"Type": "Stability", "Amount": -14.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Issue tiny parachutes to victims.",
+          "OutcomeDescription": "Airdropping parachutes is tricky when 'up' is 'down' for them.",
+          "ResourceRequirements": [{"Type": "Popularity", "Amount": -10.0}, {"Type": "Media", "Amount": 5.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        },
+        {
+          "OptionText": "Try to reverse the polarity again.",
+          "OutcomeDescription": "Could fix it, or make everyone float sideways. High risk!",
+          "ResourceRequirements": [{"Type": "Stability", "Amount": -19.0}, {"Type": "Economic", "Amount": -12.0}],
+          "StakeholdersAffected": [],
+          "ConsequenceCardID": -1,
+          "IsDelayOption": false
+        }
+      ],
+      "CrisisCardID": -1
+    }
+  ]
+}

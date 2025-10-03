@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_30
+  m_EditorClassIdentifier: 
+  CardID: 30
+  Title: Mandatory Mindfulness Minutes
+  Category: 0
+  Description: A new bill mandates 5 minutes of mindfulness meditation at the start
+    of every workday nationwide. Productivity experts are divided, zen masters rejoice.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 0
+  IsConsequence: 0
+  MultipleChoiceOptions:
+  - OptionText: Enforce 'Ohm' at the office.
+    OutcomeDescription: Nation becomes slightly calmer, or just better at napping
+      at desks.
+    ResourceRequirements:
+    - Type: 1
+      Amount: 2
+      Percent: 0
+    - Type: 0
+      Amount: 1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: 52
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Let people find their own zen.
+    OutcomeDescription: Workers continue as before, some more stressed than others.
+    ResourceRequirements:
+    - Type: 0
+      Amount: -1
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 2
+  - OptionText: Suggest a calming soundtrack.
+    OutcomeDescription: A less intrusive measure, likely ignored by most.
+    ResourceRequirements:
+    - Type: 3
+      Amount: -0.5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: 9ac0429c57fd93e4a896a101e7244fb3, type: 2}
+  - {fileID: 11400000, guid: 2601eb76f344dcd41b906b81855e3f11, type: 2}
+  - {fileID: 11400000, guid: adfca38c6cbd2fb4e874dd079b300d84, type: 2}
+  - {fileID: 11400000, guid: ce4b5c631eb6c094885d2b367351ef5a, type: 2}
+  - {fileID: 11400000, guid: 7275cc424dea28945b4ec86d5fd00714, type: 2}
+  - {fileID: 11400000, guid: e58dd94005b3a8c4d97fabd756e34f01, type: 2}
+  - {fileID: 11400000, guid: 9b893af52e70ba841ad99944f5ec24bd, type: 2}
+  - {fileID: 11400000, guid: 8204247754155cb43aa3ae11e5377df6, type: 2}
+  - {fileID: 11400000, guid: fda459d09e557514fa300165b4c0d013, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: 58

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aceb004ba0c96b4989cc9cc8dcd7efa, type: 3}
+  m_Name: DecisionCard_25
+  m_EditorClassIdentifier: 
+  CardID: 25
+  Title: The Great Butter Bailout
+  Category: 5
+  Description: Your butter subsidies stabilized prices but created a 'Big Butter'
+    lobby. Your political legacy is now irrevocably tied to dairy economics.
+  CardSprite: {fileID: 0}
+  StakeholderInformation: []
+  Urgency: 2
+  IsConsequence: 1
+  MultipleChoiceOptions:
+  - OptionText: Embrace 'Leader of Lactose' title.
+    OutcomeDescription: Dairy states absolutely love you. Arteries, less so.
+    ResourceRequirements:
+    - Type: 0
+      Amount: 8
+      Percent: 0
+    - Type: 3
+      Amount: -5
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 0
+  - OptionText: Slowly roll back the subsidies.
+    OutcomeDescription: Lobbyists get angry, economists cautiously nod in approval.
+    ResourceRequirements:
+    - Type: 1
+      Amount: -7
+      Percent: 0
+    - Type: 3
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 0
+    ReactionType: 1
+  - OptionText: Commission a flattering biography.
+    OutcomeDescription: Ensure your side of this buttery story is elegantly told.
+    ResourceRequirements:
+    - Type: 2
+      Amount: 3
+      Percent: 0
+    StakeholderReactions: []
+    StakeholdersAffected: 
+    ConsequenceCardID: -1
+    IsDelayOption: 1
+    ReactionType: 2
+  MediaReactions:
+  - {fileID: 11400000, guid: efcb854d27a8e224d8a0710076d71776, type: 2}
+  - {fileID: 11400000, guid: c7cad1bdb38ca9c4b8d0002baa47bead, type: 2}
+  - {fileID: 11400000, guid: 5d25df8cfa2076640976591f1570062d, type: 2}
+  - {fileID: 11400000, guid: a08d340590a284447a3d1f771395b1e1, type: 2}
+  - {fileID: 11400000, guid: a117cf234d4813d4eb3732bd6f032704, type: 2}
+  - {fileID: 11400000, guid: c033701ecb3844f419896f8d29049065, type: 2}
+  - {fileID: 11400000, guid: 3a4c427e9f8621c46a4296d73a40544c, type: 2}
+  - {fileID: 11400000, guid: d276902c4eab8a34da46975ae1bc2c3c, type: 2}
+  - {fileID: 11400000, guid: c86d38d53f1ebfd4a8ce6cb1fdd73a92, type: 2}
+  AllowCustomResponseCrafting: 0
+  AvailableResponseElements: 
+  TimeLimitSeconds: 0
+  TimingAffectsOutcome: 0
+  CanDelegate: 0
+  DelegateTargetID: 
+  InfoGatheringCost: []
+  AdditionalInfo: 
+  CanConsult: 0
+  ConsultationTargets: []
+  CanDefer: 0
+  DeferredConsequenceCardID: 
+  CrisisCardID: -1
