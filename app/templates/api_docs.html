@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Disorder - API Documentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .api-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .endpoint {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+            margin-right: 10px;
+        }
+        .get { background: #28a745; }
+        .post { background: #007bff; }
+        .put { background: #ffc107; color: #333; }
+        .delete { background: #dc3545; }
+        .code-block {
+            background: #2d3748;
+            color: #f7fafc;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .test-form {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .test-form input, .test-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .test-form button {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .test-form button:hover {
+            background: #5568d3;
+        }
+        .response {
+            background: #1a202c;
+            color: #48bb78;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Executive Disorder API</h1>
+            <p class="subtitle">Backend API Documentation</p>
+        </header>
+
+        <main>
+            <section class="api-section">
+                <h2>🔐 Authentication Endpoints</h2>
+                
+                <div class="endpoint">
+                    <span class="method post">POST</span>
+                    <code>/api/auth/register</code>
+                    <p>Register a new user</p>
+                    <div class="code-block">
+{
+  "username": "player123",
+  "email": "player@example.com",
+  "password": "password123"
+}</div>
+                    <div class="test-form">
+                        <h4>Test Registration</h4>
+                        <input type="text" id="reg-username" placeholder="Username">
+                        <input type="email" id="reg-email" placeholder="Email">
+                        <input type="password" id="reg-password" placeholder="Password">
+                        <button onclick="testRegister()">Register</button>
+                        <div id="reg-response" class="response" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="endpoint">
+                    <span class="method post">POST</span>
+                    <code>/api/auth/login</code>
+                    <p>Login with username and password</p>
+                    <div class="code-block">
+{
+  "username": "player123",
+  "password": "password123"
+}</div>
+                    <div class="test-form">
+                        <h4>Test Login</h4>
+                        <input type="text" id="login-username" placeholder="Username">
+                        <input type="password" id="login-password" placeholder="Password">
+                        <button onclick="testLogin()">Login</button>
+                        <div id="login-response" class="response" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="endpoint">
+                    <span class="method get">GET</span>
+                    <code>/api/auth/check</code>
+                    <p>Check if user is authenticated</p>
+                    <button onclick="testAuthCheck()">Check Auth Status</button>
+                    <div id="check-response" class="response" style="display:none;"></div>
+                </div>
+
+                <div class="endpoint">
+                    <span class="method post">POST</span>
+                    <code>/api/auth/logout</code>
+                    <p>Logout current user</p>
+                    <button onclick="testLogout()">Logout</button>
+                    <div id="logout-response" class="response" style="display:none;"></div>
+                </div>
+            </section>
+
+            <section class="api-section">
+                <h2>💾 Game Save Endpoints</h2>
+                
+                <div class="endpoint">
+                    <span class="method post">POST</span>
+                    <code>/api/game/save</code>
+                    <p>Save game progress (requires authentication)</p>
+                    <div class="code-block">
+{
+  "character_name": "President Smith",
+  "save_data": {
+    "level": 5,
+    "current_scenario": "economy_crisis"
+  },
+  "resources": {
+    "popularity": 75,
+    "stability": 60,
+    "media": 80,
+    "economic": 55
+  },
+  "decisions_count": 12
+}</div>
+                    <div class="test-form">
+                        <h4>Test Save Game</h4>
+                        <input type="text" id="save-character" placeholder="Character Name">
+                        <textarea id="save-data" rows="4" placeholder='Save Data (JSON)'></textarea>
+                        <button onclick="testSaveGame()">Save Game</button>
+                        <div id="save-response" class="response" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="endpoint">
+                    <span class="method get">GET</span>
+                    <code>/api/game/saves</code>
+                    <p>Get all saves for current user</p>
+                    <button onclick="testGetSaves()">Get My Saves</button>
+                    <div id="saves-response" class="response" style="display:none;"></div>
+                </div>
+
+                <div class="endpoint">
+                    <span class="method get">GET</span>
+                    <code>/api/game/stats</code>
+                    <p>Get game statistics</p>
+                    <button onclick="testGetStats()">Get Stats</button>
+                    <div id="stats-response" class="response" style="display:none;"></div>
+                </div>
+            </section>
+
+            <section class="api-section">
+                <h2>🔗 Integration with Unity</h2>
+                <p>To integrate these APIs with your Unity WebGL game:</p>
+                <div class="code-block">
+// Unity C# example using UnityWebRequest
+using UnityEngine.Networking;
+using System.Collections;
+
+IEnumerator Register(string username, string email, string password) {
+    var data = new {
+        username = username,
+        email = email,
+        password = password
+    };
+    
+    string json = JsonUtility.ToJson(data);
+    
+    using (UnityWebRequest request = UnityWebRequest.Post(
+        "/api/auth/register", json, "application/json")) {
+        
+        yield return request.SendWebRequest();
+        
+        if (request.result == UnityWebRequest.Result.Success) {
+            Debug.Log("Registration successful: " + request.downloadHandler.text);
+        }
+    }
+}</div>
+            </section>
+
+            <section class="info-card links">
+                <h2>🔗 Quick Links</h2>
+                <div class="link-buttons">
+                    <a href="/" class="btn">Play Game</a>
+                    <a href="/docs" class="btn">Documentation</a>
+                    <a href="/health" class="btn">Health Check</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Executive Disorder Game API</p>
+            <p>Built with Flask + PostgreSQL</p>
+        </footer>
+    </div>
+
+    <script>
+        async function apiCall(method, url, data = null) {
+            const options = {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include'
+            };
+            
+            if (data) {
+                options.body = JSON.stringify(data);
+            }
+            
+            const response = await fetch(url, options);
+            return await response.json();
+        }
+
+        async function testRegister() {
+            const username = document.getElementById('reg-username').value;
+            const email = document.getElementById('reg-email').value;
+            const password = document.getElementById('reg-password').value;
+            
+            const result = await apiCall('POST', '/api/auth/register', {username, email, password});
+            document.getElementById('reg-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('reg-response').style.display = 'block';
+        }
+
+        async function testLogin() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            
+            const result = await apiCall('POST', '/api/auth/login', {username, password});
+            document.getElementById('login-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('login-response').style.display = 'block';
+        }
+
+        async function testAuthCheck() {
+            const result = await apiCall('GET', '/api/auth/check');
+            document.getElementById('check-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('check-response').style.display = 'block';
+        }
+
+        async function testLogout() {
+            const result = await apiCall('POST', '/api/auth/logout');
+            document.getElementById('logout-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('logout-response').style.display = 'block';
+        }
+
+        async function testSaveGame() {
+            const character = document.getElementById('save-character').value;
+            const saveData = document.getElementById('save-data').value;
+            
+            const result = await apiCall('POST', '/api/game/save', {
+                character_name: character,
+                save_data: JSON.parse(saveData || '{}'),
+                resources: {popularity: 75, stability: 60, media: 80, economic: 55},
+                decisions_count: 12
+            });
+            document.getElementById('save-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('save-response').style.display = 'block';
+        }
+
+        async function testGetSaves() {
+            const result = await apiCall('GET', '/api/game/saves');
+            document.getElementById('saves-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('saves-response').style.display = 'block';
+        }
+
+        async function testGetStats() {
+            const result = await apiCall('GET', '/api/game/stats');
+            document.getElementById('stats-response').textContent = JSON.stringify(result, null, 2);
+            document.getElementById('stats-response').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
