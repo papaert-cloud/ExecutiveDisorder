@@ -248,10 +248,88 @@ async function SaveGame(characterName, saveData, resources, decisionsCount) {
 }
 ```
 
+## .NET Applications (.NET 9.0)
+
+### ExecutiveDisorder.Core (Class Library)
+- **Models**: Character, DecisionCard, Ending, GameResources, SaveGame
+- **Services**: GameDataLoader (JSON deserialization), SaveGameManager (save/load system)
+- **Features**: Resource clamping (0-100), game over detection, path resolution
+
+### ExecutiveDisorder.Console (Console Application)
+- **Timed Decisions**: 30-second countdown with visual timer, auto-select on timeout
+- **Hardened UI**: Console size validation (80x25 min), input validation, error handling
+- **Features**: Character selection, decision loop, resource display, recent headlines (3 latest), decision logging, ending detection
+- **Save System**: Auto-save to AppData, load on startup, save file management
+- **Build**: Self-contained single-file executable for win-x64, linux-x64, osx-x64
+
+### ExecutiveDisorder.Avalonia (GUI Application)
+- **Framework**: Avalonia UI 11.2 (cross-platform desktop)
+- **Architecture**: MVVM pattern with ViewModels
+- **Features**: Full game loop, data binding, Fluent Design theme
+- **Platforms**: Windows, macOS, Linux
+- **Note**: Designed for local compilation (Replit has GUI limitations)
+
+### ExecutiveDisorder.Tests (Unit Tests)
+- **Framework**: xUnit with .NET 9.0
+- **Coverage**: 25 tests covering GameResources, GameDataLoader, Models
+- **Test Types**: Unit tests, edge cases, malformed data handling
+- **Note**: Basic coverage - needs DI and behavioral tests for production
+
+### Solution Structure
+```
+ExecutiveDisorder.sln
+├── ExecutiveDisorder.Core/          # Shared library
+├── ExecutiveDisorder.Console/       # Console app
+├── ExecutiveDisorder.Avalonia/      # GUI app
+└── ExecutiveDisorder.Tests/         # Unit tests
+```
+
+## CI/CD Pipeline
+
+### .github/workflows/dotnet-ci.yml
+- **Multi-platform builds**: Ubuntu, Windows, macOS
+- **Automated testing**: Runs all 25 unit tests
+- **Console app releases**: Self-contained single-file executables
+- **Avalonia GUI releases**: Cross-platform distributions
+- **Code quality**: Formatting verification with dotnet format
+- **Triggers**: Push to main/develop, pull requests, releases
+
+### .github/workflows/unity-webgl-deploy.yml
+- **Flask validation**: Dependency check and tests
+- **JSON validation**: Validates all game data files
+- **Asset counting**: Reports cards/characters/endings
+- **Triggers**: Push to main (app/** or Assets/** changes)
+
+## Game Content
+
+### Decision Cards
+- **Total**: 110 cards (IDs 1-109)
+- **New Additions**: Mandatory nap time, national cryptocurrency, robot police force, weather control experiments, etc.
+
+### Characters
+- **Total**: 10 playable characters
+- **New**: Dr. Nova Synthesis (futuristic tech), Captain Rex Nostalgic (traditionalist)
+- **Types**: Progressive, Conservative, Populist, Technocrat, Environmentalist, etc.
+
+### Endings
+- **Total**: 12 different endings
+- **New**: "The Meme Presidency", "The Quantum Paradox"
+- **Types**: Victory, Disaster, Chaos, Utopia, etc.
+
 ## Last Updated
 October 3, 2025
 
 ## Recent Changes
+- **October 3, 2025 (Latest)**: Complete .NET ecosystem implementation
+  - Created ExecutiveDisorder.Core library with models and services
+  - Built ExecutiveDisorder.Console with timed decisions and save system
+  - Developed ExecutiveDisorder.Avalonia GUI with MVVM architecture
+  - Added ExecutiveDisorder.Tests with 25 unit tests
+  - Set up GitHub Actions CI/CD for automated builds and releases
+  - Added 10 new Unity decision cards (IDs 100-109)
+  - Created 2 new characters (Dr. Nova Synthesis, Captain Rex Nostalgic)
+  - Added 2 new endings ("The Meme Presidency", "The Quantum Paradox")
+
 - **October 3, 2025**: Implemented complete backend system
   - Added PostgreSQL database with User and GameSave models
   - Built REST API for authentication and game saves

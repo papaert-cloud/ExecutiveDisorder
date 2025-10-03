@@ -1,0 +1,25 @@
+# Code Owners for Executive Disorder
+
+# .NET Projects
+*.cs @papaert-cloud
+*.csproj @papaert-cloud
+ExecutiveDisorder.Core/ @papaert-cloud
+ExecutiveDisorder.Console/ @papaert-cloud
+ExecutiveDisorder.Avalonia/ @papaert-cloud
+ExecutiveDisorder.Tests/ @papaert-cloud
+
+# Unity Project
+Assets/ @papaert-cloud
+ProjectSettings/ @papaert-cloud
+Packages/ @papaert-cloud
+
+# Flask Backend
+app/ @papaert-cloud
+*.py @papaert-cloud
+
+# CI/CD
+.github/ @papaert-cloud
+
+# Documentation
+*.md @papaert-cloud
+docs/ @papaert-cloud

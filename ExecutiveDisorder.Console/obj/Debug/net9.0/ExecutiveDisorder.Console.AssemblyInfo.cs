@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExecutiveDisorder.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f575b4473590e63f80fc28b359618334a22ff371")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb824704be2ac9834c9f70fd03a01bf7e4866fc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExecutiveDisorder.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExecutiveDisorder.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

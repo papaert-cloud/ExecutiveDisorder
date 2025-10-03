@@ -8,6 +8,7 @@ class Program
     private static GameResources? resources;
     private static List<string> decisionLog = new();
     private static List<string> mediaHeadlines = new();
+    private static List<int> usedCardIds = new();
     private const int DecisionTimeLimit = 30; // seconds
 
     static void Main(string[] args)
