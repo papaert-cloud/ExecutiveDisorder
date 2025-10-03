@@ -11,7 +11,7 @@
       "InitialEconomic": 65
     },
     {
-      "CharacterName": "Jimmy “The Voice” Blaze",
+      "CharacterName": "Jimmy \u201cThe Voice\u201d Blaze",
       "GovernTitle": "People's Echo",
       "PartyAffiliation": "The Loud Majority",
       "CampaignSlogan": "I'm just saying what you're screaming.",
@@ -79,7 +79,26 @@
       "InitialStability": 50,
       "InitialMedia": 55,
       "InitialEconomic": 50
+    },
+    {
+      "CharacterName": "Dr. Nova Synthesis",
+      "GovernTitle": "Quantum Minister",
+      "PartyAffiliation": "The Singularity Now Party",
+      "CampaignSlogan": "The future is now, and it's weird.",
+      "InitialPopularity": 50,
+      "InitialStability": 40,
+      "InitialMedia": 70,
+      "InitialEconomic": 60
+    },
+    {
+      "CharacterName": "Captain Rex Nostalgic",
+      "GovernTitle": "Chief Retrograde Officer",
+      "PartyAffiliation": "The Good Old Days Coalition",
+      "CampaignSlogan": "Make yesterday today again!",
+      "InitialPopularity": 60,
+      "InitialStability": 70,
+      "InitialMedia": 40,
+      "InitialEconomic": 45
     }
   ]
-  
 }
