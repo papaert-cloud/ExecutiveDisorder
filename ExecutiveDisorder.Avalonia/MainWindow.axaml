@@ -1,0 +1,154 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ExecutiveDisorder.Avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="800"
+        x:Class="ExecutiveDisorder.Avalonia.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Executive Disorder"
+        Width="1200" Height="800">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto,*,Auto" Margin="20">
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#2C3E50" CornerRadius="8" Padding="20" Margin="0,0,0,20">
+            <StackPanel>
+                <TextBlock Text="EXECUTIVE DISORDER" FontSize="32" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                <TextBlock Text="A Political Decision-Making Game" FontSize="16" Foreground="#BDC3C7" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" ColumnDefinitions="250,*">
+            <!-- Character Selection Panel -->
+            <Border Grid.Column="0" Background="#34495E" CornerRadius="8" Padding="15" Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="SELECT CHARACTER" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,15"/>
+                    
+                    <ListBox ItemsSource="{Binding Characters}" 
+                             SelectedItem="{Binding SelectedCharacter}"
+                             Background="Transparent"
+                             BorderThickness="0">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,5">
+                                    <TextBlock Text="{Binding CharacterName}" FontWeight="Bold" Foreground="White"/>
+                                    <TextBlock Text="{Binding GovernTitle}" FontSize="12" Foreground="#BDC3C7"/>
+                                    <TextBlock Text="{Binding CampaignSlogan}" FontSize="11" FontStyle="Italic" Foreground="#95A5A6" TextWrapping="Wrap"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <Button Content="START GAME" 
+                            Command="{Binding StartGameCommand}"
+                            IsEnabled="{Binding CanStartGame}"
+                            Margin="0,20,0,0"
+                            Padding="15,10"
+                            Background="#27AE60"
+                            Foreground="White"
+                            FontWeight="Bold"/>
+
+                    <TextBlock Text="{Binding GameStatus}" 
+                               Foreground="#ECF0F1" 
+                               TextWrapping="Wrap"
+                               Margin="0,15,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Game Area -->
+            <Border Grid.Column="1" Background="#ECF0F1" CornerRadius="8" Padding="20">
+                <ScrollViewer>
+                    <StackPanel IsVisible="{Binding IsGameStarted}">
+                        <!-- Resources Display -->
+                        <Border Background="White" CornerRadius="8" Padding="15" Margin="0,0,0,15">
+                            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="Auto,Auto">
+                                <StackPanel Grid.Column="0" Margin="5">
+                                    <TextBlock Text="👥 POPULARITY" FontWeight="Bold" FontSize="12" Foreground="#3498DB"/>
+                                    <TextBlock Text="{Binding Popularity, StringFormat='{}{0}%'}" FontSize="24" FontWeight="Bold"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Margin="5">
+                                    <TextBlock Text="🏛️ STABILITY" FontWeight="Bold" FontSize="12" Foreground="#9B59B6"/>
+                                    <TextBlock Text="{Binding Stability, StringFormat='{}{0}%'}" FontSize="24" FontWeight="Bold"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2" Margin="5">
+                                    <TextBlock Text="📺 MEDIA TRUST" FontWeight="Bold" FontSize="12" Foreground="#E74C3C"/>
+                                    <TextBlock Text="{Binding MediaTrust, StringFormat='{}{0}%'}" FontSize="24" FontWeight="Bold"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="3" Margin="5">
+                                    <TextBlock Text="💰 ECONOMIC" FontWeight="Bold" FontSize="12" Foreground="#F39C12"/>
+                                    <TextBlock Text="{Binding Economic, StringFormat='{}{0}%'}" FontSize="24" FontWeight="Bold"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <!-- Current Card -->
+                        <Border Background="White" CornerRadius="8" Padding="20" Margin="0,0,0,15" IsVisible="{Binding HasCurrentCard}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                    <Border Background="#3498DB" CornerRadius="4" Padding="8,4">
+                                        <TextBlock Text="{Binding CurrentCard.Category}" Foreground="White" FontWeight="Bold" FontSize="12"/>
+                                    </Border>
+                                    <Border Background="#E74C3C" CornerRadius="4" Padding="8,4" Margin="10,0,0,0">
+                                        <TextBlock Text="{Binding CurrentCard.Urgency}" Foreground="White" FontWeight="Bold" FontSize="12"/>
+                                    </Border>
+                                </StackPanel>
+
+                                <TextBlock Text="{Binding CurrentCard.Title}" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+                                <TextBlock Text="{Binding CurrentCard.Description}" TextWrapping="Wrap" FontSize="14" Foreground="#7F8C8D" Margin="0,0,0,20"/>
+
+                                <TextBlock Text="YOUR OPTIONS:" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                                
+                                <ItemsControl ItemsSource="{Binding CurrentCard.MultipleChoiceOptions}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Content="{Binding OptionText}"
+                                                    Command="{Binding $parent[Window].DataContext.MakeDecisionCommand}"
+                                                    CommandParameter="{Binding}"
+                                                    Margin="0,5"
+                                                    Padding="15,10"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Left"
+                                                    Background="#2C3E50"
+                                                    Foreground="White"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Game Over / Ending -->
+                        <Border Background="#E74C3C" CornerRadius="8" Padding="20" IsVisible="{Binding IsGameOver}">
+                            <StackPanel>
+                                <TextBlock Text="GAME OVER" FontSize="28" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding EndingTitle}" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                                <TextBlock Text="{Binding EndingDescription}" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                                <Button Content="NEW GAME" 
+                                        Command="{Binding NewGameCommand}"
+                                        Margin="0,20,0,0"
+                                        Padding="15,10"
+                                        HorizontalAlignment="Center"
+                                        Background="White"
+                                        Foreground="#E74C3C"
+                                        FontWeight="Bold"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="#2C3E50" CornerRadius="8" Padding="10" Margin="0,20,0,0">
+            <TextBlock Text="Democracy: Optional. Chaos: Guaranteed." 
+                       Foreground="#BDC3C7" 
+                       HorizontalAlignment="Center"
+                       FontStyle="Italic"/>
+        </Border>
+    </Grid>
+</Window>

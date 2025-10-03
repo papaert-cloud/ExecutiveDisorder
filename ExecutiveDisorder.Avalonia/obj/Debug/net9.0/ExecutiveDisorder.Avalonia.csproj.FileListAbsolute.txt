@@ -1,0 +1,8 @@
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.csproj.AssemblyReference.cache
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/Avalonia/resources
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.AssemblyInfoInputs.cache
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.AssemblyInfo.cs
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.csproj.CoreCompileInputs.cache
+/home/runner/workspace/ExecutiveDisorder.Avalonia/obj/Debug/net9.0/ExecutiveDisorder.Avalonia.sourcelink.json
