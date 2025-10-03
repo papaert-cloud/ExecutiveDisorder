@@ -1,7 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory, redirect
 import os
 
 app = Flask(__name__)
+
+# WebGL build directory
+WEBGL_DIR = os.path.join(os.path.dirname(__file__), 'webgl')
 
 # Disable caching for development
 @app.after_request
@@ -13,7 +16,25 @@ def add_header(response):
 
 @app.route('/')
 def index():
+    webgl_exists = os.path.exists(os.path.join(WEBGL_DIR, 'index.html'))
+    if webgl_exists:
+        return redirect('/game')
     return render_template('index.html')
+
+@app.route('/docs')
+def docs():
+    return render_template('index.html')
+
+@app.route('/game')
+def game():
+    webgl_index = os.path.join(WEBGL_DIR, 'index.html')
+    if os.path.exists(webgl_index):
+        return send_from_directory(WEBGL_DIR, 'index.html')
+    return render_template('no_build.html'), 404
+
+@app.route('/game/<path:filename>')
+def serve_webgl(filename):
+    return send_from_directory(WEBGL_DIR, filename)
 
 @app.route('/health')
 def health():

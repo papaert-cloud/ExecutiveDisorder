@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Build Not Found - Executive Disorder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Executive Disorder</h1>
+            <p class="subtitle">WebGL Build Setup</p>
+        </header>
+
+        <main>
+            <section class="info-card" style="background: #fff3cd; border-left-color: #ffc107;">
+                <h2>⚠️ WebGL Build Not Found</h2>
+                <p>The WebGL build files are not yet uploaded. Follow the instructions below to build and upload your game.</p>
+            </section>
+
+            <section class="info-card">
+                <h2>📝 How to Build WebGL in Unity</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>Step 1: Open Project in Unity</h3>
+                        <p>Open this Unity project in Unity 6 on your local computer</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 2: Configure Build Settings</h3>
+                        <p>Go to <strong>File → Build Settings</strong></p>
+                        <ul>
+                            <li>Select <strong>WebGL</strong> as the platform</li>
+                            <li>Click "Switch Platform" if needed</li>
+                            <li>Ensure all required scenes are added to "Scenes In Build"</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <h3>Step 3: Configure Player Settings</h3>
+                        <p>Click "Player Settings" and configure:</p>
+                        <ul>
+                            <li>Set compression format to <strong>Disabled</strong> or <strong>Gzip</strong> (Brotli may not work on all servers)</li>
+                            <li>Disable "Data Caching" under Publishing Settings</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <h3>Step 4: Build</h3>
+                        <p>Click <strong>Build</strong> and choose a folder (e.g., "WebGLBuild")</p>
+                        <p>Unity will create files including:</p>
+                        <ul>
+                            <li>index.html</li>
+                            <li>Build/ folder containing .wasm, .data, .js files</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>📤 How to Upload to Replit</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>Step 1: Locate Build Files</h3>
+                        <p>Find the WebGL build folder on your computer</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 2: Upload to Replit</h3>
+                        <p>Upload all files from your WebGL build folder to:</p>
+                        <code>app/webgl/</code>
+                        <p>The structure should look like:</p>
+                        <code>app/webgl/index.html<br>app/webgl/Build/...</code>
+                    </div>
+                    <div class="step">
+                        <h3>Step 3: Reload</h3>
+                        <p>Once uploaded, refresh this page. The game will automatically load!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card links">
+                <h2>📚 Need Help?</h2>
+                <div class="link-buttons">
+                    <a href="/docs" class="btn">View Project Documentation</a>
+                    <a href="https://docs.unity3d.com/Manual/webgl-building.html" target="_blank" class="btn">Unity WebGL Docs</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Executive Disorder Unity Game Project</p>
+            <p>Upload your WebGL build to app/webgl/ to get started</p>
+        </footer>
+    </div>
+</body>
+</html>
