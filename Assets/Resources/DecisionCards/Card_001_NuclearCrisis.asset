@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d4e5f6789012345678901234abcdef, type: 3}
+  m_Name: Card_001_NuclearCrisis
+  m_EditorClassIdentifier: 
+  cardId: 1
+  cardTitle: Nuclear Crisis Response
+  description: "Intelligence reports confirm hostile nuclear activity. Military advisors demand immediate action. Diplomats urge patience. The world is watching. What do you do?"
+  cardImage: {fileID: 0}
+  option1Text: Launch Preemptive Strike
+  option2Text: Pursue Diplomatic Solution
+  option1Consequences:
+  - resourceName: stability
+    amount: -20
+    visualEffect: explosion
+    audioClip: explosion
+    newsHeadline: "BREAKING: Nuclear Strike Authorized - World in Crisis"
+    socialMediaReaction: "#WorldWar3 trending - This is madness! 😱"
+  - resourceName: popularity
+    amount: -15
+    visualEffect: crisis
+    audioClip: alarm
+    newsHeadline: "Protests Erupt: 'Not In Our Name' Movement Grows"
+    socialMediaReaction: "We didn't vote for war! #ImpeachNow"
+  option2Consequences:
+  - resourceName: media
+    amount: 10
+    visualEffect: celebration
+    audioClip: applause
+    newsHeadline: "President Chooses Peace: Diplomatic Talks Begin"
+    socialMediaReaction: "Finally, a leader who thinks before acting! 👏 #PeaceNotWar"
+  - resourceName: economic
+    amount: 5
+    visualEffect: ""
+    audioClip: positive
+    newsHeadline: "Markets Rally on Peace Initiative"
+    socialMediaReaction: "Stocks going up! Diplomacy works! 📈"
+  cascadeCards: []
+  cascadeProbability: 0.3

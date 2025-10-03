@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d4e5f6789012345678901234abcdef, type: 3}
+  m_Name: Card_004_ClimateCrisis
+  m_EditorClassIdentifier: 
+  cardId: 4
+  cardTitle: Climate Emergency Declaration
+  description: "Scientists warn we have months, not years. Coastal cities flooding. Heat waves killing thousands. Industry leaders threaten job losses if you act. Youth activists demand radical change."
+  cardImage: {fileID: 0}
+  option1Text: Declare Climate Emergency
+  option2Text: Take Measured Approach
+  option1Consequences:
+  - resourceName: popularity
+    amount: 20
+    visualEffect: celebration
+    audioClip: applause
+    newsHeadline: "Historic Climate Action Praised Worldwide"
+    socialMediaReaction: "Finally someone who listens to science! #ClimateAction 🌍"
+  - resourceName: economic
+    amount: -15
+    visualEffect: ""
+    audioClip: ""
+    newsHeadline: "Industries Warn of Economic Catastrophe"
+    socialMediaReaction: "My factory is closing because of this! #JobsFirst"
+  option2Consequences:
+  - resourceName: economic
+    amount: 10
+    visualEffect: ""
+    audioClip: positive
+    newsHeadline: "Businesses Welcome Balanced Climate Policy"
+    socialMediaReaction: "Thank you for being reasonable! 📈"
+  - resourceName: popularity
+    amount: -25
+    visualEffect: crisis
+    audioClip: alarm
+    newsHeadline: "Youth Movement: 'You Have Betrayed Our Future'"
+    socialMediaReaction: "The planet is dying and you're worried about profits! 😡 #ClimateStrike"
+  cascadeCards: []
+  cascadeProbability: 0.3
