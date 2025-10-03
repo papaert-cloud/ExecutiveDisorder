@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Executive Disorder</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #231F20;
+            overflow: hidden;
+        }
+        
+        #unity-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #unity-canvas {
+            width: 100%;
+            height: 100%;
+            background: #231F20;
+        }
+        
+        #unity-loading-bar {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        
+        #unity-logo {
+            width: 154px;
+            height: 130px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTQiIGhlaWdodD0iMTMwIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNNzcgMEwwIDQ0djQybDc3IDQ0IDc3LTQ0VjQ0TDc3IDB6bS0xNSA5NWwtMjYtMTUgMjYtMTUgMjYgMTUtMjYgMTV6bTQyLTQ0bC0yNyAxNVYzNWwyNy0xNXYzMXptLTU0IDB2MzFMMjMgNjdWMzVsMjcgMTZ6Ii8+PC9zdmc+') center / contain no-repeat;
+        }
+        
+        #unity-progress-bar-empty {
+            width: 141px;
+            height: 18px;
+            margin-top: 10px;
+            margin-left: 6.5px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDEiIGhlaWdodD0iMTgiPjxwYXRoIGZpbGw9IiMyQjJCMkIiIGQ9Ik0xIDFoMTM5djE2SDFWMXoiLz48cGF0aCBmaWxsPSIjM0IzQjNCIiBkPSJNMiAyaDEzN3YxNEgyVjJ6Ii8+PC9zdmc+') no-repeat center;
+        }
+        
+        #unity-progress-bar-full {
+            width: 0%;
+            height: 18px;
+            margin-top: 10px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDEiIGhlaWdodD0iMTgiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRjsiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY7Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNncmFkKSIgZD0iTTIgMmgxMzd2MTRIMlYyeiIvPjwvc3ZnPg==') no-repeat left;
+        }
+        
+        #unity-warning {
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%);
+            background: white;
+            padding: 10px;
+            display: none;
+        }
+        
+        #unity-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 38px;
+            background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #unity-footer .unity-footer-button {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 5px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        
+        #unity-footer .unity-footer-button:hover {
+            background: rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="unity-container">
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"></div>
+    </div>
+    <div id="unity-footer">
+        <button class="unity-footer-button" onclick="unityInstance.SetFullscreen(1)">Fullscreen</button>
+    </div>
+    
+    <script src="Build/ExecutiveDisord.loader.js"></script>
+    <script>
+        var unityInstance = null;
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var warningBanner = document.querySelector("#unity-warning");
+        
+        function unityShowBanner(msg, type) {
+            function updateBannerVisibility() {
+                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+            }
+            var div = document.createElement('div');
+            div.innerHTML = msg;
+            warningBanner.appendChild(div);
+            if (type == 'error') div.style = 'background: red; padding: 10px;';
+            else {
+                if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                setTimeout(function() {
+                    warningBanner.removeChild(div);
+                    updateBannerVisibility();
+                }, 5000);
+            }
+            updateBannerVisibility();
+        }
+        
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/ExecutiveDisord.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/ExecutiveDisord.data",
+            frameworkUrl: buildUrl + "/ExecutiveDisord.framework.js",
+            codeUrl: buildUrl + "/ExecutiveDisord.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "ExecutiveDisorder",
+            productName: "Executive Disorder",
+            productVersion: "1.0",
+            showBanner: unityShowBanner,
+        };
+        
+        loadingBar.style.display = "block";
+        
+        createUnityInstance(canvas, config, (progress) => {
+            progressBarFull.style.width = 100 * progress + "%";
+        }).then((instance) => {
+            unityInstance = instance;
+            loadingBar.style.display = "none";
+        }).catch((message) => {
+            alert(message);
+        });
+    </script>
+</body>
+</html>

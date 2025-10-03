@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory, redirect
+from flask import Flask, render_template, send_from_directory
 import os
 
 app = Flask(__name__)
@@ -16,25 +16,27 @@ def add_header(response):
 
 @app.route('/')
 def index():
-    webgl_exists = os.path.exists(os.path.join(WEBGL_DIR, 'index.html'))
-    if webgl_exists:
-        return redirect('/game')
-    return render_template('index.html')
-
-@app.route('/docs')
-def docs():
-    return render_template('index.html')
-
-@app.route('/game')
-def game():
     webgl_index = os.path.join(WEBGL_DIR, 'index.html')
     if os.path.exists(webgl_index):
         return send_from_directory(WEBGL_DIR, 'index.html')
     return render_template('no_build.html'), 404
 
-@app.route('/game/<path:filename>')
+@app.route('/docs')
+def docs():
+    return render_template('index.html')
+
+@app.route('/Build/<path:filename>')
+def serve_build(filename):
+    return send_from_directory(os.path.join(WEBGL_DIR, 'Build'), filename)
+
+@app.route('/<path:filename>')
 def serve_webgl(filename):
-    return send_from_directory(WEBGL_DIR, filename)
+    # Check if file exists in webgl directory
+    filepath = os.path.join(WEBGL_DIR, filename)
+    if os.path.exists(filepath):
+        return send_from_directory(WEBGL_DIR, filename)
+    # Otherwise return 404
+    return "File not found", 404
 
 @app.route('/health')
 def health():
